@@ -1,0 +1,53 @@
+@import "variables.less";
+@import "mixins";
+@import "utils/fonts.less";
+
+.FontAwesomeFonts {
+  .customFontMixin('Font Awesome', 'fontawesome-webfont', 400, normal, @pathFontAwesomeFonts);
+}
+
+.RobotoFonts {
+  .customFontMixin('Roboto', 'roboto-thin', 100, normal, @pathRoboto);
+  .customFontMixin('Roboto', 'roboto-light', 300, normal, @pathRoboto);
+  .customFontMixin('Roboto', 'roboto-regular', 400, normal, @pathRoboto);
+  .customFontMixin('Roboto', 'roboto-bold', 700, normal, @pathRoboto);
+  .customFontMixin('Roboto', 'roboto-black', 900, normal, @pathRoboto);
+}
+
+.fontAwesome() {
+  font-family: 'Font Awesome', sans-serif;
+}
+
+.roboto() {
+  font-family: 'Roboto', sans-serif;
+}
+
+*, html, body {
+  .roboto;
+  color: @font-color-1;
+  .setToZero;
+}
+
+body {
+  background-color: black;
+}
+
+
+ul {
+  list-style-type: none;
+}
+
+@media screen {
+
+  @media (min-width: @media-br-1) {
+  }
+  @media (min-width: @media-br-2) {
+  }
+  @media (min-width: @media-br-3) {
+    .address, .quote, section, footer {
+      max-width: 1680px;
+      margin: 0 auto;
+    }
+  }
+
+}
