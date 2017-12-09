@@ -1,0 +1,60 @@
+@import "../variables";
+@import "../mixins";
+@import "../common";
+
+#address {
+  padding:2em 0;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  background-color: @bg-color-2;
+
+  .info {
+    width: 100%;
+    max-width: 500px;
+    box-sizing: border-box;
+    display:flex;
+    flex-flow: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 2em 1em 2em;
+    p,h4,span {
+      width: 95%;
+      color: white;
+      font-style: normal;
+      padding: 0.5em 0;
+    }
+
+    p, span {
+      font-weight: 300;
+      padding-bottom: 0.8em;
+    }
+  }
+
+  #map {
+    width: 100%;
+    height: 35em;
+    background-color: grey;
+    max-width: 500px;
+  }
+
+  @media screen {
+
+    @media (min-width: @media-br-2) {
+      padding: 0;
+      justify-content: center;
+      align-items: center;
+      flex-flow: row;
+      #map {
+        height: 35em;
+        background-color: grey;
+        max-width: 600px;
+      }
+    }
+    @media (min-width: @media-br-3) {
+    }
+
+  }
+
+}
