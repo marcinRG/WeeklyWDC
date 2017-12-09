@@ -1,0 +1,72 @@
+@import "../variables";
+@import "../mixins";
+@import "../common";
+
+.contact-section {
+  margin: 0 auto;
+  padding: 2em 0;
+  width: 95%;
+
+  form {
+    overflow: hidden;
+
+    &:after {
+      clear: both;
+    }
+  }
+
+  button {
+    margin: 1em 0;
+
+    &:after {
+      content: @fa-var-send-o;
+      padding: 0 0.5em;
+      .fontAwesome;
+    }
+  }
+
+  input,
+  textarea {
+    border-bottom: 1px solid @color-1;
+    box-sizing: border-box;
+    float: left;
+    font-size: 1em;
+    font-weight: 600;
+    margin: 0.5em 0;
+    outline: 0;
+    padding: 1.5em 0.7em 0.5em 0;
+    text-align: left;
+    width: 100%;
+
+    &::-webkit-input-placeholder {
+      color: @color-1;
+    }
+
+    &::-moz-placeholder {
+      color: @color-1;
+
+    }
+
+    &:-ms-input-placeholder {
+      color: @color-1;
+    }
+
+    &:focus {
+      background-color: @color-3;
+    }
+  }
+
+  @media screen {
+
+    @media (min-width: @media-br-1) {
+
+      input {
+        width: 49%;
+
+        &:first-of-type {
+          margin-right: 2%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+    "fileExtensions": [".less"],
+
+    "spaceAfterPropertyColon": {
+        "enabled": true,
+        "style": "one_space"
+    },
+    "duplicateProperty": {
+            "enabled": true,
+            "exclude": ["src","background-color"]
+    },
+    "stringQuotes": "double",
+    "universalSelector": "valid",
+    "zeroUnit":"no_unit",
+    "qualifyingElement": "invalid"
+}

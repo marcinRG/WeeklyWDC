@@ -1,0 +1,119 @@
+@import "../variables";
+@import "../mixins";
+@import "../common";
+
+footer {
+  background-color: @color-1;
+  overflow: hidden;
+  padding: 2em 0;
+
+  &:after {
+    clear: both;
+  }
+
+  li {
+    display: inline-block;
+  }
+
+  a {
+    .a-links(white);
+    display: inline-block;
+
+    &:hover {
+      background-color: white;
+
+      &.facebook {
+        color: #2220a2;
+      }
+
+      &.twitter {
+        color: #6effcd;
+      }
+
+      &.instagram {
+        color: #ffa700;
+      }
+
+      &.google {
+        color: #ff070a;
+      }
+    }
+
+    &.facebook {
+      width: 1em;
+
+      &:after {
+        content: @fa-var-facebook;
+      }
+    }
+
+    &.google {
+
+      &:after {
+        content: @fa-var-google;
+      }
+    }
+
+    &.instagram {
+
+      &:after {
+        content: @fa-var-instagram;
+      }
+    }
+
+    &.twitter {
+
+      &:after {
+        content: @fa-var-twitter;
+      }
+    }
+
+    &.to-top {
+      background-color: white;
+      color: @color-1;
+      display: inline-block;
+      width: 1em;
+
+      &:after {
+        content: @fa-var-long-arrow-up;
+      }
+    }
+  }
+
+  & > ul,
+  & > span,
+  & > div {
+    color: white;
+    display: block;
+    float: left;
+    text-align: center;
+    width: 100%;
+  }
+
+  & > span {
+    padding: 0.9em 0;
+  }
+
+  @media screen {
+
+    @media (min-width: @media-br-1) {
+
+      & > ul,
+      & > span,
+      & > div {
+        box-sizing: border-box;
+        padding-left: 0.3em;
+        padding-right: 0.3em;
+        width: 33.3333%;
+      }
+
+      & > ul {
+        text-align: left;
+      }
+
+      & > div {
+        text-align: right;
+      }
+    }
+  }
+}
