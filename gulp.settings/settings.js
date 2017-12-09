@@ -4,7 +4,8 @@ var devFolder = './dev/';
 
 var appPaths = {
     doneFolder: doneFolder,
-    devFolder: devFolder
+    devFolder: devFolder,
+    defaultBuildFolder: 'build/'
 };
 
 module.exports = {
