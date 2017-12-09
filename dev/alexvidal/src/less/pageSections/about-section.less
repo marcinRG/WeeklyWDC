@@ -1,0 +1,23 @@
+@import "../variables";
+@import "../mixins";
+@import "../common";
+
+.about-section {
+  padding: 2em 0 2em 0;
+
+  p {
+    padding: 1em 0.5em 1.5em 0.5em;
+    width: 90%;
+  }
+
+  @media screen {
+
+    @media (min-width: @media-br-1) {
+
+      p {
+        margin: 0 auto;
+        width: 40%;
+      }
+    }
+  }
+}

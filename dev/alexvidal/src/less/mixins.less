@@ -1,0 +1,50 @@
+@import "variables";
+@import "utils/material-shadows";
+
+.setToZero {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.block-border-box {
+  box-sizing: border-box;
+  display: block;
+}
+
+.button-mixin(@color, @bgcolor) {
+  background-color: white;
+  border: 1px solid @color;
+  color: @color;
+  cursor: pointer;
+  font-size: 0.8em;
+  font-weight: 700;
+  padding: 1em 3em;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition-duration: 0.5s;
+  .BoxShadowHelper(2);
+}
+
+.header-mixin() {
+  padding: 1em 0.5em 15px 0.5em;
+
+  &:after {
+    background-image: url("../images/down-bg.png");
+    content: "";
+    display: block;
+    height: 6px;
+    margin: 0 auto;
+    width: 60px;
+  }
+}
+
+.a-links(@color) {
+  .fontAwesome;
+  border: 1px solid @color;
+  border-radius: 50%;
+  color: @color;
+  font-size: 1.5em;
+  padding: 0.5em;
+  text-decoration: none;
+}
