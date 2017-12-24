@@ -1,0 +1,28 @@
+{
+  "extends": "standard",
+  "parserOptions": {
+    "ecmaVersion": 5,
+    "sourceType": "script"
+  },
+  "rules": {
+    "semi" : "off",
+    "indent" :"off",
+    "curly": "error",
+    "quotes": ["error", "single"],
+    "spaced-comment": "off",
+    "space-before-function-paren":"off",
+    "brace-style": "off",
+    "handle-callback-err":"off",
+    "no-new": "off",
+    "no-unused-vars": "warn"
+
+  },
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "plugins": [
+    "standard",
+    "promise"
+  ]
+}

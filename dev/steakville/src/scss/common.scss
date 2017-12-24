@@ -1,0 +1,33 @@
+@import 'variables';
+@import 'mixins';
+@import 'utils/fonts';
+
+//@include custom-font-mixin('Roboto', 'Roboto', 400, normal, $path-roboto);
+//@include custom-font-mixin('Roboto', 'Roboto Light', 300, normal, $path-roboto);
+//@include custom-font-mixin('Roboto', 'Roboto Light Italic', 300, italic, $path-roboto);
+//@include custom-font-mixin('Roboto', 'Roboto Thin', 100, normal, $path-roboto);
+//@include custom-font-mixin('Roboto', 'Roboto Thin Italic', 100, italic, $path-roboto);
+//@include custom-font-mixin('Roboto', 'Roboto Italic', 400, italic, $path-roboto);
+//@include custom-font-mixin('Roboto', 'Roboto Medium', 500, normal, $path-roboto);
+//@include custom-font-mixin('Roboto', 'Roboto Bold', 700, normal, $path-roboto);
+//
+//@include custom-font-mixin('Oxygen Mono', 'oxygenmono-regular', 400, normal, $path-oxygen);
+//
+//@mixin roboto {
+//  font-family: 'Roboto', sans-serif;
+//}
+//
+//@mixin oxygen {
+//  font-family: 'Oxygen Mono', monospace;
+//}
+//
+//*,
+//html,
+//body {
+//  @include roboto;
+//  @include set-to-zero;
+//}
+//
+//body {
+//  background-color: $color-600;
+//}
