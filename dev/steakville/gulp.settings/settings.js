@@ -44,7 +44,7 @@ var paths = {
     lessStyles: [lessFolder + '**/*.less', '!' + lessFolder + 'font-awesome/' + '**/*.less'],
     scssStyles: [sassFolder + '**/*.scss'],
     lessFile: lessFolder + 'style.less',
-    scssFile: sassFolder + 'style.scss'
+    scssFile: sassFolder + 'style.scss',
 };
 
 var build = {

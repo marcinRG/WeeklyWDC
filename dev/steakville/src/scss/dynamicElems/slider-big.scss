@@ -1,0 +1,158 @@
+@import '../variables';
+@import '../mixins';
+@import '../common';
+
+.slider-big {
+  background-color: $text-1;
+  color: $base-f-color;
+  text-align: center;
+  padding-bottom: 3.5em;
+  position: relative;
+
+  .nav {
+    @include pos-absolute;
+    padding-bottom: 1em;
+    display: inline-block;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .prev {
+    @include pos-absolute;
+    top: 40%;
+    left: 2%;
+  }
+
+  .next {
+    @include pos-absolute;
+    top: 40%;
+    right: 2%;
+  }
+
+  .nav > span,
+  .prev > span,
+  .next > span,
+  .slide > span {
+    @include span-mixin;
+    cursor: pointer;
+  }
+
+  .prev > span,
+  .next > span {
+    font-size: 2em;
+  }
+
+  button {
+    @include button-mixin($text-1, $color-fishy);
+  }
+
+  .slider {
+    @include block-border-box;
+    width: 75%;
+    overflow: hidden;
+    position: relative;
+    height: 43.5em;
+    margin: 0 auto;
+
+    &::after {
+      clear: both;
+    }
+  }
+
+  .imgs {
+    display: none;
+  }
+
+  p {
+    padding: 2em 0;
+    font-size: .9em;
+  }
+
+  .info {
+    @include block-border-box;
+    padding: 4em 0;
+  }
+
+  .slide {
+    @include block-border-box;
+    height: 43.5em;
+    width: 100%;
+    position: absolute;
+    transition-duration: 1s;
+    transition-property: left;
+    transition-timing-function: ease-out;
+  }
+
+  @media screen {
+
+    @media (min-width: $media-br-1) {
+
+      .slider {
+        width: 85%;
+      }
+
+      .info {
+        text-align: left;
+        padding: 8em 8em 0 2em;
+        margin: 0;
+
+        p {
+          padding: 2em 2em 2em 0;
+          font-size: 1em;
+        }
+      }
+    }
+
+    @media (min-width: $media-br-2) {
+
+      .slider {
+        width: 90%;
+      }
+
+      .slide {
+        @include block-border-box;
+        width: 100%;
+        overflow: hidden;
+
+        &::after {
+          clear: both;
+        }
+      }
+
+      .info {
+        width: 50%;
+        float: left;
+        text-align: left;
+        padding: 8em 0 0 2em;
+        margin: 0;
+      }
+
+      .imgs {
+
+        @include block-border-box;
+        width: 50%;
+        float: right;
+        height: 43.5em;
+        position: relative;
+
+        img {
+          left: 5%;
+          top: 30%;
+          position: absolute;
+          width: 80%;
+          max-width: 800px;
+          height: auto;
+
+          .img-1 {
+            transform: rotateZ(-5deg);
+          }
+
+          .img-2 {
+            transform: rotateZ(5deg);
+          }
+        }
+      }
+    }
+  }
+}

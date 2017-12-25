@@ -1,6 +1,6 @@
 files:
   ignore:
-    - 'src/scss/ionicons/**/*.*'
+    - 'src/scss/libs/**/*.*'
 rules:
   bem-depth:
     - 0

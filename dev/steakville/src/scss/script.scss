@@ -1,0 +1,18 @@
+@import 'variables';
+@import 'mixins';
+@import 'common';
+
+.remove-spaces {
+  padding: .2em .5em;
+}
+
+nav {
+  .nav {
+    .menu-items {
+
+      .selected-item {
+        color: $color-fishy;
+      }
+    }
+  }
+}

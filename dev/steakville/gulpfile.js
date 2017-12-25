@@ -39,7 +39,7 @@ gulp.task('sass-compile', ['lint-sass'],  function () {
     msg('Kompilacja plików scss -> css');
     return gulp.src(settings.app.scssFile)
         .pipe($.sass().on('error', $.sass.logError))
-        .pipe(gulp.dest(settings.app.cssStyles));
+        .pipe(gulp.dest(settings.app.cssFolder));
 });
 
 gulp.task('browserify-compil', ['code-check'], function () {
@@ -78,6 +78,36 @@ gulp.task('inject-css', function () {
         .pipe(gulp.dest(settings.app.client));
 });
 
+gulp.task('copyToBuild-fonts', function () {
+    msg('Kopiowanie fontów');
+    return gulp.src(settings.app.fontsSrc)
+        .pipe(gulp.dest(settings.build.fontsPath));
+});
+
+function serve(isDev) {
+    var nodeOptions = {
+        script: settings.server.serverApp,
+        ext: 'js',
+        delay: 2500,
+        env: {
+            'PORT': settings.server.port,
+            'NODE_ENV': isDev ? 'dev' : 'build'
+        },
+        watch: settings.server.serverFiles
+    };
+    return $.nodemon(nodeOptions)
+        .on('start', function () {
+            msg('...start servera ...');
+        })
+        .on('restart', function () {
+            msg('...restart servera...');
+        })
+        .on('exit', function () {
+        })
+        .on('crash', function () {
+            msg('!!!Wystąpiły bęłdy');
+        });
+};
 
 function msg(txt) {
     $.util.log($.util.colors.blue(txt));

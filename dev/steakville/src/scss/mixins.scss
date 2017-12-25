@@ -11,29 +11,6 @@
   display: block;
 }
 
-@mixin button-mixin($color,$bg-color) {
-  cursor: pointer;
-  outline: none;
-  color: $color;
-  display: inline-block;
-  background-color: $bg-color;
-  border: none;
-  border-radius: 2px;
-  text-align: center;
-  padding: 0.7em 3em;
-  font-size: 0.9em;
-  font-weight: 600;
-  text-transform: uppercase;
-  transition-duration: 0.5s;
-  transition-property: background-color, color;
-
-  &:hover {
-    background-color: darken($bg-color, 30%);
-    color: lighten($color, 70%);
-  }
-
-}
-
 @mixin block-mixin($bg-color) {
   @include block-border-box;
   width: 100%;
@@ -42,7 +19,7 @@
 
 @mixin after-arrow {
 
-  &:after {
+  &::after {
     position: relative;
     content: '';
     display: block;
@@ -59,8 +36,8 @@
 @mixin frame1($color) {
   position: relative;
 
-  &:before {
-    content: "";
+  &::before {
+    content: '';
     position: absolute;
     border: 1px $color solid;
     top: 0;
@@ -73,63 +50,6 @@
 @mixin pos-absolute {
   position: absolute;
   z-index: 5;
-}
-
-@mixin span-mixin() {
-  display: inline-block;
-  color: $color-fishy;
-  font-size: 0.9em;
-  &.dot {
-    &:before {
-      //content: @fa-var-square-o;
-    }
-    &.selected {
-      &:before {
-        //content: @fa-var-square;
-      }
-    }
-  }
-
-  &.bck {
-    &:before {
-      //content: @fa-var-coffee;
-    }
-  }
-
-  &.nxt {
-    &:before {
-      //content: @fa-var-cutlery;
-    }
-  }
-
-  &.dash {
-    &:before {
-      //content: @fa-var-dashboard;
-    }
-  }
-
-  &.globe {
-    &:before {
-      //content: @fa-var-globe;
-    }
-  }
-
-  &.hletter {
-    &:before {
-      //content: @fa-var-h-square;
-    }
-  }
-
-  &.dot-2 {
-    &:before {
-      //content: @fa-var-circle-o;
-    }
-    &.selected {
-      &:before {
-        //content: @fa-var-circle;
-      }
-    }
-  }
 }
 
 @mixin animation-mixin($duration, $name, $count) {
