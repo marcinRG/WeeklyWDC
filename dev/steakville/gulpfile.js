@@ -1,7 +1,7 @@
 'use strict';
 
-var gulp = require("gulp");
-var browserify = require("browserify");
+var gulp = require('gulp');
+var browserify = require('browserify');
 var source = require('vinyl-source-stream');
 var $ = require('gulp-load-plugins')({lazy: true});
 var sassLint = require('gulp-sass-lint');
@@ -32,10 +32,10 @@ gulp.task('lint-sass', ['clean-styles'], function () {
             }
         ))
         .pipe(sassLint.format())
-        .pipe(sassLint.failOnError())
+        .pipe(sassLint.failOnError());
 });
 
-gulp.task('sass-compile', ['lint-sass'],  function () {
+gulp.task('sass-compile', ['lint-sass'], function () {
     msg('Kompilacja plików scss -> css');
     return gulp.src(settings.app.scssFile)
         .pipe($.sass().on('error', $.sass.logError))
@@ -53,7 +53,7 @@ gulp.task('browserify-compil', ['code-check'], function () {
 
 gulp.task('browserify-inject-js', ['browserify-compil'], function () {
     return gulp.src(settings.app.index)
-        .pipe($.inject(gulp.src(settings.app.compiledJS, {read: false}), {relative: true}))
+        .pipe($.inject(gulp.src(settings.app.compiledJs, {read: false}), {relative: true}))
         .pipe(gulp.dest(settings.app.client));
 });
 
@@ -70,6 +70,10 @@ function clean(path, done) {
 
 gulp.task('sass-watcher', function () {
     gulp.watch(settings.app.scssStyles, ['sass-compile', 'inject-css']);
+});
+
+gulp.task('js-watcher', function () {
+    gulp.watch(settings.app.jsAppFiles, ['browserify-inject-js']);
 });
 
 gulp.task('inject-css', function () {
@@ -107,7 +111,7 @@ function serve(isDev) {
         .on('crash', function () {
             msg('!!!Wystąpiły bęłdy');
         });
-};
+}
 
 function msg(txt) {
     $.util.log($.util.colors.blue(txt));

@@ -1,4 +1,5 @@
 'use strict';
+var utils = require('../utils/Utlities');
 
 function InfoAnimation(settings) {
     var images = settings.images;
@@ -6,17 +7,17 @@ function InfoAnimation(settings) {
     var hideClass = settings.hideClass;
 
     function showImages() {
-       images.removeClass(hideClass);
-       images.addClass(showClass);
+        utils.swapClasses(images, hideClass, showClass);
     }
 
     function hideImages() {
-        images.removeClass(showClass);
-        images.addClass(hideClass);
+        utils.swapClasses(images, showClass, hideClass);
     }
+
     return {
         showImages: showImages,
         hideImages: hideImages
     };
 }
+
 module.exports = InfoAnimation;

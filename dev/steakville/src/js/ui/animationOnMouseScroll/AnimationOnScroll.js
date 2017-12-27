@@ -5,7 +5,7 @@ function partWindowHeight(precentage) {
     return (height * (precentage / 100));
 }
 
-function AnimationOnScroll(settings) {
+function AnimationOnMouseScroll(settings) {
     var elem = settings.elem;
     var minWidth = settings.minWidth;
     var triggerTopPoint = settings.triggerTopPoint;
@@ -89,4 +89,4 @@ function AnimationOnScroll(settings) {
     };
 }
 
-module.exports = AnimationOnScroll;
+module.exports = AnimationOnMouseScroll;

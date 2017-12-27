@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zadanie 29 - Steakville</title>
+    <title>Steakville</title>
     <!-- build:css css/style.css -->
     <!-- inject:css -->
     <link rel="stylesheet" href="css/style.css">
@@ -22,17 +22,17 @@
         </div>
         <div class="menu-items">
             <ul>
-                <li><a data-id="welcome">home</a></li>
-                <li><a data-id="menu">menu</a></li>
-                <li><a data-id="dishes">dishes</a></li>
-                <li><a data-id="opening">opening hours</a></li>
-                <li><a data-id="reservation">reservations</a></li>
+                <li><a href="#welcome">home</a></li>
+                <li><a href="#menu">menu</a></li>
+                <li><a href="#dishes">dishes</a></li>
+                <li><a href="#opening">opening hours</a></li>
+                <li><a href="#reservation">reservations</a></li>
             </ul>
         </div>
     </div>
 </nav>
 <main>
-    <section class="welcome-section">
+    <section class="welcome-section" id="welcome">
         <div class="info">
             <h1><span>Welcome to </span>
                 Steakville Restaurant
@@ -171,7 +171,7 @@
         </blockquote>
     </section>
 
-    <section class="menu-section">
+    <section class="menu-section" id="menu">
         <h2><span>Our dishes</span> Menu</h2>
         <div class="hamburgers">
             <div class="hamburger">
@@ -255,7 +255,7 @@
         </div>
     </section>
 
-    <section class="dishes-section">
+    <section class="dishes-section" id="dishes">
         <h2><span>Steakville</span> Our menu</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus alias cumque eaque exercitationem facere,
             neque nihil odio rem tempore voluptas. Error hic incidunt inventore obcaecati pariatur quod sequi
@@ -328,7 +328,7 @@
         </div>
     </section>
 
-    <section class="opening-section">
+    <section class="opening-section" id="opening">
         <h2><span>You're welcome</span> opening hours</h2>
         <div class="info">
             <div class="img">
@@ -345,7 +345,7 @@
         </div>
     </section>
 
-    <section class="reservation-section">
+    <section class="reservation-section" id="reservation">
         <div class="top">
             <h2><span>Reservation</span> book a table</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.

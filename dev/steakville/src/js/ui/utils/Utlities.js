@@ -78,6 +78,17 @@ function doAnimation(elems, className, mainDelay, delay) {
     elems.map(addClassToElem(className));
 }
 
+function getElemTopBottom(elem) {
+    if (elem) {
+        var top = elem.getBoundingClientRect().top + window.pageYOffset;
+        var bottom = top + elem.getBoundingClientRect().height;
+        return {
+            top: top,
+            bottom: bottom
+        };
+    }
+}
+
 module.exports = {
     removeAllNonPrintableCharacters: removeAllNonPrintableCharacters,
     removeSpaces: removeSpaces,
@@ -89,5 +100,6 @@ module.exports = {
     swapElemClasses: swapElemClasses,
     executeInFuture: executeInFuture,
     updateCounterWithMaxValue: updateCounterWithMaxValue,
-    doAnimation: doAnimation
+    doAnimation: doAnimation,
+    getElementTopBottom: getElemTopBottom
 };

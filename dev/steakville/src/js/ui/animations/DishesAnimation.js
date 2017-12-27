@@ -6,8 +6,8 @@ function DishesAnimation(settings) {
     var dishes = settings.dishes;
     var showClass = settings.showClass;
     var hideClass = settings.hideClass;
-    var dishesLeft = dishes.children('.left').find('.meal');
-    var dishesRight = dishes.children('.right').find('.meal');
+    var dishesLeft = Array.from(dishes.querySelectorAll('.left .meal'));
+    var dishesRight = Array.from(dishes.querySelectorAll('.right .meal'));
 
     function showDishes() {
         dishesLeft = dishesLeft.map(utils.addAnimationDelay(0, 0.25));

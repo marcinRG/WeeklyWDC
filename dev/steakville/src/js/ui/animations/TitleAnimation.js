@@ -24,26 +24,28 @@ function TitleAnimation(settings) {
     }
 
     function clearClasses() {
-        title.attr('class', '');
-        button.attr('class', '');
+        title.setAttribute('class', '');
+        button.setAttribute('class', '');
     }
 
     function hideTitle() {
         clearClasses();
         counter = updateCounter(counter, titleAnimations.length);
-        title.addClass(hideAnimation);
-        button.addClass(hideAnimation);
-        utils.executeInFuture(timeOutId, animateTitle, shortTime);
+        title.classList.add(hideAnimation);
+        button.classList.add(hideAnimation);
+        timeOutId = utils.executeInFuture(timeOutId, animateTitle, shortTime);
     }
 
     function animateTitle() {
         clearClasses();
-        title.addClass(titleAnimations[counter]);
-        button.addClass(titleAnimations[titleAnimations.length - counter - 1]);
+        title.classList.add(titleAnimations[counter]);
+        button.classList.add(titleAnimations[titleAnimations.length - counter - 1]);
         timeOutId = utils.executeInFuture(timeOutId, hideTitle, longTime);
     }
 
-    animateTitle();
+    return {
+        run: animateTitle
+    };
 }
 
 module.exports = TitleAnimation;

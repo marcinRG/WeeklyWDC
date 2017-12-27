@@ -2,11 +2,12 @@
 @import 'mixins';
 @import 'common';
 
-.remove-spaces {
-  padding: .2em .5em;
-}
+.navbar {
 
-nav {
+  &.remove-spaces {
+    padding: .2em .5em;
+  }
+
   .nav {
     .menu-items {
 

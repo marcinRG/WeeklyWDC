@@ -1,5 +1,5 @@
 'use strict';
-var animFuncs = require('../../utils/AnimateFunctions');
+var animFuncs = require('../utils/AnimateFunctions');
 
 function NavBarButton(settings) {
     var navBtn = settings.button;
