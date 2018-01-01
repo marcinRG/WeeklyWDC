@@ -12,6 +12,7 @@ var buildPath = './build/';
 
 var bootstrapFolder = './node_modules/bootstrap/';
 var fontAwesomeFolder = './node_modules/font-awesome/';
+var serverFolder = './server/';
 
 var bootstrap = {
     fonts: bootstrapFolder + 'fonts/**.*',
@@ -55,9 +56,16 @@ var build = {
     imagesPath: buildPath + 'images'
 };
 
+var server = {
+    serverApp: serverFolder + 'server.js',
+    serverFiles: [serverFolder + 'server.js', serverFolder + '**/*.js'],
+    port: 4580
+};
+
 module.exports = {
     app: paths,
     build: build,
     bootstrap: bootstrap,
-    fontAwesome: fontAwesome
+    fontAwesome: fontAwesome,
+    server: server
 };

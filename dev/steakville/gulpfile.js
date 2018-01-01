@@ -88,6 +88,36 @@ gulp.task('copyToBuild-fonts', function () {
         .pipe(gulp.dest(settings.build.fontsPath));
 });
 
+gulp.task('copyToBuild-images', function () {
+    msg('Kopiowanie obrazów');
+    return gulp.src(settings.app.imageSrc)
+        .pipe($.imagemin())
+        .pipe(gulp.dest(settings.build.imagesPath));
+});
+
+gulp.task('build-prepare', ['browserify-inject-js', 'inject-css'], function () {
+});
+
+gulp.task('run-dev', ['browserify-inject-js', 'inject-css'], function () {
+    serve(true);
+});
+
+gulp.task('run-dist', ['dist-optimize'], function () {
+    serve(false);
+});
+
+gulp.task('dist-optimize', ['build-prepare', 'copyToBuild-images',
+    'copyToBuild-fonts'], function () {
+    msg('Poczatek');
+    var cleanCss = require('gulp-clean-css');
+    return gulp.src(settings.app.index)
+        .pipe($.plumber())
+        .pipe($.useref())
+        .pipe($.if('*.js', $.uglify()))
+        .pipe($.if('*.css', cleanCss()))
+        .pipe(gulp.dest(settings.build.path));
+});
+
 function serve(isDev) {
     var nodeOptions = {
         script: settings.server.serverApp,

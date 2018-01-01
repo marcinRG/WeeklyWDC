@@ -78,7 +78,7 @@ var imagesScrollAnimationTrigger = {
 var imagesScroll = new AnimationOnScroll(imagesScrollAnimationTrigger);
 imagesScroll.run();
 
- var burgerAnimationSettings = {
+var burgerAnimationSettings = {
     hamburgers: document.querySelectorAll('.hamburgers .hamburger'),
     classOdd: 'hamburger-odd',
     classEven: 'hamburger-even',
@@ -116,3 +116,29 @@ var dishesScrollAnimationSettings = {
 var scrollAnimDishes = new AnimationOnScroll(dishesScrollAnimationSettings);
 scrollAnimDishes.run();
 
+var SimpleSlider = require('./ui/sliders/SimpleSlider');
+var sliderBigSettings = {
+    delay: 15000,
+    slideDelay: 1000,
+    autoPlay: true,
+    currentElem: 0,
+    slider: document.querySelector('.slider.big'),
+    navbarItemClass: 'dot-2',
+    navbarItemSelected: 'selected',
+    isContinuous: true
+};
+var simpleSlider = new SimpleSlider(sliderBigSettings);
+simpleSlider.run();
+
+var sliderSmallSettings = {
+    delay: 5000,
+    slideDelay: 500,
+    autoPlay: true,
+    currentElem: 0,
+    slider: document.querySelector('.slider.small'),
+    navbarItemClass: 'dot',
+    navbarItemSelected: 'selected',
+    isContinuous: true
+};
+var simpleSmallSlider = new SimpleSlider(sliderSmallSettings);
+simpleSmallSlider.run();

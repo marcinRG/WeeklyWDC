@@ -29,6 +29,7 @@ html,
 body {
   @include set-to-zero;
   @include average-font;
+  box-sizing: border-box;
 }
 
 h1,
@@ -88,21 +89,22 @@ h2 {
   color: $color-fishy;
   font-size: .9em;
 
-  .dot {
+  &.dot {
 
     &::before {
       content: $fa-var-square-o;
     }
 
-    .selected {
+    &.selected {
 
       &::before {
         content: $fa-var-square;
       }
     }
+
   }
 
-  .bck {
+  &.bck {
 
     &::before {
       content: $fa-var-coffee;
@@ -116,7 +118,7 @@ h2 {
     }
   }
 
-  .dash {
+  &.dash {
 
     &::before {
       content: $fa-var-dashboard;
@@ -129,20 +131,20 @@ h2 {
     }
   }
 
-  .hletter {
+  &.hletter {
 
     &::before {
       content: $fa-var-h-square;
     }
   }
 
-  .dot-2 {
+  &.dot-2 {
 
     &::before {
       content: $fa-var-circle-o;
     }
 
-    .selected {
+    &.selected {
 
       &::before {
         content: $fa-var-circle;
