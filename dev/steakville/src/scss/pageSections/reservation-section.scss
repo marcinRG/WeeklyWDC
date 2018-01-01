@@ -1,0 +1,141 @@
+@import '../variables';
+@import '../mixins';
+@import '../common';
+
+.reservation-section {
+
+  .top {
+    @include block-mixin($base-f-color);
+    padding: 4em 0;
+  }
+
+  .bottom {
+    @include block-mixin($bg-color-6);
+    padding: 4em 0;
+
+    h2 {
+      @include after-arrow;
+      color: $base-f-color;
+    }
+  }
+
+  button {
+    @include button-mixin ($text-1, $color-fishy);
+    display: inline-block;
+  }
+
+  form {
+    padding: 2em 0;
+  }
+
+  .inputs {
+
+    padding-bottom: 2em;
+
+    .input {
+      border: 1px solid $color-fishy;
+      border-radius: 2px;
+      margin: .4em auto;
+      width: 95%;
+      display: block;
+      overflow: hidden;
+
+      &::after {
+        clear: both;
+      }
+
+      button,
+      input {
+        @include set-to-zero;
+        @include block-border-box;
+        font-weight: 400;
+        background-color: $bg-color-6;
+        color: $color-fishy;
+        font-size: 1.2em;
+        padding: .6em .2em;
+        outline: none;
+      }
+
+      .txt-input {
+        display: inline-block;
+        width: 85%;
+        float: left;
+      }
+
+      .btn {
+        @include font-awesome;
+        width: 2em;
+        float: right;
+
+        &.date {
+          &::after {
+            content: $fa-var-calendar;
+          }
+        }
+
+        &.block {
+          &::after {
+            content: $fa-var-building-o;
+          }
+        }
+
+        &.person {
+          &::after {
+            content: $fa-var-user;
+          }
+        }
+      }
+    }
+  }
+
+  h2 {
+    color: $text-1;
+  }
+
+  p {
+    width: 95%;
+    display: inline-block;
+    padding: 1em 0;
+  }
+
+  @media screen {
+
+    @media (min-width: $media-br-1) {
+
+      p {
+        width: 60%;
+        display: block;
+        margin: 0 auto;
+        padding: 1em 0;
+
+      }
+
+      .inputs {
+        .input {
+          width: 75%;
+        }
+      }
+
+    }
+
+    @media (min-width: $media-br-2) {
+
+      p {
+        width: 40%;
+      }
+
+      .inputs {
+        width: 95%;
+        max-width: 60em;
+        margin: 0 auto;
+        overflow: hidden;
+
+        .input {
+          width: 31.5%;
+          float: left;
+          margin: .4em;
+        }
+      }
+    }
+  }
+}

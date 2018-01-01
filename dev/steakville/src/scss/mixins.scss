@@ -1,0 +1,61 @@
+@import 'variables';
+
+@mixin set-to-zero {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin block-border-box {
+  box-sizing: border-box;
+  display: block;
+}
+
+@mixin block-mixin($bg-color) {
+  @include block-border-box;
+  width: 100%;
+  background-color: $bg-color;
+}
+
+@mixin after-arrow {
+
+  &::after {
+    position: relative;
+    content: '';
+    display: block;
+    height: $padding-arrow;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-image: url($arrow-link);
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+}
+
+@mixin frame1($color) {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    border: 1px $color solid;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+@mixin pos-absolute {
+  position: absolute;
+  z-index: 5;
+}
+
+@mixin animation-mixin($duration, $name, $count) {
+  animation-duration: $duration;
+  animation-timing-function: ease-in-out;
+  animation-name: $name;
+  animation-fill-mode: both;
+  animation-iteration-count: $count;
+}

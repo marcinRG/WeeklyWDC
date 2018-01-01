@@ -1,0 +1,260 @@
+@import '../variables';
+@import '../mixins';
+@import '../common';
+
+.slider {
+  @include block-border-box;
+  @include set-to-zero;
+  width: 100%;
+  position: relative;
+
+  .nav {
+    @include pos-absolute;
+    padding-bottom: 1em;
+    display: inline-block;
+    text-align: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .prev {
+    @include pos-absolute;
+    top: 40%;
+    left: 2%;
+    font-size: 2em;
+  }
+
+  .next {
+    @include pos-absolute;
+    top: 40%;
+    right: 2%;
+    font-size: 2em;
+  }
+
+  .nav > span,
+  .prev > span,
+  .next > span,
+  .slide > span {
+    @include span-mixin;
+    cursor: pointer;
+  }
+
+  button {
+    @include button-mixin($text-1, $color-fishy);
+  }
+
+  &.big {
+    background-color: $text-1;
+    color: $base-f-color;
+    padding-bottom: 3.5em;
+    height: 760px;
+
+    .slider-view {
+      @include set-to-zero;
+      position: relative;
+      width: 75%;
+      height: 695px;
+      margin: 0 auto;
+      overflow: hidden;
+    }
+
+    .slides {
+      @include set-to-zero;
+      position: absolute;
+      white-space: nowrap;
+      text-align: center;
+      height: 695px;
+      font-size: 0;
+      width: 100%;
+
+      .slide {
+        @include set-to-zero;
+        font-size: 1rem;
+        box-sizing: border-box;
+        display: inline-block;
+        vertical-align: top;
+        white-space: normal;
+        height: 695px;
+        width: 100%;
+
+        .imgs {
+          display: none;
+        }
+
+        p {
+          padding: 2em 0;
+          font-size: 1em;
+        }
+
+        .info {
+          @include block-border-box;
+          padding: 4em 0;
+        }
+
+        @media (min-width: $media-br-1) {
+
+          .info {
+            text-align: left;
+            padding: 8em 8em 0 2em;
+            margin: 0;
+          }
+
+          p {
+            padding: 2em 2em 2em 0;
+            font-size: 1em;
+          }
+        }
+
+        @media (min-width: $media-br-2) {
+
+          .slide {
+            width: 100%;
+            overflow: hidden;
+
+            &::after {
+              clear: both;
+            }
+          }
+
+          .info {
+            width: 50%;
+            float: left;
+            text-align: left;
+            padding: 8em 0 0 2em;
+            margin: 0;
+          }
+
+          .imgs {
+            @include block-border-box;
+            width: 50%;
+            float: right;
+            height: 695px;
+            position: relative;
+
+            img {
+              left: 5%;
+              top: 30%;
+              position: absolute;
+              width: 80%;
+              max-width: 800px;
+              height: auto;
+
+              &.img-1 {
+                transform: rotateZ(-5deg);
+              }
+
+              &.img-2 {
+                transform: rotateZ(5deg);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    @media screen {
+      @media (min-width: $media-br-1) {
+        .slider-view {
+          width: 85%;
+        }
+      }
+
+      @media (min-width: $media-br-2) {
+        .slider-view {
+          width: 90%;
+        }
+      }
+    }
+  }
+
+  &.small {
+    text-align: center;
+    color: $base-f-color;
+    background-color: $bg-color-5;
+    position: relative;
+
+    .nav > span {
+      padding: 0 0.1em;
+    }
+
+    .slider-view {
+      @include set-to-zero;
+      position: relative;
+      width: 85%;
+      height: 320px;
+      margin: 0 auto;
+      overflow: hidden;
+
+      .slides {
+        @include set-to-zero;
+        position: absolute;
+        white-space: nowrap;
+        text-align: center;
+        height: 320px;
+        font-size: 0;
+        width: 100%;
+      }
+
+      .slide {
+        @include set-to-zero;
+        font-size: 1rem;
+        box-sizing: border-box;
+        display: inline-block;
+        vertical-align: top;
+        white-space: normal;
+        height: 320px;
+        width: 100%;
+        padding: 4em 0;
+
+        & > span {
+          font-size: 1.5em;
+        }
+
+        p {
+          width: 70%;
+          display: block;
+          margin: 0 auto;
+          padding: 2em;
+        }
+
+        h4 {
+          @include montserrat;
+          text-transform: uppercase;
+          font-weight: 700;
+
+          span {
+            @include average-font;
+            color: $color-fishy;
+            font-weight: 400;
+            text-transform: none;
+            display: inline-block;
+            width: 100%;
+          }
+        }
+
+        @media (min-width: $media-br-2) {
+
+          p {
+            width: 35%;
+          }
+        }
+      }
+
+    }
+
+    @media screen {
+
+      @media (min-width: $media-br-1) {
+        .prev {
+          left: 10%;
+        }
+
+        .next {
+          right: 10%;
+        }
+      }
+
+    }
+  }
+}
