@@ -21,6 +21,7 @@ function MenuItemsAndScrolls(settings) {
         var body = document.getElementsByTagName('body')[0];
         body.addEventListener('click', function () {
             if ((window.outerWidth < pageSmallSize)) {
+                console.log('its working');
                 if (animFuncs.isShown(menu)) {
                     animFuncs.doSlideAnimation(menu, 'slideUp', slideTime, 'easeOut');
                 }
