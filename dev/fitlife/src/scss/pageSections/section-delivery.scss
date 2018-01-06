@@ -1,0 +1,60 @@
+@import '../variables';
+@import '../common';
+@import '../mixins';
+
+.delivery-section {
+
+  @include block-border-box;
+  width: 100%;
+  margin-top: 2em;
+  text-align: center;
+  background-image: url('../images/furiture.jpg');
+  background-repeat: no-repeat;
+  background-position: 50% 95%;
+  background-size: 80%;
+  padding-bottom: 60%;
+
+  h2 {
+    @include h2-all;
+  }
+
+  p {
+    @include p-all;
+  }
+
+  @media screen {
+
+    @media (min-width: $media-br-1) {
+      margin-top: 0;
+      padding: 0;
+      padding-right: 50%;
+      background-position: center right;
+      background-size: 50%;
+      height: 400px;
+    }
+
+    @media (min-width: $media-br-2) {
+      width: 90%;
+      margin: 0 auto;
+      background-position: center right;
+      background-size: 60%;
+      padding-right: 55%;
+      height: 430px;
+    }
+
+    @media (min-width: $media-br-3) {
+      max-width: 1680px;
+      margin: 0 auto;
+      background-size: 65%;
+      padding-right: 60%;
+      height: 500px;
+
+    }
+
+    @media (min-width: $media-br-4) {
+      background-size: contain;
+      padding-right: 890px;
+      height: 590px;
+    }
+  }
+}

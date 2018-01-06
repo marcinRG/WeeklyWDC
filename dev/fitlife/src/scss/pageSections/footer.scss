@@ -1,0 +1,77 @@
+@import '../variables';
+@import '../common';
+@import '../mixins';
+
+.footer {
+
+  @include block-border-box;
+  text-align: center;
+  overflow: hidden;
+  width: 90%;
+  margin: 0 auto 3em;
+
+  div {
+    @include block-border-box;
+    width: 100%;
+    float: left;
+  }
+
+  ul {
+    @include block-border-box;
+    list-style-type: none;
+    display: block;
+    width: 100%;
+  }
+
+  h3 {
+    @include liberation-fonts;
+    font-size: 1em;
+    padding: 1em 0;
+    color: $grey-2;
+  }
+
+  a {
+
+    @include liberation-fonts;
+    text-decoration: none;
+    font-size: .8em;
+    color: $grey-2;
+  }
+
+  p {
+    @include liberation-fonts;
+    padding-bottom: 1em;
+    font-size: .8em;
+    width: 70%;
+    margin: 0 auto;
+    color: $grey-2;
+  }
+
+  &::after {
+    clear: both;
+  }
+
+  @media screen {
+    @media (min-width: $media-br-1) {
+      text-align: left;
+
+      div {
+        width: 33%;
+      }
+
+      p {
+        text-align: justify;
+        margin: 0;
+      }
+    }
+
+    @media (min-width: $media-br-2) {
+      width: 90%;
+    }
+
+    @media (min-width: $media-br-3) {
+      max-width: 1680px;
+    }
+  }
+
+}

@@ -1,0 +1,15 @@
+@import 'variables';
+@import 'mixins';
+@import 'utils/fonts';
+@import 'utils/material-shadows';
+@import 'common';
+
+@import 'script';
+@import 'pageSections/flashy-sign';
+@import 'pageSections/navbar';
+@import 'pageSections/footer';
+@import 'pageSections/section-home';
+@import 'pageSections/section-delivery';
+@import 'pageSections/section-contact';
+@import 'pageSections/section-bizz';
+@import 'pageSections/section-products';

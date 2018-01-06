@@ -1,0 +1,12 @@
+@import 'variables';
+
+@mixin set-to-zero {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin block-border-box {
+  box-sizing: border-box;
+  display: block;
+}
