@@ -9,22 +9,21 @@ function VideoPlayer(settings) {
     var isPlaying = false;
 
     function play() {
-        video[0].play();
-        video.addClass(videoPlayClass);
-        btn.text('Stop video');
-        btn.addClass(buttonPlayClass);
+        video.play();
+        video.classList.add(videoPlayClass);
+        btn.textContent = 'Stop video';
+        btn.classList.add(buttonPlayClass);
     }
 
     function stop() {
-        video[0].pause();
-        video.removeClass(videoPlayClass);
-        btn.text('Play video');
-        btn.removeClass(buttonPlayClass);
-
+        video.pause();
+        video.classList.remove(videoPlayClass);
+        btn.textContent = 'Play video';
+        btn.classList.remove(buttonPlayClass);
     }
 
     function addBtnEventHandler() {
-        btn.on('click', function () {
+        btn.addEventListener('click', function () {
             if (isPlaying) {
                 stop();
                 isPlaying = false;
@@ -35,7 +34,11 @@ function VideoPlayer(settings) {
         });
     }
 
-    addBtnEventHandler();
+    return {
+        run: function () {
+            addBtnEventHandler();
+        }
+    };
 }
 
 module.exports = VideoPlayer;

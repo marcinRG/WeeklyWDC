@@ -1,9 +1,10 @@
 'use strict';
+var utils = require('../utils/Utlities');
 
 function createImagesPropeties(imagesCount, rotateAng) {
-    return function (index, value) {
+    return function (value, index) {
         var sign = 1;
-        value.style.zIndex = imagesCount - index;
+        value.style.zIndex = (imagesCount - index) + '';
         if (index % 2) {
             sign = 1 * (index + 1) / 2;
         }
@@ -15,25 +16,23 @@ function createImagesPropeties(imagesCount, rotateAng) {
     };
 }
 
-function imagesIntialize(images) {
-    return images.map(createImagesPropeties(images.length, 5));
+function imagesInitialize(images) {
+    var imgs = utils.toArray(images);
+    return imgs.map(createImagesPropeties(imgs.length, 5));
 }
 
 function ImageTosser(settings) {
-
-    var win = settings.window;
     var longSmall = settings.longSmall;
     var shortSmall = settings.shortSmall;
     var longBig = settings.longBig;
     var shortBig = settings.shortBig;
     var changeTrigger = settings.changeTrigger;
-    var images = imagesIntialize(settings.images);
-
+    var images = imagesInitialize(settings.images);
     var timeOutId;
     var counter = 0;
     var animationShow = true;
     var maxValue = images.length;
-    var prevWidth = win.outerWidth();
+    var prevWidth = window.outerWidth;
 
     function changeCounterSmall() {
         if (animationShow) {
@@ -55,7 +54,7 @@ function ImageTosser(settings) {
 
     function resetImageClasses() {
         for (var i = 0; i < images.length; i++) {
-            images[i].className = '';
+            images[i].className = 'image';
         }
     }
 
@@ -71,26 +70,26 @@ function ImageTosser(settings) {
 
     function animatePicturesSmall() {
         if (counter % 2) {
-            images[counter].classList.remove('goLeftBack');
-            images[counter].classList.add('goLeft');
+            images[counter].classList.remove('go-left-back');
+            images[counter].classList.add('go-left');
         }
         else {
-            images[counter].classList.remove('goRightBack');
-            images[counter].classList.add('goRight');
+            images[counter].classList.remove('go-right-back');
+            images[counter].classList.add('go-right');
         }
-        executeInFuture(doImageSmall, longSmall);
+        timeOutId = utils.executeInFuture(timeOutId, doImageSmall, longSmall);
     }
 
     function hidePicturesSmall() {
         if (counter % 2) {
-            images[counter].classList.remove('goLeft');
-            images[counter].classList.add('goLeftBack');
+            images[counter].classList.remove('go-left');
+            images[counter].classList.add('go-left-back');
         }
         else {
-            images[counter].classList.remove('goRight');
-            images[counter].classList.add('goRightBack');
+            images[counter].classList.remove('go-right');
+            images[counter].classList.add('go-right-back');
         }
-        executeInFuture(doImageSmall, shortSmall);
+        timeOutId = utils.executeInFuture(timeOutId, doImageSmall, shortSmall);
     }
 
     function shiftValues(counter, value, maxValue) {
@@ -102,29 +101,14 @@ function ImageTosser(settings) {
         }
     }
 
-    function executeInFuture(func, time) {
-        clearTimeout(timeOutId);
-        timeOutId = setTimeout(func, time);
-    }
-
-    function updateCounterBig(currentValue, maxLength) {
-        if (currentValue < maxLength - 1) {
-            currentValue = currentValue + 1;
-        }
-        else {
-            currentValue = 0;
-        }
-        return currentValue;
-    }
-
     function animatePictures() {
         for (var i = 0; i < maxValue; i++) {
             images[i].style.zIndex = maxValue -
-                shiftValues(counter, i, maxValue);
+                shiftValues(counter, i, maxValue) + '';
             images[i].classList.add('transform-' +
                 (shiftValues(counter, i, maxValue) + 1));
         }
-        executeInFuture(hidePictures, longBig);
+        timeOutId = utils.executeInFuture(timeOutId, hidePictures, longBig);
     }
 
     function hidePictures() {
@@ -132,40 +116,50 @@ function ImageTosser(settings) {
             images[i].classList.add('transform-bck-' +
                 (shiftValues(counter, i, maxValue) + 1));
         }
-        executeInFuture(resetClasses, shortBig);
+        timeOutId = utils.executeInFuture(timeOutId, resetClasses, shortBig);
     }
 
     function resetClasses() {
         resetImageClasses();
-        counter = updateCounterBig(counter, maxValue);
+        counter = utils.updateCounterWithMaxValue(counter, maxValue);
         animatePictures();
     }
 
     function reset() {
         counter = 0;
-        imagesIntialize(settings.images);
+        imagesInitialize(settings.images);
         resetImageClasses();
     }
 
-    win.on('resize', function () {
-        var currentSize = win.outerWidth();
-        if ((changeTrigger > prevWidth) && !(changeTrigger > currentSize)) {
-            reset();
-            executeInFuture(animatePictures, 1000);
-        }
-        if (!(changeTrigger > prevWidth) && (changeTrigger > currentSize)) {
-            reset();
-            executeInFuture(animatePicturesSmall, 1000);
-        }
-        prevWidth = currentSize;
-    });
+    function addResizeListener() {
+        window.addEventListener('resize', function () {
+            var currentSize = window.outerWidth;
+            if ((changeTrigger > prevWidth) && !(changeTrigger > currentSize)) {
+                reset();
+                timeOutId = utils.executeInFuture(timeOutId, animatePictures, 1000);
+            }
+            if (!(changeTrigger > prevWidth) && (changeTrigger > currentSize)) {
+                reset();
+                timeOutId = utils.executeInFuture(timeOutId, animatePicturesSmall, 1000);
+            }
+            prevWidth = currentSize;
+        });
+    }
 
-    if (prevWidth > changeTrigger) {
-        animatePictures();
+    function run() {
+        reset();
+        addResizeListener();
+        if (prevWidth > changeTrigger) {
+            animatePictures();
+        }
+        else {
+            animatePicturesSmall();
+        }
     }
-    else {
-        animatePicturesSmall();
-    }
+
+    return {
+        run: run
+    };
 }
 
 module.exports = ImageTosser;

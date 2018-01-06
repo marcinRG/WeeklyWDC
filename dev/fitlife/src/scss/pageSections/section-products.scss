@@ -31,7 +31,7 @@
     height: 65vh;
     perspective: 1500px;
 
-    img {
+    .image {
       @include block-border-box;
       position: absolute;
       left: 10%;
@@ -61,7 +61,7 @@
 
     @media (min-width: $media-br-1) {
       .image-tosser {
-        img {
+        .image {
           width: 70%;
           left: 15%;
         }
@@ -88,7 +88,7 @@
         left: 0;
         top: 0;
 
-        img {
+        .image {
           left: 30%;
           bottom: 20%;
           width: 400px;
@@ -102,7 +102,7 @@
 
       .image-tosser {
 
-        img {
+        .image {
           width: 500px;
         }
       }

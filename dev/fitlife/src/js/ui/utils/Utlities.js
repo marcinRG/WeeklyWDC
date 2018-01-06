@@ -89,6 +89,10 @@ function getElemTopBottom(elem) {
     }
 }
 
+function toArray(elements) {
+    return [].slice.call(elements);
+}
+
 module.exports = {
     removeAllNonPrintableCharacters: removeAllNonPrintableCharacters,
     removeSpaces: removeSpaces,
@@ -101,5 +105,6 @@ module.exports = {
     executeInFuture: executeInFuture,
     updateCounterWithMaxValue: updateCounterWithMaxValue,
     doAnimation: doAnimation,
-    getElementTopBottom: getElemTopBottom
+    getElementTopBottom: getElemTopBottom,
+    toArray: toArray
 };

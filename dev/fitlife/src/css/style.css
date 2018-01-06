@@ -1,187 +1,4 @@
-@font-face {
-  font-family: "Josefin Sans";
-  src: url("../fonts/Josefin_Sans/josefinsans-regular.eot");
-  src: url("../fonts/Josefin_Sans/josefinsans-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Josefin_Sans/josefinsans-regular.woff2") format("woff2"), url("../fonts/Josefin_Sans/josefinsans-regular.woff") format("woff"), url("../fonts/Josefin_Sans/josefinsans-regular.ttf") format("truetype"), url("../fonts/Josefin_Sans/josefinsans-regular.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 400; }
-
-@font-face {
-  font-family: "Josefin Sans";
-  src: url("../fonts/Josefin_Sans/josefinsans-semibold.eot");
-  src: url("../fonts/Josefin_Sans/josefinsans-semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/Josefin_Sans/josefinsans-semibold.woff2") format("woff2"), url("../fonts/Josefin_Sans/josefinsans-semibold.woff") format("woff"), url("../fonts/Josefin_Sans/josefinsans-semibold.ttf") format("truetype"), url("../fonts/Josefin_Sans/josefinsans-semibold.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 600; }
-
-@font-face {
-  font-family: "Josefin Sans";
-  src: url("../fonts/Josefin_Sans/josefinsans-bold.eot");
-  src: url("../fonts/Josefin_Sans/josefinsans-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Josefin_Sans/josefinsans-bold.woff2") format("woff2"), url("../fonts/Josefin_Sans/josefinsans-bold.woff") format("woff"), url("../fonts/Josefin_Sans/josefinsans-bold.ttf") format("truetype"), url("../fonts/Josefin_Sans/josefinsans-bold.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 700; }
-
-@font-face {
-  font-family: "Josefin Sans";
-  src: url("../fonts/Josefin_Sans/josefinsans-thin.eot");
-  src: url("../fonts/Josefin_Sans/josefinsans-thin.eot?#iefix") format("embedded-opentype"), url("../fonts/Josefin_Sans/josefinsans-thin.woff2") format("woff2"), url("../fonts/Josefin_Sans/josefinsans-thin.woff") format("woff"), url("../fonts/Josefin_Sans/josefinsans-thin.ttf") format("truetype"), url("../fonts/Josefin_Sans/josefinsans-thin.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 100; }
-
-@font-face {
-  font-family: "Josefin Sans";
-  src: url("../fonts/Josefin_Sans/josefinsans-light.eot");
-  src: url("../fonts/Josefin_Sans/josefinsans-light.eot?#iefix") format("embedded-opentype"), url("../fonts/Josefin_Sans/josefinsans-light.woff2") format("woff2"), url("../fonts/Josefin_Sans/josefinsans-light.woff") format("woff"), url("../fonts/Josefin_Sans/josefinsans-light.ttf") format("truetype"), url("../fonts/Josefin_Sans/josefinsans-light.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 300; }
-
-@font-face {
-  font-family: "Lato";
-  src: url("../fonts/Lato/lato-regular.eot");
-  src: url("../fonts/Lato/lato-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato/lato-regular.woff2") format("woff2"), url("../fonts/Lato/lato-regular.woff") format("woff"), url("../fonts/Lato/lato-regular.ttf") format("truetype"), url("../fonts/Lato/lato-regular.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 400; }
-
-@font-face {
-  font-family: "Lato";
-  src: url("../fonts/Lato/lato-bold.eot");
-  src: url("../fonts/Lato/lato-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato/lato-bold.woff2") format("woff2"), url("../fonts/Lato/lato-bold.woff") format("woff"), url("../fonts/Lato/lato-bold.ttf") format("truetype"), url("../fonts/Lato/lato-bold.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 700; }
-
-@font-face {
-  font-family: "Lato";
-  src: url("../fonts/Lato/lato-black.eot");
-  src: url("../fonts/Lato/lato-black.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato/lato-black.woff2") format("woff2"), url("../fonts/Lato/lato-black.woff") format("woff"), url("../fonts/Lato/lato-black.ttf") format("truetype"), url("../fonts/Lato/lato-black.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 900; }
-
-@font-face {
-  font-family: "Lato";
-  src: url("../fonts/Lato/lato-light.eot");
-  src: url("../fonts/Lato/lato-light.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato/lato-light.woff2") format("woff2"), url("../fonts/Lato/lato-light.woff") format("woff"), url("../fonts/Lato/lato-light.ttf") format("truetype"), url("../fonts/Lato/lato-light.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 300; }
-
-@font-face {
-  font-family: "Lato";
-  src: url("../fonts/Lato/lato-hairline.eot");
-  src: url("../fonts/Lato/lato-hairline.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato/lato-hairline.woff2") format("woff2"), url("../fonts/Lato/lato-hairline.woff") format("woff"), url("../fonts/Lato/lato-hairline.ttf") format("truetype"), url("../fonts/Lato/lato-hairline.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 100; }
-
-@font-face {
-  font-family: "Liberation Sans";
-  src: url("../fonts/Liberation_Sans/liberationsans-regular.eot");
-  src: url("../fonts/Liberation_Sans/liberationsans-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Liberation_Sans/liberationsans-regular.woff2") format("woff2"), url("../fonts/Liberation_Sans/liberationsans-regular.woff") format("woff"), url("../fonts/Liberation_Sans/liberationsans-regular.ttf") format("truetype"), url("../fonts/Liberation_Sans/liberationsans-regular.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 400; }
-
-@font-face {
-  font-family: "Liberation Sans";
-  src: url("../fonts/Liberation_Sans/liberationsans-bold.eot");
-  src: url("../fonts/Liberation_Sans/liberationsans-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Liberation_Sans/liberationsans-bold.woff2") format("woff2"), url("../fonts/Liberation_Sans/liberationsans-bold.woff") format("woff"), url("../fonts/Liberation_Sans/liberationsans-bold.ttf") format("truetype"), url("../fonts/Liberation_Sans/liberationsans-bold.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 700; }
-
-*,
-html,
-body {
-  border: 0;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
-@font-face {
-  font-family: "Josefin Sans";
-  src: url("../fonts/Josefin_Sans/josefinsans-regular.eot");
-  src: url("../fonts/Josefin_Sans/josefinsans-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Josefin_Sans/josefinsans-regular.woff2") format("woff2"), url("../fonts/Josefin_Sans/josefinsans-regular.woff") format("woff"), url("../fonts/Josefin_Sans/josefinsans-regular.ttf") format("truetype"), url("../fonts/Josefin_Sans/josefinsans-regular.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 400; }
-
-@font-face {
-  font-family: "Josefin Sans";
-  src: url("../fonts/Josefin_Sans/josefinsans-semibold.eot");
-  src: url("../fonts/Josefin_Sans/josefinsans-semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/Josefin_Sans/josefinsans-semibold.woff2") format("woff2"), url("../fonts/Josefin_Sans/josefinsans-semibold.woff") format("woff"), url("../fonts/Josefin_Sans/josefinsans-semibold.ttf") format("truetype"), url("../fonts/Josefin_Sans/josefinsans-semibold.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 600; }
-
-@font-face {
-  font-family: "Josefin Sans";
-  src: url("../fonts/Josefin_Sans/josefinsans-bold.eot");
-  src: url("../fonts/Josefin_Sans/josefinsans-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Josefin_Sans/josefinsans-bold.woff2") format("woff2"), url("../fonts/Josefin_Sans/josefinsans-bold.woff") format("woff"), url("../fonts/Josefin_Sans/josefinsans-bold.ttf") format("truetype"), url("../fonts/Josefin_Sans/josefinsans-bold.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 700; }
-
-@font-face {
-  font-family: "Josefin Sans";
-  src: url("../fonts/Josefin_Sans/josefinsans-thin.eot");
-  src: url("../fonts/Josefin_Sans/josefinsans-thin.eot?#iefix") format("embedded-opentype"), url("../fonts/Josefin_Sans/josefinsans-thin.woff2") format("woff2"), url("../fonts/Josefin_Sans/josefinsans-thin.woff") format("woff"), url("../fonts/Josefin_Sans/josefinsans-thin.ttf") format("truetype"), url("../fonts/Josefin_Sans/josefinsans-thin.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 100; }
-
-@font-face {
-  font-family: "Josefin Sans";
-  src: url("../fonts/Josefin_Sans/josefinsans-light.eot");
-  src: url("../fonts/Josefin_Sans/josefinsans-light.eot?#iefix") format("embedded-opentype"), url("../fonts/Josefin_Sans/josefinsans-light.woff2") format("woff2"), url("../fonts/Josefin_Sans/josefinsans-light.woff") format("woff"), url("../fonts/Josefin_Sans/josefinsans-light.ttf") format("truetype"), url("../fonts/Josefin_Sans/josefinsans-light.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 300; }
-
-@font-face {
-  font-family: "Lato";
-  src: url("../fonts/Lato/lato-regular.eot");
-  src: url("../fonts/Lato/lato-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato/lato-regular.woff2") format("woff2"), url("../fonts/Lato/lato-regular.woff") format("woff"), url("../fonts/Lato/lato-regular.ttf") format("truetype"), url("../fonts/Lato/lato-regular.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 400; }
-
-@font-face {
-  font-family: "Lato";
-  src: url("../fonts/Lato/lato-bold.eot");
-  src: url("../fonts/Lato/lato-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato/lato-bold.woff2") format("woff2"), url("../fonts/Lato/lato-bold.woff") format("woff"), url("../fonts/Lato/lato-bold.ttf") format("truetype"), url("../fonts/Lato/lato-bold.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 700; }
-
-@font-face {
-  font-family: "Lato";
-  src: url("../fonts/Lato/lato-black.eot");
-  src: url("../fonts/Lato/lato-black.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato/lato-black.woff2") format("woff2"), url("../fonts/Lato/lato-black.woff") format("woff"), url("../fonts/Lato/lato-black.ttf") format("truetype"), url("../fonts/Lato/lato-black.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 900; }
-
-@font-face {
-  font-family: "Lato";
-  src: url("../fonts/Lato/lato-light.eot");
-  src: url("../fonts/Lato/lato-light.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato/lato-light.woff2") format("woff2"), url("../fonts/Lato/lato-light.woff") format("woff"), url("../fonts/Lato/lato-light.ttf") format("truetype"), url("../fonts/Lato/lato-light.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 300; }
-
-@font-face {
-  font-family: "Lato";
-  src: url("../fonts/Lato/lato-hairline.eot");
-  src: url("../fonts/Lato/lato-hairline.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato/lato-hairline.woff2") format("woff2"), url("../fonts/Lato/lato-hairline.woff") format("woff"), url("../fonts/Lato/lato-hairline.ttf") format("truetype"), url("../fonts/Lato/lato-hairline.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 100; }
-
-@font-face {
-  font-family: "Liberation Sans";
-  src: url("../fonts/Liberation_Sans/liberationsans-regular.eot");
-  src: url("../fonts/Liberation_Sans/liberationsans-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Liberation_Sans/liberationsans-regular.woff2") format("woff2"), url("../fonts/Liberation_Sans/liberationsans-regular.woff") format("woff"), url("../fonts/Liberation_Sans/liberationsans-regular.ttf") format("truetype"), url("../fonts/Liberation_Sans/liberationsans-regular.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 400; }
-
-@font-face {
-  font-family: "Liberation Sans";
-  src: url("../fonts/Liberation_Sans/liberationsans-bold.eot");
-  src: url("../fonts/Liberation_Sans/liberationsans-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Liberation_Sans/liberationsans-bold.woff2") format("woff2"), url("../fonts/Liberation_Sans/liberationsans-bold.woff") format("woff"), url("../fonts/Liberation_Sans/liberationsans-bold.ttf") format("truetype"), url("../fonts/Liberation_Sans/liberationsans-bold.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 700; }
-
-*,
-html,
-body {
-  border: 0;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
+/* @import 'variables'; */
 /**
  * A mixin which helps you to add depth to elements according to the Google Material Design spec:
  * http://www.google.com/design/spec/layout/layout-principles.html#layout-principles-dimensionality
@@ -210,48 +27,143 @@ body {
  * }
  *
  */
-.navbar .bottom-line {
+/* @import 'variables'; */
+/* @import 'mixins'; */
+/* @import 'utils/fonts'; */
+@font-face {
+  font-family: "Josefin Sans";
+  src: url("../fonts/Josefin_Sans/josefinsans-regular.eot");
+  src: url("../fonts/Josefin_Sans/josefinsans-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Josefin_Sans/josefinsans-regular.woff2") format("woff2"), url("../fonts/Josefin_Sans/josefinsans-regular.woff") format("woff"), url("../fonts/Josefin_Sans/josefinsans-regular.ttf") format("truetype"), url("../fonts/Josefin_Sans/josefinsans-regular.svg#icon") format("svg");
+  font-style: normal;
+  font-weight: 400; }
+
+@font-face {
+  font-family: "Josefin Sans";
+  src: url("../fonts/Josefin_Sans/josefinsans-semibold.eot");
+  src: url("../fonts/Josefin_Sans/josefinsans-semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/Josefin_Sans/josefinsans-semibold.woff2") format("woff2"), url("../fonts/Josefin_Sans/josefinsans-semibold.woff") format("woff"), url("../fonts/Josefin_Sans/josefinsans-semibold.ttf") format("truetype"), url("../fonts/Josefin_Sans/josefinsans-semibold.svg#icon") format("svg");
+  font-style: normal;
+  font-weight: 600; }
+
+@font-face {
+  font-family: "Josefin Sans";
+  src: url("../fonts/Josefin_Sans/josefinsans-bold.eot");
+  src: url("../fonts/Josefin_Sans/josefinsans-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Josefin_Sans/josefinsans-bold.woff2") format("woff2"), url("../fonts/Josefin_Sans/josefinsans-bold.woff") format("woff"), url("../fonts/Josefin_Sans/josefinsans-bold.ttf") format("truetype"), url("../fonts/Josefin_Sans/josefinsans-bold.svg#icon") format("svg");
+  font-style: normal;
+  font-weight: 700; }
+
+@font-face {
+  font-family: "Josefin Sans";
+  src: url("../fonts/Josefin_Sans/josefinsans-thin.eot");
+  src: url("../fonts/Josefin_Sans/josefinsans-thin.eot?#iefix") format("embedded-opentype"), url("../fonts/Josefin_Sans/josefinsans-thin.woff2") format("woff2"), url("../fonts/Josefin_Sans/josefinsans-thin.woff") format("woff"), url("../fonts/Josefin_Sans/josefinsans-thin.ttf") format("truetype"), url("../fonts/Josefin_Sans/josefinsans-thin.svg#icon") format("svg");
+  font-style: normal;
+  font-weight: 100; }
+
+@font-face {
+  font-family: "Josefin Sans";
+  src: url("../fonts/Josefin_Sans/josefinsans-light.eot");
+  src: url("../fonts/Josefin_Sans/josefinsans-light.eot?#iefix") format("embedded-opentype"), url("../fonts/Josefin_Sans/josefinsans-light.woff2") format("woff2"), url("../fonts/Josefin_Sans/josefinsans-light.woff") format("woff"), url("../fonts/Josefin_Sans/josefinsans-light.ttf") format("truetype"), url("../fonts/Josefin_Sans/josefinsans-light.svg#icon") format("svg");
+  font-style: normal;
+  font-weight: 300; }
+
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato/lato-regular.eot");
+  src: url("../fonts/Lato/lato-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato/lato-regular.woff2") format("woff2"), url("../fonts/Lato/lato-regular.woff") format("woff"), url("../fonts/Lato/lato-regular.ttf") format("truetype"), url("../fonts/Lato/lato-regular.svg#icon") format("svg");
+  font-style: normal;
+  font-weight: 400; }
+
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato/lato-bold.eot");
+  src: url("../fonts/Lato/lato-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato/lato-bold.woff2") format("woff2"), url("../fonts/Lato/lato-bold.woff") format("woff"), url("../fonts/Lato/lato-bold.ttf") format("truetype"), url("../fonts/Lato/lato-bold.svg#icon") format("svg");
+  font-style: normal;
+  font-weight: 700; }
+
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato/lato-black.eot");
+  src: url("../fonts/Lato/lato-black.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato/lato-black.woff2") format("woff2"), url("../fonts/Lato/lato-black.woff") format("woff"), url("../fonts/Lato/lato-black.ttf") format("truetype"), url("../fonts/Lato/lato-black.svg#icon") format("svg");
+  font-style: normal;
+  font-weight: 900; }
+
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato/lato-light.eot");
+  src: url("../fonts/Lato/lato-light.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato/lato-light.woff2") format("woff2"), url("../fonts/Lato/lato-light.woff") format("woff"), url("../fonts/Lato/lato-light.ttf") format("truetype"), url("../fonts/Lato/lato-light.svg#icon") format("svg");
+  font-style: normal;
+  font-weight: 300; }
+
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato/lato-hairline.eot");
+  src: url("../fonts/Lato/lato-hairline.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato/lato-hairline.woff2") format("woff2"), url("../fonts/Lato/lato-hairline.woff") format("woff"), url("../fonts/Lato/lato-hairline.ttf") format("truetype"), url("../fonts/Lato/lato-hairline.svg#icon") format("svg");
+  font-style: normal;
+  font-weight: 100; }
+
+@font-face {
+  font-family: "Liberation Sans";
+  src: url("../fonts/Liberation_Sans/liberationsans-regular.eot");
+  src: url("../fonts/Liberation_Sans/liberationsans-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Liberation_Sans/liberationsans-regular.woff2") format("woff2"), url("../fonts/Liberation_Sans/liberationsans-regular.woff") format("woff"), url("../fonts/Liberation_Sans/liberationsans-regular.ttf") format("truetype"), url("../fonts/Liberation_Sans/liberationsans-regular.svg#icon") format("svg");
+  font-style: normal;
+  font-weight: 400; }
+
+@font-face {
+  font-family: "Liberation Sans";
+  src: url("../fonts/Liberation_Sans/liberationsans-bold.eot");
+  src: url("../fonts/Liberation_Sans/liberationsans-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Liberation_Sans/liberationsans-bold.woff2") format("woff2"), url("../fonts/Liberation_Sans/liberationsans-bold.woff") format("woff"), url("../fonts/Liberation_Sans/liberationsans-bold.ttf") format("truetype"), url("../fonts/Liberation_Sans/liberationsans-bold.svg#icon") format("svg");
+  font-style: normal;
+  font-weight: 700; }
+
+*,
+html,
+body {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* @import 'variables'; */
+/* @import 'mixins'; */
+/* @import 'common'; */
+/* @import 'utils/material-shadows'; */
+.navbar.bottom-line {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
   background-color: white; }
 
-.home-section .video-play {
+.home-section .viewer.video-play {
   height: auto;
   width: 70%;
   opacity: 1; }
 
 @media screen and (min-width: 410px) {
-  .home-section .video-play {
+  .home-section .viewer.video-play {
     width: 55%; } }
 
 @media screen and (min-width: 610px) {
-  .home-section .video-play {
+  .home-section .viewer.video-play {
     width: 45%; } }
 
 @media screen and (min-width: 772px) {
-  .home-section .video-play {
+  .home-section .viewer.video-play {
     width: 35%; } }
 
 @media screen and (min-width: 992px) {
-  .home-section .video-play {
+  .home-section .viewer.video-play {
     width: 45%; } }
 
 @media screen and (min-width: 1400px) {
-  .home-section .video-play {
+  .home-section .viewer.video-play {
     width: 35%; } }
 
 @media screen and (min-width: 1200px) {
-  .home-section .video-play {
+  .home-section .viewer.video-play {
     width: 580px; } }
 
-.home-section .button-play::after {
+.home-section .video-btn.button-play::after {
   background-image: url("../images/stop-btn.png"); }
 
 .welcome-section .title .small-animation {
-  animation-name: smallAnim;
+  animation-name: small-anim;
   animation-duration: 10s;
   animation-timing-function: ease;
   animation-fill-mode: both;
@@ -259,7 +171,7 @@ body {
 
 .welcome-section .title .span-animation {
   display: inline-block;
-  animation-name: titleAnim;
+  animation-name: title-anim;
   animation-iteration-count: infinite;
   animation-duration: 10s;
   animation-timing-function: ease-in;
@@ -275,104 +187,104 @@ body {
   z-index: 3; }
 
 .welcome-section .slider .slide .panel.slide-panel {
-  animation-name: panelAnim;
+  animation-name: panel-anim;
   animation-duration: 1s;
   animation-timing-function: ease-out;
   animation-iteration-count: 1;
   animation-fill-mode: both; }
 
-.products-section .image-tosser .go-right {
-  animation-name: imageRight;
+.products-section .image-tosser .image.go-right {
+  animation-name: image-right;
   animation-duration: 4s;
   animation-timing-function: ease-out;
   animation-fill-mode: both;
   animation-iteration-count: 1; }
 
-.products-section .image-tosser .go-right-back {
-  animation-name: imageRightRev;
+.products-section .image-tosser .image.go-right-back {
+  animation-name: image-right-rev;
   animation-duration: 1s;
   animation-timing-function: ease-out;
   animation-fill-mode: both;
   animation-iteration-count: 1; }
 
-.products-section .image-tosser .go-left {
-  animation-name: imageLeft;
+.products-section .image-tosser .image.go-left {
+  animation-name: image-left;
   animation-duration: 4s;
   animation-timing-function: ease-out;
   animation-fill-mode: both;
   animation-iteration-count: 1; }
 
-.products-section .image-tosser .go-left-back {
-  animation-name: imageLeftRev;
+.products-section .image-tosser .image.go-left-back {
+  animation-name: image-left-rev;
   animation-duration: 1s;
   animation-timing-function: ease-out;
   animation-fill-mode: both;
   animation-iteration-count: 1; }
 
-.products-section .image-tosser .transform-1 {
+.products-section .image-tosser .image.transform-1 {
   animation-name: image-Tr-1;
   animation-duration: 1s;
   animation-timing-function: ease-out;
   animation-fill-mode: both;
   animation-iteration-count: 1; }
 
-.products-section .image-tosser .transform-bck-1 {
+.products-section .image-tosser .image.transform-bck-1 {
   animation-name: image-TrRev-1;
   animation-duration: 0.5s;
   animation-timing-function: ease-out;
   animation-fill-mode: both;
   animation-iteration-count: 1; }
 
-.products-section .image-tosser .transform-2 {
+.products-section .image-tosser .image.transform-2 {
   animation-name: image-Tr-2;
   animation-duration: 1s;
   animation-timing-function: ease-out;
   animation-fill-mode: both;
   animation-iteration-count: 1; }
 
-.products-section .image-tosser .transform-bck-2 {
+.products-section .image-tosser .image.transform-bck-2 {
   animation-name: image-TrRev-2;
   animation-duration: 0.5s;
   animation-timing-function: ease-out;
   animation-fill-mode: both;
   animation-iteration-count: 1; }
 
-.products-section .image-tosser .transform-3 {
+.products-section .image-tosser .image.transform-3 {
   animation-name: image-Tr-3;
   animation-duration: 1s;
   animation-timing-function: ease-out;
   animation-fill-mode: both;
   animation-iteration-count: 1; }
 
-.products-section .image-tosser .transform-bck-3 {
+.products-section .image-tosser .image.transform-bck-3 {
   animation-name: image-TrRev-3;
   animation-duration: 0.5s;
   animation-timing-function: ease-out;
   animation-fill-mode: both;
   animation-iteration-count: 1; }
 
-.products-section .image-tosser .transform-4 {
+.products-section .image-tosser .image.transform-4 {
   animation-name: image-Tr-4;
   animation-duration: 1s;
   animation-timing-function: ease-out;
   animation-fill-mode: both;
   animation-iteration-count: 1; }
 
-.products-section .image-tosser .transform-bck-4 {
+.products-section .image-tosser .image.transform-bck-4 {
   animation-name: image-TrRev-4;
   animation-duration: 0.5s;
   animation-timing-function: ease-out;
   animation-fill-mode: both;
   animation-iteration-count: 1; }
 
-.products-section .image-tosser .transform-5 {
+.products-section .image-tosser .image.transform-5 {
   animation-name: image-Tr-5;
   animation-duration: 1s;
   animation-timing-function: ease-out;
   animation-fill-mode: both;
   animation-iteration-count: 1; }
 
-.products-section .image-tosser .transform-bck-5 {
+.products-section .image-tosser .image.transform-bck-5 {
   animation-name: image-TrRev-5;
   animation-duration: 0.5s;
   animation-timing-function: ease-out;
@@ -380,52 +292,42 @@ body {
   animation-iteration-count: 1; }
 
 @keyframes image-Tr-1 {
-  0% { }
   100% {
     transform: scale(1.35, 1.35) translateX(15%) translateY(-30%); } }
 
 @keyframes image-TrRev-1 {
   0% {
-    transform: scale(1.35, 1.35) translateX(15%) translateY(-30%); }
-  100% { } }
+    transform: scale(1.35, 1.35) translateX(15%) translateY(-30%); } }
 
 @keyframes image-Tr-2 {
-  0% { }
   100% {
     transform: scale(1.2, 1.2) translateX(-65%) translateY(-100%) rotateZ(-5deg); } }
 
 @keyframes image-TrRev-2 {
-  100% { }
   0% {
     transform: scale(1.2, 1.2) translateX(-65%) translateY(-100%) rotateZ(-5deg); } }
 
 @keyframes image-Tr-3 {
-  0% { }
   100% {
     transform: scale(1.2, 1.2) translateX(70%) translateY(-90%) rotateZ(5deg); } }
 
 @keyframes image-TrRev-3 {
-  100% { }
   0% {
     transform: scale(1.2, 1.2) translateX(70%) translateY(-90%) rotateZ(5deg); } }
 
 @keyframes image-Tr-4 {
-  0% { }
   100% {
     transform: scale(1.2, 1.2) translateX(-60%) translateY(20%) rotateZ(-9deg); } }
 
 @keyframes image-TrRev-4 {
-  100% { }
   0% {
     transform: scale(1.2, 1.2) translateX(-60%) translateY(20%) rotateZ(-9deg); } }
 
 @keyframes image-Tr-5 {
-  0% { }
   100% {
     transform: scale(1.2, 1.2) translateX(80%) translateY(30%) rotateZ(10deg); } }
 
 @keyframes image-TrRev-5 {
-  100% { }
   0% {
     transform: scale(1.2, 1.2) translateX(80%) translateY(30%) rotateZ(10deg); } }
 
@@ -498,98 +400,9 @@ body {
   100% {
     transform: translateY(0) translateX(0); } }
 
-@font-face {
-  font-family: "Josefin Sans";
-  src: url("../fonts/Josefin_Sans/josefinsans-regular.eot");
-  src: url("../fonts/Josefin_Sans/josefinsans-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Josefin_Sans/josefinsans-regular.woff2") format("woff2"), url("../fonts/Josefin_Sans/josefinsans-regular.woff") format("woff"), url("../fonts/Josefin_Sans/josefinsans-regular.ttf") format("truetype"), url("../fonts/Josefin_Sans/josefinsans-regular.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 400; }
-
-@font-face {
-  font-family: "Josefin Sans";
-  src: url("../fonts/Josefin_Sans/josefinsans-semibold.eot");
-  src: url("../fonts/Josefin_Sans/josefinsans-semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/Josefin_Sans/josefinsans-semibold.woff2") format("woff2"), url("../fonts/Josefin_Sans/josefinsans-semibold.woff") format("woff"), url("../fonts/Josefin_Sans/josefinsans-semibold.ttf") format("truetype"), url("../fonts/Josefin_Sans/josefinsans-semibold.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 600; }
-
-@font-face {
-  font-family: "Josefin Sans";
-  src: url("../fonts/Josefin_Sans/josefinsans-bold.eot");
-  src: url("../fonts/Josefin_Sans/josefinsans-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Josefin_Sans/josefinsans-bold.woff2") format("woff2"), url("../fonts/Josefin_Sans/josefinsans-bold.woff") format("woff"), url("../fonts/Josefin_Sans/josefinsans-bold.ttf") format("truetype"), url("../fonts/Josefin_Sans/josefinsans-bold.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 700; }
-
-@font-face {
-  font-family: "Josefin Sans";
-  src: url("../fonts/Josefin_Sans/josefinsans-thin.eot");
-  src: url("../fonts/Josefin_Sans/josefinsans-thin.eot?#iefix") format("embedded-opentype"), url("../fonts/Josefin_Sans/josefinsans-thin.woff2") format("woff2"), url("../fonts/Josefin_Sans/josefinsans-thin.woff") format("woff"), url("../fonts/Josefin_Sans/josefinsans-thin.ttf") format("truetype"), url("../fonts/Josefin_Sans/josefinsans-thin.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 100; }
-
-@font-face {
-  font-family: "Josefin Sans";
-  src: url("../fonts/Josefin_Sans/josefinsans-light.eot");
-  src: url("../fonts/Josefin_Sans/josefinsans-light.eot?#iefix") format("embedded-opentype"), url("../fonts/Josefin_Sans/josefinsans-light.woff2") format("woff2"), url("../fonts/Josefin_Sans/josefinsans-light.woff") format("woff"), url("../fonts/Josefin_Sans/josefinsans-light.ttf") format("truetype"), url("../fonts/Josefin_Sans/josefinsans-light.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 300; }
-
-@font-face {
-  font-family: "Lato";
-  src: url("../fonts/Lato/lato-regular.eot");
-  src: url("../fonts/Lato/lato-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato/lato-regular.woff2") format("woff2"), url("../fonts/Lato/lato-regular.woff") format("woff"), url("../fonts/Lato/lato-regular.ttf") format("truetype"), url("../fonts/Lato/lato-regular.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 400; }
-
-@font-face {
-  font-family: "Lato";
-  src: url("../fonts/Lato/lato-bold.eot");
-  src: url("../fonts/Lato/lato-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato/lato-bold.woff2") format("woff2"), url("../fonts/Lato/lato-bold.woff") format("woff"), url("../fonts/Lato/lato-bold.ttf") format("truetype"), url("../fonts/Lato/lato-bold.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 700; }
-
-@font-face {
-  font-family: "Lato";
-  src: url("../fonts/Lato/lato-black.eot");
-  src: url("../fonts/Lato/lato-black.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato/lato-black.woff2") format("woff2"), url("../fonts/Lato/lato-black.woff") format("woff"), url("../fonts/Lato/lato-black.ttf") format("truetype"), url("../fonts/Lato/lato-black.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 900; }
-
-@font-face {
-  font-family: "Lato";
-  src: url("../fonts/Lato/lato-light.eot");
-  src: url("../fonts/Lato/lato-light.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato/lato-light.woff2") format("woff2"), url("../fonts/Lato/lato-light.woff") format("woff"), url("../fonts/Lato/lato-light.ttf") format("truetype"), url("../fonts/Lato/lato-light.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 300; }
-
-@font-face {
-  font-family: "Lato";
-  src: url("../fonts/Lato/lato-hairline.eot");
-  src: url("../fonts/Lato/lato-hairline.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato/lato-hairline.woff2") format("woff2"), url("../fonts/Lato/lato-hairline.woff") format("woff"), url("../fonts/Lato/lato-hairline.ttf") format("truetype"), url("../fonts/Lato/lato-hairline.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 100; }
-
-@font-face {
-  font-family: "Liberation Sans";
-  src: url("../fonts/Liberation_Sans/liberationsans-regular.eot");
-  src: url("../fonts/Liberation_Sans/liberationsans-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Liberation_Sans/liberationsans-regular.woff2") format("woff2"), url("../fonts/Liberation_Sans/liberationsans-regular.woff") format("woff"), url("../fonts/Liberation_Sans/liberationsans-regular.ttf") format("truetype"), url("../fonts/Liberation_Sans/liberationsans-regular.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 400; }
-
-@font-face {
-  font-family: "Liberation Sans";
-  src: url("../fonts/Liberation_Sans/liberationsans-bold.eot");
-  src: url("../fonts/Liberation_Sans/liberationsans-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Liberation_Sans/liberationsans-bold.woff2") format("woff2"), url("../fonts/Liberation_Sans/liberationsans-bold.woff") format("woff"), url("../fonts/Liberation_Sans/liberationsans-bold.ttf") format("truetype"), url("../fonts/Liberation_Sans/liberationsans-bold.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 700; }
-
-*,
-html,
-body {
-  border: 0;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
+/* @import '../variables'; */
+/* @import '../mixins'; */
+/* @import '../common'; */
 .welcome-section {
   padding-top: 7em;
   overflow: hidden; }
@@ -673,43 +486,43 @@ body {
     width: 100%;
     float: right;
     margin-bottom: 1em; }
-    .welcome-section .anim-container .slider {
-      display: block;
-      margin: 0 auto;
+  .welcome-section .slider {
+    display: block;
+    margin: 0 auto;
+    width: 531px;
+    height: 696px; }
+    .welcome-section .slider .slide {
+      position: absolute;
       width: 531px;
-      height: 696px; }
-      .welcome-section .anim-container .slider .slide {
-        position: absolute;
-        width: 531px;
-        height: 696px;
-        background-color: transparent;
-        z-index: 1;
+      height: 696px;
+      background-color: transparent;
+      z-index: 1;
+      overflow: hidden;
+      display: none; }
+      .welcome-section .slider .slide .panel {
         overflow: hidden;
-        display: none; }
-        .welcome-section .anim-container .slider .slide .panel {
-          overflow: hidden;
-          position: absolute;
-          height: 50%;
-          width: 50%;
-          background-image: url("../images/white-chair-yl.jpg");
-          transition-duration: 1s;
-          transition-property: transform; }
-          .welcome-section .anim-container .slider .slide .panel:nth-of-type(1) {
-            background-position: 0 0;
-            transform: translateX(-265.5px); }
-          .welcome-section .anim-container .slider .slide .panel:nth-of-type(2) {
-            background-position: 100% 0;
-            transform: translateY(-348px); }
-          .welcome-section .anim-container .slider .slide .panel:nth-of-type(3) {
-            background-position: 0 100%;
-            transform: translateY(348px); }
-          .welcome-section .anim-container .slider .slide .panel:nth-of-type(4) {
-            background-position: 100% 100%;
-            transform: translateX(265.5px); }
-          .welcome-section .anim-container .slider .slide .panel:nth-of-type(2), .welcome-section .anim-container .slider .slide .panel:nth-of-type(4) {
-            left: 50%; }
-          .welcome-section .anim-container .slider .slide .panel:nth-of-type(3), .welcome-section .anim-container .slider .slide .panel:nth-of-type(4) {
-            top: 50%; } }
+        position: absolute;
+        height: 50%;
+        width: 50%;
+        background-image: url("../images/white-chair-yl.jpg");
+        transition-duration: 1s;
+        transition-property: transform; }
+        .welcome-section .slider .slide .panel:nth-of-type(1) {
+          background-position: 0 0;
+          transform: translateX(-265.5px); }
+        .welcome-section .slider .slide .panel:nth-of-type(2) {
+          background-position: 100% 0;
+          transform: translateY(-348px); }
+        .welcome-section .slider .slide .panel:nth-of-type(3) {
+          background-position: 0 100%;
+          transform: translateY(348px); }
+        .welcome-section .slider .slide .panel:nth-of-type(4) {
+          background-position: 100% 100%;
+          transform: translateX(265.5px); }
+        .welcome-section .slider .slide .panel:nth-of-type(2), .welcome-section .slider .slide .panel:nth-of-type(4) {
+          left: 50%; }
+        .welcome-section .slider .slide .panel:nth-of-type(3), .welcome-section .slider .slide .panel:nth-of-type(4) {
+          top: 50%; } }
 
 @media screen and (min-width: 992px) {
   .welcome-section {
@@ -729,8 +542,8 @@ body {
       height: 100%;
       top: 0;
       margin: 0; }
-      .welcome-section .anim-container .slider {
-        margin: 0; }
+    .welcome-section .slider {
+      margin: 0; }
     .welcome-section h1 {
       font-size: 12em; }
     .welcome-section p {
@@ -751,98 +564,145 @@ body {
     .welcome-section .title small {
       left: 35%; } }
 
-@font-face {
-  font-family: "Josefin Sans";
-  src: url("../fonts/Josefin_Sans/josefinsans-regular.eot");
-  src: url("../fonts/Josefin_Sans/josefinsans-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Josefin_Sans/josefinsans-regular.woff2") format("woff2"), url("../fonts/Josefin_Sans/josefinsans-regular.woff") format("woff"), url("../fonts/Josefin_Sans/josefinsans-regular.ttf") format("truetype"), url("../fonts/Josefin_Sans/josefinsans-regular.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 400; }
-
-@font-face {
-  font-family: "Josefin Sans";
-  src: url("../fonts/Josefin_Sans/josefinsans-semibold.eot");
-  src: url("../fonts/Josefin_Sans/josefinsans-semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/Josefin_Sans/josefinsans-semibold.woff2") format("woff2"), url("../fonts/Josefin_Sans/josefinsans-semibold.woff") format("woff"), url("../fonts/Josefin_Sans/josefinsans-semibold.ttf") format("truetype"), url("../fonts/Josefin_Sans/josefinsans-semibold.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 600; }
-
-@font-face {
-  font-family: "Josefin Sans";
-  src: url("../fonts/Josefin_Sans/josefinsans-bold.eot");
-  src: url("../fonts/Josefin_Sans/josefinsans-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Josefin_Sans/josefinsans-bold.woff2") format("woff2"), url("../fonts/Josefin_Sans/josefinsans-bold.woff") format("woff"), url("../fonts/Josefin_Sans/josefinsans-bold.ttf") format("truetype"), url("../fonts/Josefin_Sans/josefinsans-bold.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 700; }
-
-@font-face {
-  font-family: "Josefin Sans";
-  src: url("../fonts/Josefin_Sans/josefinsans-thin.eot");
-  src: url("../fonts/Josefin_Sans/josefinsans-thin.eot?#iefix") format("embedded-opentype"), url("../fonts/Josefin_Sans/josefinsans-thin.woff2") format("woff2"), url("../fonts/Josefin_Sans/josefinsans-thin.woff") format("woff"), url("../fonts/Josefin_Sans/josefinsans-thin.ttf") format("truetype"), url("../fonts/Josefin_Sans/josefinsans-thin.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 100; }
-
-@font-face {
-  font-family: "Josefin Sans";
-  src: url("../fonts/Josefin_Sans/josefinsans-light.eot");
-  src: url("../fonts/Josefin_Sans/josefinsans-light.eot?#iefix") format("embedded-opentype"), url("../fonts/Josefin_Sans/josefinsans-light.woff2") format("woff2"), url("../fonts/Josefin_Sans/josefinsans-light.woff") format("woff"), url("../fonts/Josefin_Sans/josefinsans-light.ttf") format("truetype"), url("../fonts/Josefin_Sans/josefinsans-light.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 300; }
-
-@font-face {
-  font-family: "Lato";
-  src: url("../fonts/Lato/lato-regular.eot");
-  src: url("../fonts/Lato/lato-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato/lato-regular.woff2") format("woff2"), url("../fonts/Lato/lato-regular.woff") format("woff"), url("../fonts/Lato/lato-regular.ttf") format("truetype"), url("../fonts/Lato/lato-regular.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 400; }
-
-@font-face {
-  font-family: "Lato";
-  src: url("../fonts/Lato/lato-bold.eot");
-  src: url("../fonts/Lato/lato-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato/lato-bold.woff2") format("woff2"), url("../fonts/Lato/lato-bold.woff") format("woff"), url("../fonts/Lato/lato-bold.ttf") format("truetype"), url("../fonts/Lato/lato-bold.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 700; }
-
-@font-face {
-  font-family: "Lato";
-  src: url("../fonts/Lato/lato-black.eot");
-  src: url("../fonts/Lato/lato-black.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato/lato-black.woff2") format("woff2"), url("../fonts/Lato/lato-black.woff") format("woff"), url("../fonts/Lato/lato-black.ttf") format("truetype"), url("../fonts/Lato/lato-black.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 900; }
-
-@font-face {
-  font-family: "Lato";
-  src: url("../fonts/Lato/lato-light.eot");
-  src: url("../fonts/Lato/lato-light.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato/lato-light.woff2") format("woff2"), url("../fonts/Lato/lato-light.woff") format("woff"), url("../fonts/Lato/lato-light.ttf") format("truetype"), url("../fonts/Lato/lato-light.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 300; }
-
-@font-face {
-  font-family: "Lato";
-  src: url("../fonts/Lato/lato-hairline.eot");
-  src: url("../fonts/Lato/lato-hairline.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato/lato-hairline.woff2") format("woff2"), url("../fonts/Lato/lato-hairline.woff") format("woff"), url("../fonts/Lato/lato-hairline.ttf") format("truetype"), url("../fonts/Lato/lato-hairline.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 100; }
-
-@font-face {
-  font-family: "Liberation Sans";
-  src: url("../fonts/Liberation_Sans/liberationsans-regular.eot");
-  src: url("../fonts/Liberation_Sans/liberationsans-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Liberation_Sans/liberationsans-regular.woff2") format("woff2"), url("../fonts/Liberation_Sans/liberationsans-regular.woff") format("woff"), url("../fonts/Liberation_Sans/liberationsans-regular.ttf") format("truetype"), url("../fonts/Liberation_Sans/liberationsans-regular.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 400; }
-
-@font-face {
-  font-family: "Liberation Sans";
-  src: url("../fonts/Liberation_Sans/liberationsans-bold.eot");
-  src: url("../fonts/Liberation_Sans/liberationsans-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Liberation_Sans/liberationsans-bold.woff2") format("woff2"), url("../fonts/Liberation_Sans/liberationsans-bold.woff") format("woff"), url("../fonts/Liberation_Sans/liberationsans-bold.ttf") format("truetype"), url("../fonts/Liberation_Sans/liberationsans-bold.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 700; }
-
-*,
-html,
-body {
+/* @import '../variables'; */
+/* @import '../common'; */
+/* @import '../mixins'; */
+.navbar {
   border: 0;
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  display: block;
+  position: fixed;
+  background-color: white;
+  z-index: 50;
+  width: 100%; }
+  .navbar .nav {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    overflow: hidden; }
+    .navbar .nav::after {
+      clear: both; }
+  .navbar .menu-headers {
+    box-sizing: border-box;
+    display: block;
+    float: left;
+    width: 100%;
+    padding: 3px; }
+    .navbar .menu-headers::after {
+      clear: both; }
+    .navbar .menu-headers .logo {
+      font-family: 'Josefin Sans', sans-serif;
+      box-sizing: border-box;
+      display: block;
+      width: 3.5em;
+      float: left;
+      color: #b7b7b7;
+      font-size: 40px;
+      font-weight: 700; }
+    .navbar .menu-headers .nav-btn {
+      box-sizing: border-box;
+      display: block;
+      width: 40px;
+      float: right; }
+      .navbar .menu-headers .nav-btn button {
+        border: 0;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        display: block;
+        outline: 0;
+        overflow: hidden;
+        background-color: transparent;
+        height: 40px;
+        width: 40px;
+        border-radius: 3px;
+        background-image: url("../images/hamb.png"); }
+  .navbar .menu-items {
+    float: right;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: none;
+    width: 100%; }
+    .navbar .menu-items ul {
+      box-sizing: border-box;
+      display: block;
+      overflow: hidden;
+      display: block;
+      width: 100%;
+      list-style-type: none;
+      text-align: center;
+      padding: 1em 0;
+      color: #535353; }
+      .navbar .menu-items ul li {
+        box-sizing: border-box;
+        display: block;
+        cursor: pointer;
+        overflow: hidden;
+        width: 100%;
+        font-size: 1.5em;
+        float: left; }
+    .navbar .menu-items a {
+      font-family: 'Lato', sans-serif;
+      color: #535353;
+      text-decoration: none;
+      font-weight: 300;
+      display: inline-block;
+      border-bottom: 2px solid transparent; }
+      .navbar .menu-items a:hover {
+        border-bottom: 2px solid #535353; }
+      .navbar .menu-items a::first-letter {
+        text-transform: capitalize;
+        font-weight: 700; }
 
+@media screen and (min-width: 772px) {
+  .navbar .menu-headers {
+    float: left;
+    width: 21%; }
+    .navbar .menu-headers .logo {
+      font-size: 3.8em; }
+    .navbar .menu-headers .nav-btn {
+      display: none; }
+  .navbar .menu-items {
+    display: block;
+    float: right;
+    overflow: hidden;
+    width: 78%;
+    padding-top: .5em; }
+    .navbar .menu-items ul {
+      box-sizing: border-box;
+      display: block;
+      overflow: hidden;
+      display: block;
+      width: 85%;
+      margin-left: auto; }
+      .navbar .menu-items ul li {
+        overflow: hidden;
+        float: left;
+        width: auto; }
+      .navbar .menu-items ul a {
+        padding: 0 10px; }
+      .navbar .menu-items ul::after {
+        clear: both; } }
+
+@media screen and (min-width: 992px) {
+  .navbar .nav {
+    width: 90%;
+    margin: 0 auto; }
+  .navbar .menu-items ul {
+    width: 70%; } }
+
+@media screen and (min-width: 1200px) {
+  .navbar .nav {
+    max-width: 1680px;
+    margin: 0 auto; }
+  .navbar .menu-items ul {
+    width: 60%; } }
+
+/* @import '../variables'; */
+/* @import '../common'; */
+/* @import '../mixins'; */
 .footer {
   box-sizing: border-box;
   display: block;
@@ -898,321 +758,319 @@ body {
   .footer {
     max-width: 1680px; } }
 
-@font-face {
-  font-family: "Josefin Sans";
-  src: url("../fonts/Josefin_Sans/josefinsans-regular.eot");
-  src: url("../fonts/Josefin_Sans/josefinsans-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Josefin_Sans/josefinsans-regular.woff2") format("woff2"), url("../fonts/Josefin_Sans/josefinsans-regular.woff") format("woff"), url("../fonts/Josefin_Sans/josefinsans-regular.ttf") format("truetype"), url("../fonts/Josefin_Sans/josefinsans-regular.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 400; }
-
-@font-face {
-  font-family: "Josefin Sans";
-  src: url("../fonts/Josefin_Sans/josefinsans-semibold.eot");
-  src: url("../fonts/Josefin_Sans/josefinsans-semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/Josefin_Sans/josefinsans-semibold.woff2") format("woff2"), url("../fonts/Josefin_Sans/josefinsans-semibold.woff") format("woff"), url("../fonts/Josefin_Sans/josefinsans-semibold.ttf") format("truetype"), url("../fonts/Josefin_Sans/josefinsans-semibold.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 600; }
-
-@font-face {
-  font-family: "Josefin Sans";
-  src: url("../fonts/Josefin_Sans/josefinsans-bold.eot");
-  src: url("../fonts/Josefin_Sans/josefinsans-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Josefin_Sans/josefinsans-bold.woff2") format("woff2"), url("../fonts/Josefin_Sans/josefinsans-bold.woff") format("woff"), url("../fonts/Josefin_Sans/josefinsans-bold.ttf") format("truetype"), url("../fonts/Josefin_Sans/josefinsans-bold.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 700; }
-
-@font-face {
-  font-family: "Josefin Sans";
-  src: url("../fonts/Josefin_Sans/josefinsans-thin.eot");
-  src: url("../fonts/Josefin_Sans/josefinsans-thin.eot?#iefix") format("embedded-opentype"), url("../fonts/Josefin_Sans/josefinsans-thin.woff2") format("woff2"), url("../fonts/Josefin_Sans/josefinsans-thin.woff") format("woff"), url("../fonts/Josefin_Sans/josefinsans-thin.ttf") format("truetype"), url("../fonts/Josefin_Sans/josefinsans-thin.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 100; }
-
-@font-face {
-  font-family: "Josefin Sans";
-  src: url("../fonts/Josefin_Sans/josefinsans-light.eot");
-  src: url("../fonts/Josefin_Sans/josefinsans-light.eot?#iefix") format("embedded-opentype"), url("../fonts/Josefin_Sans/josefinsans-light.woff2") format("woff2"), url("../fonts/Josefin_Sans/josefinsans-light.woff") format("woff"), url("../fonts/Josefin_Sans/josefinsans-light.ttf") format("truetype"), url("../fonts/Josefin_Sans/josefinsans-light.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 300; }
-
-@font-face {
-  font-family: "Lato";
-  src: url("../fonts/Lato/lato-regular.eot");
-  src: url("../fonts/Lato/lato-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato/lato-regular.woff2") format("woff2"), url("../fonts/Lato/lato-regular.woff") format("woff"), url("../fonts/Lato/lato-regular.ttf") format("truetype"), url("../fonts/Lato/lato-regular.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 400; }
-
-@font-face {
-  font-family: "Lato";
-  src: url("../fonts/Lato/lato-bold.eot");
-  src: url("../fonts/Lato/lato-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato/lato-bold.woff2") format("woff2"), url("../fonts/Lato/lato-bold.woff") format("woff"), url("../fonts/Lato/lato-bold.ttf") format("truetype"), url("../fonts/Lato/lato-bold.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 700; }
-
-@font-face {
-  font-family: "Lato";
-  src: url("../fonts/Lato/lato-black.eot");
-  src: url("../fonts/Lato/lato-black.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato/lato-black.woff2") format("woff2"), url("../fonts/Lato/lato-black.woff") format("woff"), url("../fonts/Lato/lato-black.ttf") format("truetype"), url("../fonts/Lato/lato-black.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 900; }
-
-@font-face {
-  font-family: "Lato";
-  src: url("../fonts/Lato/lato-light.eot");
-  src: url("../fonts/Lato/lato-light.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato/lato-light.woff2") format("woff2"), url("../fonts/Lato/lato-light.woff") format("woff"), url("../fonts/Lato/lato-light.ttf") format("truetype"), url("../fonts/Lato/lato-light.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 300; }
-
-@font-face {
-  font-family: "Lato";
-  src: url("../fonts/Lato/lato-hairline.eot");
-  src: url("../fonts/Lato/lato-hairline.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato/lato-hairline.woff2") format("woff2"), url("../fonts/Lato/lato-hairline.woff") format("woff"), url("../fonts/Lato/lato-hairline.ttf") format("truetype"), url("../fonts/Lato/lato-hairline.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 100; }
-
-@font-face {
-  font-family: "Liberation Sans";
-  src: url("../fonts/Liberation_Sans/liberationsans-regular.eot");
-  src: url("../fonts/Liberation_Sans/liberationsans-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Liberation_Sans/liberationsans-regular.woff2") format("woff2"), url("../fonts/Liberation_Sans/liberationsans-regular.woff") format("woff"), url("../fonts/Liberation_Sans/liberationsans-regular.ttf") format("truetype"), url("../fonts/Liberation_Sans/liberationsans-regular.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 400; }
-
-@font-face {
-  font-family: "Liberation Sans";
-  src: url("../fonts/Liberation_Sans/liberationsans-bold.eot");
-  src: url("../fonts/Liberation_Sans/liberationsans-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Liberation_Sans/liberationsans-bold.woff2") format("woff2"), url("../fonts/Liberation_Sans/liberationsans-bold.woff") format("woff"), url("../fonts/Liberation_Sans/liberationsans-bold.ttf") format("truetype"), url("../fonts/Liberation_Sans/liberationsans-bold.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 700; }
-
-*,
-html,
-body {
-  border: 0;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
-.navbar {
-  border: 0;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  display: block;
-  position: fixed;
-  background-color: white;
-  z-index: 50;
-  width: 100%; }
-  .navbar .nav {
-    box-sizing: border-box;
-    display: block;
-    width: 100%;
-    overflow: hidden; }
-    .navbar .nav::after {
-      clear: both; }
-    .navbar .nav .menu-headers {
-      box-sizing: border-box;
+/* @import '../variables'; */
+/* @import '../common'; */
+/* @import '../mixins'; */
+.home-section {
+  text-align: center;
+  background-image: url("../images/white-chair-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 760px;
+  position: relative; }
+  .home-section .description {
+    margin: .5em 1em 0;
+    background-color: rgba(255, 255, 255, 0.55);
+    padding-bottom: 1em;
+    position: absolute;
+    bottom: 10%;
+    left: 0; }
+    .home-section .description button {
+      font-family: 'Josefin Sans', sans-serif;
+      cursor: pointer;
+      margin: .5em auto;
+      color: #626262;
+      padding: 5px 0 5px 88px;
+      height: 80px;
+      font-size: 2em;
+      font-weight: 300;
       display: block;
-      float: left;
+      background-color: transparent;
+      position: relative;
+      outline: 0; }
+      .home-section .description button::before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background-color: #b7b7b7;
+        top: 0;
+        left: 0; }
+      .home-section .description button::after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #d3d3d3;
+        background-image: url("../images/play-btn.png");
+        background-size: 40%;
+        background-repeat: no-repeat;
+        background-position: center center;
+        top: 12.5px;
+        left: 12.5px; }
+    .home-section .description h2 {
+      font-family: 'Josefin Sans', sans-serif;
+      padding-top: 2em;
+      font-weight: 700;
+      font-size: 2em;
       width: 100%;
-      padding: 3px; }
-      .navbar .nav .menu-headers::after {
-        clear: both; }
-      .navbar .nav .menu-headers .logo {
-        font-family: 'Josefin Sans', sans-serif;
-        box-sizing: border-box;
-        display: block;
-        width: 3.5em;
-        float: left;
-        color: #b7b7b7;
-        font-size: 40px;
-        font-weight: 700; }
-      .navbar .nav .menu-headers .nav-btn {
-        box-sizing: border-box;
-        display: block;
-        width: 40px;
-        float: right; }
-        .navbar .nav .menu-headers .nav-btn button {
-          border: 0;
-          margin: 0;
-          padding: 0;
-          box-sizing: border-box;
-          display: block;
-          outline: 0;
-          overflow: hidden;
-          background-color: transparent;
-          height: 40px;
-          width: 40px;
-          border-radius: 3px;
-          background-image: url("../images/hamb.png"); }
-    .navbar .nav .menu-items {
-      float: right;
-      box-sizing: border-box;
-      overflow: hidden;
-      display: none;
-      width: 100%; }
-      .navbar .nav .menu-items ul {
-        box-sizing: border-box;
-        display: block;
-        overflow: hidden;
-        display: block;
-        width: 100%;
-        list-style-type: none;
-        text-align: center;
-        padding: 1em 0;
-        color: #535353; }
-        .navbar .nav .menu-items ul li {
-          box-sizing: border-box;
-          display: block;
-          cursor: pointer;
-          overflow: hidden;
-          width: 100%;
-          font-size: 1.5em;
-          float: left; }
-          .navbar .nav .menu-items ul li a {
-            font-family: 'Lato', sans-serif;
-            font-weight: 300;
-            display: inline-block;
-            border-bottom: 2px solid transparent; }
-            .navbar .nav .menu-items ul li a:hover {
-              border-bottom: 2px solid #535353; }
-            .navbar .nav .menu-items ul li a::first-letter {
-              text-transform: capitalize;
-              font-weight: 700; }
-
-@media screen and (min-width: 772px) {
-  .navbar .nav .menu-headers {
-    float: left;
-    width: 21%; }
-    .navbar .nav .menu-headers .logo {
-      font-size: 3.8em; }
-    .navbar .nav .menu-headers .nav-btn {
-      display: none; }
-  .navbar .nav .menu-items {
-    display: block;
-    float: right;
-    overflow: hidden;
-    width: 78%;
-    padding-top: .5em; }
-    .navbar .nav .menu-items ul {
-      box-sizing: border-box;
-      display: block;
-      overflow: hidden;
-      display: block;
-      width: 85%;
-      margin-left: auto; }
-      .navbar .nav .menu-items ul li {
-        overflow: hidden;
-        float: left;
-        width: auto; }
-        .navbar .nav .menu-items ul li a {
-          padding: 0 10px; }
-      .navbar .nav .menu-items ul::after {
-        clear: both; } }
+      color: #626262; }
 
 @media screen and (min-width: 992px) {
-  .navbar .nav {
+  .home-section .description h2 {
+    font-size: 3.5em; } }
+    .home-section .description p {
+      box-sizing: border-box;
+      display: block;
+      font-family: 'Lato', sans-serif;
+      color: #626262;
+      font-size: 1.1em;
+      font-weight: 300;
+      padding: 1em;
+      text-align: left; }
+  .home-section .viewer {
+    position: absolute;
+    transition-duration: 1s;
+    transition-property: width, opacity;
+    top: 2%;
+    left: 15%;
+    width: 0;
+    opacity: 0;
+    height: auto;
+    background-color: #d3d3d3;
+    padding: 1px; }
+
+@media screen and (min-width: 410px) {
+  .home-section .viewer {
+    top: 1%;
+    left: 22.5%; } }
+
+@media screen and (min-width: 610px) {
+  .home-section .viewer {
+    top: 1%;
+    left: 27.5%; } }
+
+@media screen and (min-width: 772px) {
+  .home-section {
+    padding-top: 0;
+    background-size: 55%;
+    height: 420px; }
+    .home-section .description {
+      margin: 0;
+      background-color: white;
+      padding: 0;
+      position: absolute;
+      height: 100%;
+      top: 0;
+      left: 50%; }
+      .home-section .description button {
+        margin-top: 2em;
+        font-size: 3em; }
+    .home-section .viewer {
+      top: 7%;
+      left: 7%; } }
+
+@media screen and (min-width: 992px) {
+  .home-section {
     width: 90%;
-    margin: 0 auto; }
-    .navbar .nav .menu-items ul {
-      width: 70%; } }
+    margin: 0 auto;
+    background-size: contain;
+    height: 780px; }
+    .home-section .description {
+      position: absolute;
+      height: 100%;
+      top: 0;
+      left: 60%; }
+    .home-section .viewer {
+      top: 10%;
+      left: 7.5%; } }
+
+@media screen and (min-width: 1400px) {
+  .home-section .viewer {
+    top: 10%;
+    left: 10%; } }
 
 @media screen and (min-width: 1200px) {
-  .navbar .nav {
+  .home-section {
     max-width: 1680px;
     margin: 0 auto; }
-    .navbar .nav .menu-items ul {
-      width: 60%; } }
+    .home-section .viewer {
+      top: 10%;
+      left: 5%; } }
 
-@font-face {
-  font-family: "Josefin Sans";
-  src: url("../fonts/Josefin_Sans/josefinsans-regular.eot");
-  src: url("../fonts/Josefin_Sans/josefinsans-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Josefin_Sans/josefinsans-regular.woff2") format("woff2"), url("../fonts/Josefin_Sans/josefinsans-regular.woff") format("woff"), url("../fonts/Josefin_Sans/josefinsans-regular.ttf") format("truetype"), url("../fonts/Josefin_Sans/josefinsans-regular.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 400; }
+/* @import '../variables'; */
+/* @import '../common'; */
+/* @import '../mixins'; */
+.delivery-section {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  margin-top: 2em;
+  text-align: center;
+  background-image: url("../images/furiture.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 95%;
+  background-size: 80%;
+  padding-bottom: 60%; }
+  .delivery-section h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    padding-top: 2em;
+    font-weight: 700;
+    font-size: 2em;
+    width: 100%;
+    color: #626262; }
 
-@font-face {
-  font-family: "Josefin Sans";
-  src: url("../fonts/Josefin_Sans/josefinsans-semibold.eot");
-  src: url("../fonts/Josefin_Sans/josefinsans-semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/Josefin_Sans/josefinsans-semibold.woff2") format("woff2"), url("../fonts/Josefin_Sans/josefinsans-semibold.woff") format("woff"), url("../fonts/Josefin_Sans/josefinsans-semibold.ttf") format("truetype"), url("../fonts/Josefin_Sans/josefinsans-semibold.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 600; }
+@media screen and (min-width: 992px) {
+  .delivery-section h2 {
+    font-size: 3.5em; } }
+  .delivery-section p {
+    box-sizing: border-box;
+    display: block;
+    font-family: 'Lato', sans-serif;
+    color: #626262;
+    font-size: 1.1em;
+    font-weight: 300;
+    padding: 1em;
+    text-align: left; }
 
-@font-face {
-  font-family: "Josefin Sans";
-  src: url("../fonts/Josefin_Sans/josefinsans-bold.eot");
-  src: url("../fonts/Josefin_Sans/josefinsans-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Josefin_Sans/josefinsans-bold.woff2") format("woff2"), url("../fonts/Josefin_Sans/josefinsans-bold.woff") format("woff"), url("../fonts/Josefin_Sans/josefinsans-bold.ttf") format("truetype"), url("../fonts/Josefin_Sans/josefinsans-bold.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 700; }
+@media screen and (min-width: 772px) {
+  .delivery-section {
+    margin-top: 0;
+    padding: 0;
+    padding-right: 50%;
+    background-position: center right;
+    background-size: 50%;
+    height: 400px; } }
 
-@font-face {
-  font-family: "Josefin Sans";
-  src: url("../fonts/Josefin_Sans/josefinsans-thin.eot");
-  src: url("../fonts/Josefin_Sans/josefinsans-thin.eot?#iefix") format("embedded-opentype"), url("../fonts/Josefin_Sans/josefinsans-thin.woff2") format("woff2"), url("../fonts/Josefin_Sans/josefinsans-thin.woff") format("woff"), url("../fonts/Josefin_Sans/josefinsans-thin.ttf") format("truetype"), url("../fonts/Josefin_Sans/josefinsans-thin.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 100; }
+@media screen and (min-width: 992px) {
+  .delivery-section {
+    width: 90%;
+    margin: 0 auto;
+    background-position: center right;
+    background-size: 60%;
+    padding-right: 55%;
+    height: 430px; } }
 
-@font-face {
-  font-family: "Josefin Sans";
-  src: url("../fonts/Josefin_Sans/josefinsans-light.eot");
-  src: url("../fonts/Josefin_Sans/josefinsans-light.eot?#iefix") format("embedded-opentype"), url("../fonts/Josefin_Sans/josefinsans-light.woff2") format("woff2"), url("../fonts/Josefin_Sans/josefinsans-light.woff") format("woff"), url("../fonts/Josefin_Sans/josefinsans-light.ttf") format("truetype"), url("../fonts/Josefin_Sans/josefinsans-light.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 300; }
+@media screen and (min-width: 1200px) {
+  .delivery-section {
+    max-width: 1680px;
+    margin: 0 auto;
+    background-size: 65%;
+    padding-right: 60%;
+    height: 500px; } }
 
-@font-face {
-  font-family: "Lato";
-  src: url("../fonts/Lato/lato-regular.eot");
-  src: url("../fonts/Lato/lato-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato/lato-regular.woff2") format("woff2"), url("../fonts/Lato/lato-regular.woff") format("woff"), url("../fonts/Lato/lato-regular.ttf") format("truetype"), url("../fonts/Lato/lato-regular.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 400; }
+@media screen and (min-width: 1650px) {
+  .delivery-section {
+    background-size: contain;
+    padding-right: 890px;
+    height: 590px; } }
 
-@font-face {
-  font-family: "Lato";
-  src: url("../fonts/Lato/lato-bold.eot");
-  src: url("../fonts/Lato/lato-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato/lato-bold.woff2") format("woff2"), url("../fonts/Lato/lato-bold.woff") format("woff"), url("../fonts/Lato/lato-bold.ttf") format("truetype"), url("../fonts/Lato/lato-bold.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 700; }
+/* @import '../variables'; */
+/* @import '../common'; */
+/* @import '../mixins'; */
+.contact-section {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-top: 2em;
+  background-repeat: no-repeat;
+  background-position: 50% 95%;
+  background-size: 80%;
+  padding-bottom: 58%;
+  background-image: url("../images/round-table-cr.jpg"); }
+  .contact-section form {
+    box-sizing: border-box;
+    display: block;
+    text-align: left;
+    overflow: hidden;
+    width: 80%;
+    margin: 0 auto; }
+    .contact-section form::after {
+      clear: both; }
+  .contact-section h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    padding-top: 2em;
+    font-weight: 700;
+    font-size: 2em;
+    width: 100%;
+    color: #626262; }
 
-@font-face {
-  font-family: "Lato";
-  src: url("../fonts/Lato/lato-black.eot");
-  src: url("../fonts/Lato/lato-black.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato/lato-black.woff2") format("woff2"), url("../fonts/Lato/lato-black.woff") format("woff"), url("../fonts/Lato/lato-black.ttf") format("truetype"), url("../fonts/Lato/lato-black.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 900; }
+@media screen and (min-width: 992px) {
+  .contact-section h2 {
+    font-size: 3.5em; } }
+  .contact-section p {
+    box-sizing: border-box;
+    display: block;
+    font-family: 'Lato', sans-serif;
+    color: #626262;
+    font-size: 1.1em;
+    font-weight: 300;
+    padding: 1em;
+    text-align: left;
+    padding: 2em; }
+  .contact-section input,
+  .contact-section textarea {
+    box-sizing: border-box;
+    display: block;
+    font-family: 'Josefin Sans', sans-serif;
+    outline: 0;
+    width: 100%;
+    margin: .7em auto;
+    padding: .7em .2em;
+    font-weight: 600;
+    font-size: .9em;
+    color: #454545;
+    border: 1px solid #454545; }
+    .contact-section input[type='button'],
+    .contact-section textarea[type='button'] {
+      width: 10em;
+      border: 1px solid transparent;
+      float: right;
+      font-weight: 700;
+      background-color: #b7b7b7; }
 
-@font-face {
-  font-family: "Lato";
-  src: url("../fonts/Lato/lato-light.eot");
-  src: url("../fonts/Lato/lato-light.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato/lato-light.woff2") format("woff2"), url("../fonts/Lato/lato-light.woff") format("woff"), url("../fonts/Lato/lato-light.ttf") format("truetype"), url("../fonts/Lato/lato-light.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 300; }
+@media screen and (min-width: 772px) {
+  .contact-section {
+    overflow: hidden;
+    margin-top: 0;
+    padding-top: 0;
+    padding-left: 55%;
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-size: 55%;
+    height: 480px;
+    padding-bottom: 0; } }
 
-@font-face {
-  font-family: "Lato";
-  src: url("../fonts/Lato/lato-hairline.eot");
-  src: url("../fonts/Lato/lato-hairline.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato/lato-hairline.woff2") format("woff2"), url("../fonts/Lato/lato-hairline.woff") format("woff"), url("../fonts/Lato/lato-hairline.ttf") format("truetype"), url("../fonts/Lato/lato-hairline.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 100; }
+@media screen and (min-width: 992px) {
+  .contact-section {
+    width: 90%;
+    background-size: 55%;
+    padding-left: 50%;
+    height: 700px;
+    margin: 0 auto; } }
 
-@font-face {
-  font-family: "Liberation Sans";
-  src: url("../fonts/Liberation_Sans/liberationsans-regular.eot");
-  src: url("../fonts/Liberation_Sans/liberationsans-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Liberation_Sans/liberationsans-regular.woff2") format("woff2"), url("../fonts/Liberation_Sans/liberationsans-regular.woff") format("woff"), url("../fonts/Liberation_Sans/liberationsans-regular.ttf") format("truetype"), url("../fonts/Liberation_Sans/liberationsans-regular.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 400; }
+@media screen and (min-width: 1200px) {
+  .contact-section {
+    background-position: top left;
+    background-size: 58%;
+    max-width: 1680px;
+    margin: 0 auto; } }
 
-@font-face {
-  font-family: "Liberation Sans";
-  src: url("../fonts/Liberation_Sans/liberationsans-bold.eot");
-  src: url("../fonts/Liberation_Sans/liberationsans-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Liberation_Sans/liberationsans-bold.woff2") format("woff2"), url("../fonts/Liberation_Sans/liberationsans-bold.woff") format("woff"), url("../fonts/Liberation_Sans/liberationsans-bold.ttf") format("truetype"), url("../fonts/Liberation_Sans/liberationsans-bold.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 700; }
+@media screen and (min-width: 1650px) {
+  .contact-section {
+    padding-left: 825px;
+    background-size: auto; }
+    .contact-section form {
+      width: 95%; } }
 
-*,
-html,
-body {
-  border: 0;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
+/* @import '../variables'; */
+/* @import '../common'; */
+/* @import '../mixins'; */
 .business-section {
   box-sizing: border-box;
   display: block;
@@ -1372,519 +1230,9 @@ body {
       width: 1012px;
       padding-bottom: 561px; } }
 
-@font-face {
-  font-family: "Josefin Sans";
-  src: url("../fonts/Josefin_Sans/josefinsans-regular.eot");
-  src: url("../fonts/Josefin_Sans/josefinsans-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Josefin_Sans/josefinsans-regular.woff2") format("woff2"), url("../fonts/Josefin_Sans/josefinsans-regular.woff") format("woff"), url("../fonts/Josefin_Sans/josefinsans-regular.ttf") format("truetype"), url("../fonts/Josefin_Sans/josefinsans-regular.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 400; }
-
-@font-face {
-  font-family: "Josefin Sans";
-  src: url("../fonts/Josefin_Sans/josefinsans-semibold.eot");
-  src: url("../fonts/Josefin_Sans/josefinsans-semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/Josefin_Sans/josefinsans-semibold.woff2") format("woff2"), url("../fonts/Josefin_Sans/josefinsans-semibold.woff") format("woff"), url("../fonts/Josefin_Sans/josefinsans-semibold.ttf") format("truetype"), url("../fonts/Josefin_Sans/josefinsans-semibold.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 600; }
-
-@font-face {
-  font-family: "Josefin Sans";
-  src: url("../fonts/Josefin_Sans/josefinsans-bold.eot");
-  src: url("../fonts/Josefin_Sans/josefinsans-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Josefin_Sans/josefinsans-bold.woff2") format("woff2"), url("../fonts/Josefin_Sans/josefinsans-bold.woff") format("woff"), url("../fonts/Josefin_Sans/josefinsans-bold.ttf") format("truetype"), url("../fonts/Josefin_Sans/josefinsans-bold.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 700; }
-
-@font-face {
-  font-family: "Josefin Sans";
-  src: url("../fonts/Josefin_Sans/josefinsans-thin.eot");
-  src: url("../fonts/Josefin_Sans/josefinsans-thin.eot?#iefix") format("embedded-opentype"), url("../fonts/Josefin_Sans/josefinsans-thin.woff2") format("woff2"), url("../fonts/Josefin_Sans/josefinsans-thin.woff") format("woff"), url("../fonts/Josefin_Sans/josefinsans-thin.ttf") format("truetype"), url("../fonts/Josefin_Sans/josefinsans-thin.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 100; }
-
-@font-face {
-  font-family: "Josefin Sans";
-  src: url("../fonts/Josefin_Sans/josefinsans-light.eot");
-  src: url("../fonts/Josefin_Sans/josefinsans-light.eot?#iefix") format("embedded-opentype"), url("../fonts/Josefin_Sans/josefinsans-light.woff2") format("woff2"), url("../fonts/Josefin_Sans/josefinsans-light.woff") format("woff"), url("../fonts/Josefin_Sans/josefinsans-light.ttf") format("truetype"), url("../fonts/Josefin_Sans/josefinsans-light.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 300; }
-
-@font-face {
-  font-family: "Lato";
-  src: url("../fonts/Lato/lato-regular.eot");
-  src: url("../fonts/Lato/lato-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato/lato-regular.woff2") format("woff2"), url("../fonts/Lato/lato-regular.woff") format("woff"), url("../fonts/Lato/lato-regular.ttf") format("truetype"), url("../fonts/Lato/lato-regular.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 400; }
-
-@font-face {
-  font-family: "Lato";
-  src: url("../fonts/Lato/lato-bold.eot");
-  src: url("../fonts/Lato/lato-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato/lato-bold.woff2") format("woff2"), url("../fonts/Lato/lato-bold.woff") format("woff"), url("../fonts/Lato/lato-bold.ttf") format("truetype"), url("../fonts/Lato/lato-bold.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 700; }
-
-@font-face {
-  font-family: "Lato";
-  src: url("../fonts/Lato/lato-black.eot");
-  src: url("../fonts/Lato/lato-black.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato/lato-black.woff2") format("woff2"), url("../fonts/Lato/lato-black.woff") format("woff"), url("../fonts/Lato/lato-black.ttf") format("truetype"), url("../fonts/Lato/lato-black.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 900; }
-
-@font-face {
-  font-family: "Lato";
-  src: url("../fonts/Lato/lato-light.eot");
-  src: url("../fonts/Lato/lato-light.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato/lato-light.woff2") format("woff2"), url("../fonts/Lato/lato-light.woff") format("woff"), url("../fonts/Lato/lato-light.ttf") format("truetype"), url("../fonts/Lato/lato-light.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 300; }
-
-@font-face {
-  font-family: "Lato";
-  src: url("../fonts/Lato/lato-hairline.eot");
-  src: url("../fonts/Lato/lato-hairline.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato/lato-hairline.woff2") format("woff2"), url("../fonts/Lato/lato-hairline.woff") format("woff"), url("../fonts/Lato/lato-hairline.ttf") format("truetype"), url("../fonts/Lato/lato-hairline.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 100; }
-
-@font-face {
-  font-family: "Liberation Sans";
-  src: url("../fonts/Liberation_Sans/liberationsans-regular.eot");
-  src: url("../fonts/Liberation_Sans/liberationsans-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Liberation_Sans/liberationsans-regular.woff2") format("woff2"), url("../fonts/Liberation_Sans/liberationsans-regular.woff") format("woff"), url("../fonts/Liberation_Sans/liberationsans-regular.ttf") format("truetype"), url("../fonts/Liberation_Sans/liberationsans-regular.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 400; }
-
-@font-face {
-  font-family: "Liberation Sans";
-  src: url("../fonts/Liberation_Sans/liberationsans-bold.eot");
-  src: url("../fonts/Liberation_Sans/liberationsans-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Liberation_Sans/liberationsans-bold.woff2") format("woff2"), url("../fonts/Liberation_Sans/liberationsans-bold.woff") format("woff"), url("../fonts/Liberation_Sans/liberationsans-bold.ttf") format("truetype"), url("../fonts/Liberation_Sans/liberationsans-bold.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 700; }
-
-*,
-html,
-body {
-  border: 0;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
-.contact-section {
-  box-sizing: border-box;
-  display: block;
-  width: 100%;
-  text-align: center;
-  margin-top: 2em;
-  background-repeat: no-repeat;
-  background-position: 50% 95%;
-  background-size: 80%;
-  padding-bottom: 58%;
-  background-image: url("../images/round-table-cr.jpg"); }
-  .contact-section form {
-    box-sizing: border-box;
-    display: block;
-    text-align: left;
-    overflow: hidden;
-    width: 80%;
-    margin: 0 auto; }
-    .contact-section form::after {
-      clear: both; }
-  .contact-section h2 {
-    font-family: 'Josefin Sans', sans-serif;
-    padding-top: 2em;
-    font-weight: 700;
-    font-size: 2em;
-    width: 100%;
-    color: #626262; }
-
-@media screen and (min-width: 992px) {
-  .contact-section h2 {
-    font-size: 3.5em; } }
-  .contact-section p {
-    box-sizing: border-box;
-    display: block;
-    font-family: 'Lato', sans-serif;
-    color: #626262;
-    font-size: 1.1em;
-    font-weight: 300;
-    padding: 1em;
-    text-align: left;
-    padding: 2em; }
-  .contact-section input,
-  .contact-section textarea {
-    box-sizing: border-box;
-    display: block;
-    font-family: 'Josefin Sans', sans-serif;
-    outline: 0;
-    width: 100%;
-    margin: .7em auto;
-    padding: .7em .2em;
-    font-weight: 600;
-    font-size: .9em;
-    color: #454545;
-    border: 1px solid #454545; }
-    .contact-section input[type='button'],
-    .contact-section textarea[type='button'] {
-      width: 10em;
-      border: 1px solid transparent;
-      float: right;
-      font-weight: 700;
-      background-color: #b7b7b7; }
-
-@media screen and (min-width: 772px) {
-  .contact-section {
-    overflow: hidden;
-    margin-top: 0;
-    padding-top: 0;
-    padding-left: 55%;
-    background-position: center left;
-    background-repeat: no-repeat;
-    background-size: 55%;
-    height: 480px;
-    padding-bottom: 0; } }
-
-@media screen and (min-width: 992px) {
-  .contact-section {
-    width: 90%;
-    background-size: 55%;
-    padding-left: 50%;
-    height: 700px;
-    margin: 0 auto; } }
-
-@media screen and (min-width: 1200px) {
-  .contact-section {
-    background-position: top left;
-    background-size: 58%;
-    max-width: 1680px;
-    margin: 0 auto; } }
-
-@media screen and (min-width: 1650px) {
-  .contact-section {
-    padding-left: 825px;
-    background-size: auto; }
-    .contact-section form {
-      width: 95%; } }
-
-@font-face {
-  font-family: "Josefin Sans";
-  src: url("../fonts/Josefin_Sans/josefinsans-regular.eot");
-  src: url("../fonts/Josefin_Sans/josefinsans-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Josefin_Sans/josefinsans-regular.woff2") format("woff2"), url("../fonts/Josefin_Sans/josefinsans-regular.woff") format("woff"), url("../fonts/Josefin_Sans/josefinsans-regular.ttf") format("truetype"), url("../fonts/Josefin_Sans/josefinsans-regular.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 400; }
-
-@font-face {
-  font-family: "Josefin Sans";
-  src: url("../fonts/Josefin_Sans/josefinsans-semibold.eot");
-  src: url("../fonts/Josefin_Sans/josefinsans-semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/Josefin_Sans/josefinsans-semibold.woff2") format("woff2"), url("../fonts/Josefin_Sans/josefinsans-semibold.woff") format("woff"), url("../fonts/Josefin_Sans/josefinsans-semibold.ttf") format("truetype"), url("../fonts/Josefin_Sans/josefinsans-semibold.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 600; }
-
-@font-face {
-  font-family: "Josefin Sans";
-  src: url("../fonts/Josefin_Sans/josefinsans-bold.eot");
-  src: url("../fonts/Josefin_Sans/josefinsans-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Josefin_Sans/josefinsans-bold.woff2") format("woff2"), url("../fonts/Josefin_Sans/josefinsans-bold.woff") format("woff"), url("../fonts/Josefin_Sans/josefinsans-bold.ttf") format("truetype"), url("../fonts/Josefin_Sans/josefinsans-bold.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 700; }
-
-@font-face {
-  font-family: "Josefin Sans";
-  src: url("../fonts/Josefin_Sans/josefinsans-thin.eot");
-  src: url("../fonts/Josefin_Sans/josefinsans-thin.eot?#iefix") format("embedded-opentype"), url("../fonts/Josefin_Sans/josefinsans-thin.woff2") format("woff2"), url("../fonts/Josefin_Sans/josefinsans-thin.woff") format("woff"), url("../fonts/Josefin_Sans/josefinsans-thin.ttf") format("truetype"), url("../fonts/Josefin_Sans/josefinsans-thin.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 100; }
-
-@font-face {
-  font-family: "Josefin Sans";
-  src: url("../fonts/Josefin_Sans/josefinsans-light.eot");
-  src: url("../fonts/Josefin_Sans/josefinsans-light.eot?#iefix") format("embedded-opentype"), url("../fonts/Josefin_Sans/josefinsans-light.woff2") format("woff2"), url("../fonts/Josefin_Sans/josefinsans-light.woff") format("woff"), url("../fonts/Josefin_Sans/josefinsans-light.ttf") format("truetype"), url("../fonts/Josefin_Sans/josefinsans-light.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 300; }
-
-@font-face {
-  font-family: "Lato";
-  src: url("../fonts/Lato/lato-regular.eot");
-  src: url("../fonts/Lato/lato-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato/lato-regular.woff2") format("woff2"), url("../fonts/Lato/lato-regular.woff") format("woff"), url("../fonts/Lato/lato-regular.ttf") format("truetype"), url("../fonts/Lato/lato-regular.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 400; }
-
-@font-face {
-  font-family: "Lato";
-  src: url("../fonts/Lato/lato-bold.eot");
-  src: url("../fonts/Lato/lato-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato/lato-bold.woff2") format("woff2"), url("../fonts/Lato/lato-bold.woff") format("woff"), url("../fonts/Lato/lato-bold.ttf") format("truetype"), url("../fonts/Lato/lato-bold.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 700; }
-
-@font-face {
-  font-family: "Lato";
-  src: url("../fonts/Lato/lato-black.eot");
-  src: url("../fonts/Lato/lato-black.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato/lato-black.woff2") format("woff2"), url("../fonts/Lato/lato-black.woff") format("woff"), url("../fonts/Lato/lato-black.ttf") format("truetype"), url("../fonts/Lato/lato-black.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 900; }
-
-@font-face {
-  font-family: "Lato";
-  src: url("../fonts/Lato/lato-light.eot");
-  src: url("../fonts/Lato/lato-light.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato/lato-light.woff2") format("woff2"), url("../fonts/Lato/lato-light.woff") format("woff"), url("../fonts/Lato/lato-light.ttf") format("truetype"), url("../fonts/Lato/lato-light.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 300; }
-
-@font-face {
-  font-family: "Lato";
-  src: url("../fonts/Lato/lato-hairline.eot");
-  src: url("../fonts/Lato/lato-hairline.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato/lato-hairline.woff2") format("woff2"), url("../fonts/Lato/lato-hairline.woff") format("woff"), url("../fonts/Lato/lato-hairline.ttf") format("truetype"), url("../fonts/Lato/lato-hairline.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 100; }
-
-@font-face {
-  font-family: "Liberation Sans";
-  src: url("../fonts/Liberation_Sans/liberationsans-regular.eot");
-  src: url("../fonts/Liberation_Sans/liberationsans-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Liberation_Sans/liberationsans-regular.woff2") format("woff2"), url("../fonts/Liberation_Sans/liberationsans-regular.woff") format("woff"), url("../fonts/Liberation_Sans/liberationsans-regular.ttf") format("truetype"), url("../fonts/Liberation_Sans/liberationsans-regular.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 400; }
-
-@font-face {
-  font-family: "Liberation Sans";
-  src: url("../fonts/Liberation_Sans/liberationsans-bold.eot");
-  src: url("../fonts/Liberation_Sans/liberationsans-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Liberation_Sans/liberationsans-bold.woff2") format("woff2"), url("../fonts/Liberation_Sans/liberationsans-bold.woff") format("woff"), url("../fonts/Liberation_Sans/liberationsans-bold.ttf") format("truetype"), url("../fonts/Liberation_Sans/liberationsans-bold.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 700; }
-
-*,
-html,
-body {
-  border: 0;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
-.home-section {
-  text-align: center;
-  background-image: url("../images/white-chair-2.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 760px;
-  position: relative; }
-  .home-section .description {
-    margin: .5em 1em 0;
-    background-color: rgba(255, 255, 255, 0.55);
-    padding-bottom: 1em;
-    position: absolute;
-    bottom: 10%;
-    left: 0; }
-    .home-section .description button {
-      font-family: 'Josefin Sans', sans-serif;
-      cursor: pointer;
-      margin: .5em auto;
-      color: #626262;
-      padding: 5px 0 5px 88px;
-      height: 80px;
-      font-size: 2em;
-      font-weight: 300;
-      display: block;
-      background-color: transparent;
-      position: relative;
-      outline: 0; }
-      .home-section .description button::before {
-        content: '';
-        display: block;
-        position: absolute;
-        width: 80px;
-        height: 80px;
-        border-radius: 50%;
-        background-color: #b7b7b7;
-        top: 0;
-        left: 0; }
-      .home-section .description button::after {
-        content: '';
-        display: block;
-        position: absolute;
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        background-color: #d3d3d3;
-        background-image: url("../images/play-btn.png");
-        background-size: 40%;
-        background-repeat: no-repeat;
-        background-position: center center;
-        top: 12.5px;
-        left: 12.5px; }
-    .home-section .description h2 {
-      font-family: 'Josefin Sans', sans-serif;
-      padding-top: 2em;
-      font-weight: 700;
-      font-size: 2em;
-      width: 100%;
-      color: #626262; }
-
-@media screen and (min-width: 992px) {
-  .home-section .description h2 {
-    font-size: 3.5em; } }
-    .home-section .description p {
-      box-sizing: border-box;
-      display: block;
-      font-family: 'Lato', sans-serif;
-      color: #626262;
-      font-size: 1.1em;
-      font-weight: 300;
-      padding: 1em;
-      text-align: left; }
-  .home-section .viewer {
-    position: absolute;
-    transition-duration: 1s;
-    transition-property: width, opacity;
-    top: 2%;
-    left: 15%;
-    width: 0;
-    opacity: 0;
-    height: auto;
-    background-color: #d3d3d3;
-    padding: 1px; }
-
-@media screen and (min-width: 410px) {
-  .home-section .viewer {
-    top: 1%;
-    left: 22.5%; } }
-
-@media screen and (min-width: 610px) {
-  .home-section .viewer {
-    top: 1%;
-    left: 27.5%; } }
-
-@media screen and (min-width: 772px) {
-  .home-section {
-    padding-top: 0;
-    background-size: 55%;
-    height: 420px; }
-    .home-section .description {
-      margin: 0;
-      background-color: white;
-      padding: 0;
-      position: absolute;
-      height: 100%;
-      top: 0;
-      left: 50%; }
-      .home-section .description button {
-        margin-top: 2em;
-        font-size: 3em; }
-    .home-section .viewer {
-      top: 7%;
-      left: 7%; } }
-
-@media screen and (min-width: 992px) {
-  .home-section {
-    width: 90%;
-    margin: 0 auto;
-    background-size: contain;
-    height: 780px; }
-    .home-section .description {
-      position: absolute;
-      height: 100%;
-      top: 0;
-      left: 60%; }
-    .home-section .viewer {
-      top: 10%;
-      left: 7.5%; } }
-
-@media screen and (min-width: 1400px) {
-  .home-section .viewer {
-    top: 10%;
-    left: 10%; } }
-
-@media screen and (min-width: 1200px) {
-  .home-section {
-    max-width: 1680px;
-    margin: 0 auto; }
-    .home-section .viewer {
-      top: 10%;
-      left: 5%; } }
-
-@font-face {
-  font-family: "Josefin Sans";
-  src: url("../fonts/Josefin_Sans/josefinsans-regular.eot");
-  src: url("../fonts/Josefin_Sans/josefinsans-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Josefin_Sans/josefinsans-regular.woff2") format("woff2"), url("../fonts/Josefin_Sans/josefinsans-regular.woff") format("woff"), url("../fonts/Josefin_Sans/josefinsans-regular.ttf") format("truetype"), url("../fonts/Josefin_Sans/josefinsans-regular.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 400; }
-
-@font-face {
-  font-family: "Josefin Sans";
-  src: url("../fonts/Josefin_Sans/josefinsans-semibold.eot");
-  src: url("../fonts/Josefin_Sans/josefinsans-semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/Josefin_Sans/josefinsans-semibold.woff2") format("woff2"), url("../fonts/Josefin_Sans/josefinsans-semibold.woff") format("woff"), url("../fonts/Josefin_Sans/josefinsans-semibold.ttf") format("truetype"), url("../fonts/Josefin_Sans/josefinsans-semibold.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 600; }
-
-@font-face {
-  font-family: "Josefin Sans";
-  src: url("../fonts/Josefin_Sans/josefinsans-bold.eot");
-  src: url("../fonts/Josefin_Sans/josefinsans-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Josefin_Sans/josefinsans-bold.woff2") format("woff2"), url("../fonts/Josefin_Sans/josefinsans-bold.woff") format("woff"), url("../fonts/Josefin_Sans/josefinsans-bold.ttf") format("truetype"), url("../fonts/Josefin_Sans/josefinsans-bold.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 700; }
-
-@font-face {
-  font-family: "Josefin Sans";
-  src: url("../fonts/Josefin_Sans/josefinsans-thin.eot");
-  src: url("../fonts/Josefin_Sans/josefinsans-thin.eot?#iefix") format("embedded-opentype"), url("../fonts/Josefin_Sans/josefinsans-thin.woff2") format("woff2"), url("../fonts/Josefin_Sans/josefinsans-thin.woff") format("woff"), url("../fonts/Josefin_Sans/josefinsans-thin.ttf") format("truetype"), url("../fonts/Josefin_Sans/josefinsans-thin.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 100; }
-
-@font-face {
-  font-family: "Josefin Sans";
-  src: url("../fonts/Josefin_Sans/josefinsans-light.eot");
-  src: url("../fonts/Josefin_Sans/josefinsans-light.eot?#iefix") format("embedded-opentype"), url("../fonts/Josefin_Sans/josefinsans-light.woff2") format("woff2"), url("../fonts/Josefin_Sans/josefinsans-light.woff") format("woff"), url("../fonts/Josefin_Sans/josefinsans-light.ttf") format("truetype"), url("../fonts/Josefin_Sans/josefinsans-light.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 300; }
-
-@font-face {
-  font-family: "Lato";
-  src: url("../fonts/Lato/lato-regular.eot");
-  src: url("../fonts/Lato/lato-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato/lato-regular.woff2") format("woff2"), url("../fonts/Lato/lato-regular.woff") format("woff"), url("../fonts/Lato/lato-regular.ttf") format("truetype"), url("../fonts/Lato/lato-regular.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 400; }
-
-@font-face {
-  font-family: "Lato";
-  src: url("../fonts/Lato/lato-bold.eot");
-  src: url("../fonts/Lato/lato-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato/lato-bold.woff2") format("woff2"), url("../fonts/Lato/lato-bold.woff") format("woff"), url("../fonts/Lato/lato-bold.ttf") format("truetype"), url("../fonts/Lato/lato-bold.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 700; }
-
-@font-face {
-  font-family: "Lato";
-  src: url("../fonts/Lato/lato-black.eot");
-  src: url("../fonts/Lato/lato-black.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato/lato-black.woff2") format("woff2"), url("../fonts/Lato/lato-black.woff") format("woff"), url("../fonts/Lato/lato-black.ttf") format("truetype"), url("../fonts/Lato/lato-black.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 900; }
-
-@font-face {
-  font-family: "Lato";
-  src: url("../fonts/Lato/lato-light.eot");
-  src: url("../fonts/Lato/lato-light.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato/lato-light.woff2") format("woff2"), url("../fonts/Lato/lato-light.woff") format("woff"), url("../fonts/Lato/lato-light.ttf") format("truetype"), url("../fonts/Lato/lato-light.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 300; }
-
-@font-face {
-  font-family: "Lato";
-  src: url("../fonts/Lato/lato-hairline.eot");
-  src: url("../fonts/Lato/lato-hairline.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato/lato-hairline.woff2") format("woff2"), url("../fonts/Lato/lato-hairline.woff") format("woff"), url("../fonts/Lato/lato-hairline.ttf") format("truetype"), url("../fonts/Lato/lato-hairline.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 100; }
-
-@font-face {
-  font-family: "Liberation Sans";
-  src: url("../fonts/Liberation_Sans/liberationsans-regular.eot");
-  src: url("../fonts/Liberation_Sans/liberationsans-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Liberation_Sans/liberationsans-regular.woff2") format("woff2"), url("../fonts/Liberation_Sans/liberationsans-regular.woff") format("woff"), url("../fonts/Liberation_Sans/liberationsans-regular.ttf") format("truetype"), url("../fonts/Liberation_Sans/liberationsans-regular.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 400; }
-
-@font-face {
-  font-family: "Liberation Sans";
-  src: url("../fonts/Liberation_Sans/liberationsans-bold.eot");
-  src: url("../fonts/Liberation_Sans/liberationsans-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Liberation_Sans/liberationsans-bold.woff2") format("woff2"), url("../fonts/Liberation_Sans/liberationsans-bold.woff") format("woff"), url("../fonts/Liberation_Sans/liberationsans-bold.ttf") format("truetype"), url("../fonts/Liberation_Sans/liberationsans-bold.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 700; }
-
-*,
-html,
-body {
-  border: 0;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
+/* @import '../variables'; */
+/* @import '../common'; */
+/* @import '../mixins'; */
 .products-section {
   overflow: hidden;
   width: 100%; }
@@ -1924,7 +1272,7 @@ body {
     overflow: hidden;
     height: 65vh;
     perspective: 1500px; }
-    .products-section .image-tosser img {
+    .products-section .image-tosser .image {
       box-sizing: border-box;
       display: block;
       position: absolute;
@@ -1947,7 +1295,7 @@ body {
     height: 120vh; } }
 
 @media screen and (min-width: 772px) {
-  .products-section .image-tosser img {
+  .products-section .image-tosser .image {
     width: 70%;
     left: 15%; } }
 
@@ -1968,7 +1316,7 @@ body {
       height: 100%;
       left: 0;
       top: 0; }
-      .products-section .image-tosser img {
+      .products-section .image-tosser .image {
         left: 30%;
         bottom: 20%;
         width: 400px; } }
@@ -1977,161 +1325,5 @@ body {
   .products-section {
     max-width: 1680px;
     height: 1400px; }
-    .products-section .image-tosser img {
+    .products-section .image-tosser .image {
       width: 500px; } }
-
-@font-face {
-  font-family: "Josefin Sans";
-  src: url("../fonts/Josefin_Sans/josefinsans-regular.eot");
-  src: url("../fonts/Josefin_Sans/josefinsans-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Josefin_Sans/josefinsans-regular.woff2") format("woff2"), url("../fonts/Josefin_Sans/josefinsans-regular.woff") format("woff"), url("../fonts/Josefin_Sans/josefinsans-regular.ttf") format("truetype"), url("../fonts/Josefin_Sans/josefinsans-regular.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 400; }
-
-@font-face {
-  font-family: "Josefin Sans";
-  src: url("../fonts/Josefin_Sans/josefinsans-semibold.eot");
-  src: url("../fonts/Josefin_Sans/josefinsans-semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/Josefin_Sans/josefinsans-semibold.woff2") format("woff2"), url("../fonts/Josefin_Sans/josefinsans-semibold.woff") format("woff"), url("../fonts/Josefin_Sans/josefinsans-semibold.ttf") format("truetype"), url("../fonts/Josefin_Sans/josefinsans-semibold.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 600; }
-
-@font-face {
-  font-family: "Josefin Sans";
-  src: url("../fonts/Josefin_Sans/josefinsans-bold.eot");
-  src: url("../fonts/Josefin_Sans/josefinsans-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Josefin_Sans/josefinsans-bold.woff2") format("woff2"), url("../fonts/Josefin_Sans/josefinsans-bold.woff") format("woff"), url("../fonts/Josefin_Sans/josefinsans-bold.ttf") format("truetype"), url("../fonts/Josefin_Sans/josefinsans-bold.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 700; }
-
-@font-face {
-  font-family: "Josefin Sans";
-  src: url("../fonts/Josefin_Sans/josefinsans-thin.eot");
-  src: url("../fonts/Josefin_Sans/josefinsans-thin.eot?#iefix") format("embedded-opentype"), url("../fonts/Josefin_Sans/josefinsans-thin.woff2") format("woff2"), url("../fonts/Josefin_Sans/josefinsans-thin.woff") format("woff"), url("../fonts/Josefin_Sans/josefinsans-thin.ttf") format("truetype"), url("../fonts/Josefin_Sans/josefinsans-thin.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 100; }
-
-@font-face {
-  font-family: "Josefin Sans";
-  src: url("../fonts/Josefin_Sans/josefinsans-light.eot");
-  src: url("../fonts/Josefin_Sans/josefinsans-light.eot?#iefix") format("embedded-opentype"), url("../fonts/Josefin_Sans/josefinsans-light.woff2") format("woff2"), url("../fonts/Josefin_Sans/josefinsans-light.woff") format("woff"), url("../fonts/Josefin_Sans/josefinsans-light.ttf") format("truetype"), url("../fonts/Josefin_Sans/josefinsans-light.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 300; }
-
-@font-face {
-  font-family: "Lato";
-  src: url("../fonts/Lato/lato-regular.eot");
-  src: url("../fonts/Lato/lato-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato/lato-regular.woff2") format("woff2"), url("../fonts/Lato/lato-regular.woff") format("woff"), url("../fonts/Lato/lato-regular.ttf") format("truetype"), url("../fonts/Lato/lato-regular.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 400; }
-
-@font-face {
-  font-family: "Lato";
-  src: url("../fonts/Lato/lato-bold.eot");
-  src: url("../fonts/Lato/lato-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato/lato-bold.woff2") format("woff2"), url("../fonts/Lato/lato-bold.woff") format("woff"), url("../fonts/Lato/lato-bold.ttf") format("truetype"), url("../fonts/Lato/lato-bold.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 700; }
-
-@font-face {
-  font-family: "Lato";
-  src: url("../fonts/Lato/lato-black.eot");
-  src: url("../fonts/Lato/lato-black.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato/lato-black.woff2") format("woff2"), url("../fonts/Lato/lato-black.woff") format("woff"), url("../fonts/Lato/lato-black.ttf") format("truetype"), url("../fonts/Lato/lato-black.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 900; }
-
-@font-face {
-  font-family: "Lato";
-  src: url("../fonts/Lato/lato-light.eot");
-  src: url("../fonts/Lato/lato-light.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato/lato-light.woff2") format("woff2"), url("../fonts/Lato/lato-light.woff") format("woff"), url("../fonts/Lato/lato-light.ttf") format("truetype"), url("../fonts/Lato/lato-light.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 300; }
-
-@font-face {
-  font-family: "Lato";
-  src: url("../fonts/Lato/lato-hairline.eot");
-  src: url("../fonts/Lato/lato-hairline.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato/lato-hairline.woff2") format("woff2"), url("../fonts/Lato/lato-hairline.woff") format("woff"), url("../fonts/Lato/lato-hairline.ttf") format("truetype"), url("../fonts/Lato/lato-hairline.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 100; }
-
-@font-face {
-  font-family: "Liberation Sans";
-  src: url("../fonts/Liberation_Sans/liberationsans-regular.eot");
-  src: url("../fonts/Liberation_Sans/liberationsans-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Liberation_Sans/liberationsans-regular.woff2") format("woff2"), url("../fonts/Liberation_Sans/liberationsans-regular.woff") format("woff"), url("../fonts/Liberation_Sans/liberationsans-regular.ttf") format("truetype"), url("../fonts/Liberation_Sans/liberationsans-regular.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 400; }
-
-@font-face {
-  font-family: "Liberation Sans";
-  src: url("../fonts/Liberation_Sans/liberationsans-bold.eot");
-  src: url("../fonts/Liberation_Sans/liberationsans-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Liberation_Sans/liberationsans-bold.woff2") format("woff2"), url("../fonts/Liberation_Sans/liberationsans-bold.woff") format("woff"), url("../fonts/Liberation_Sans/liberationsans-bold.ttf") format("truetype"), url("../fonts/Liberation_Sans/liberationsans-bold.svg#icon") format("svg");
-  font-style: normal;
-  font-weight: 700; }
-
-*,
-html,
-body {
-  border: 0;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
-.delivery-section {
-  box-sizing: border-box;
-  display: block;
-  width: 100%;
-  margin-top: 2em;
-  text-align: center;
-  background-image: url("../images/furiture.jpg");
-  background-repeat: no-repeat;
-  background-position: 50% 95%;
-  background-size: 80%;
-  padding-bottom: 60%; }
-  .delivery-section h2 {
-    font-family: 'Josefin Sans', sans-serif;
-    padding-top: 2em;
-    font-weight: 700;
-    font-size: 2em;
-    width: 100%;
-    color: #626262; }
-
-@media screen and (min-width: 992px) {
-  .delivery-section h2 {
-    font-size: 3.5em; } }
-  .delivery-section p {
-    box-sizing: border-box;
-    display: block;
-    font-family: 'Lato', sans-serif;
-    color: #626262;
-    font-size: 1.1em;
-    font-weight: 300;
-    padding: 1em;
-    text-align: left; }
-
-@media screen and (min-width: 772px) {
-  .delivery-section {
-    margin-top: 0;
-    padding: 0;
-    padding-right: 50%;
-    background-position: center right;
-    background-size: 50%;
-    height: 400px; } }
-
-@media screen and (min-width: 992px) {
-  .delivery-section {
-    width: 90%;
-    margin: 0 auto;
-    background-position: center right;
-    background-size: 60%;
-    padding-right: 55%;
-    height: 430px; } }
-
-@media screen and (min-width: 1200px) {
-  .delivery-section {
-    max-width: 1680px;
-    margin: 0 auto;
-    background-size: 65%;
-    padding-right: 60%;
-    height: 500px; } }
-
-@media screen and (min-width: 1650px) {
-  .delivery-section {
-    background-size: contain;
-    padding-right: 890px;
-    height: 590px; } }
