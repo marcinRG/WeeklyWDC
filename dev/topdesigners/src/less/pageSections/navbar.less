@@ -1,0 +1,166 @@
+@import "../variables";
+@import "../mixins";
+@import "../common";
+
+nav {
+
+  z-index: 35;
+  width: 100%;
+  position: fixed;
+
+  .nav {
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    background-color: white;
+
+    .logo {
+      font-weight: 300;
+      font-size: 1.2em;
+      margin: 0 auto 0 0;
+      position: relative;
+      padding: 20px;
+
+      &:before {
+        position: absolute;
+        border: 1px solid @bg-red;
+        border-radius: 10px;
+        border-top-right-radius: 0px;
+        content: "";
+        top: 10px;
+        bottom: 10px;
+        left: 10px;
+        right: 10px;
+      }
+    }
+
+    .menu {
+      background-color: black;
+      color: white;
+      display: flex;
+      justify-items: flex-start;
+      align-items: center;
+      cursor: pointer;
+      text-transform: uppercase;
+
+      span {
+        padding: 0 0.2em;
+      }
+    }
+
+    .social {
+      display: none;
+    }
+
+    a,
+    .menu-icon {
+
+      &:before {
+        content: "";
+        display: inline-block;
+        width: 45px;
+        height: 45px;
+        background-image: url("../images/icons.png");
+      }
+
+      &.facebook {
+
+        &:before {
+          background-position: -32px 0;
+        }
+      }
+
+      &.instagram {
+        &:before {
+          background-position: -88px 0;
+        }
+      }
+
+      &.linkedin {
+
+        &:before {
+          background-position: -142px 0;
+        }
+      }
+
+      &.twitter {
+        &:before {
+          background-position: -188px 0;
+        }
+      }
+
+      &.menu-icon {
+
+        &:before {
+          background-position: -242px 0;
+        }
+      }
+    }
+
+    ul {
+      list-style-type: none;
+      display: flex;
+      flex-flow: row;
+      align-items: center;
+    }
+
+    @media screen {
+
+      @media (min-width: @media-br-1) {
+
+        .social {
+          display: flex;
+        }
+
+        .menu {
+          padding-right: 200px;
+          min-width: 310px;
+          box-sizing: border-box;
+        }
+
+        .logo {
+          margin-left: 5em;
+        }
+
+      }
+
+      @media (min-width: @media-br-2) {
+      }
+    }
+  }
+
+  .menu-items {
+    position: absolute;
+    z-index: 35;
+    transition-duration: 1s;
+    transform: translateX(100%);
+    right: 0;
+    width: 100%;
+    max-width: 310px;
+
+    ul {
+      list-style-type: none;
+      display: block;
+      width: 100%;
+
+      li {
+
+        a {
+          display: block;
+          width: 100%;
+          padding: 2em 0.5em;
+          background-color: black;
+          color: white;
+          text-decoration: none;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+
+  .show-menu {
+    transform: translateX(0);
+  }
+
+}
+

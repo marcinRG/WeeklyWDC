@@ -1,0 +1,139 @@
+@import "../variables";
+@import "../mixins";
+@import "../common";
+
+.welcome-section {
+
+  .hello {
+    background-image: url("../images/jumbo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    max-height: 1040px;
+    &:extend(.flex-column-centered);
+    justify-content: space-between;
+
+    h1 {
+      .small-mixin;
+      .header-text;
+
+      small {
+        letter-spacing: normal;
+      }
+      font-size: 3em;
+      letter-spacing: 4px;
+      padding: 0.5em 0;
+      margin: 2em 0 0.5em 0;
+    }
+
+    button {
+      background-color: transparent;
+      border: 3px white solid;
+      border-radius: 50px;
+      text-transform: uppercase;
+      color: white;
+      padding: 0.8em 3em;
+      font-size: 1.2em;
+      font-weight: 300;
+      margin: 0.5em;
+      cursor: pointer;
+    }
+
+    span {
+      margin-top: auto;
+      height: 3em;
+      margin-bottom: 1em;
+    }
+  }
+
+  .performance {
+    display: flex;
+    flex-flow: column;
+    margin: 0 auto;
+    align-items: center;
+
+    .desc {
+      padding: 2em 0;
+      box-sizing: border-box;
+      width: 220px;
+
+      svg {
+
+        .txt-big {
+          text-align: center;
+          letter-spacing: 5px;
+          font-size: 4.2em;
+          fill: black;
+          text-transform: uppercase;
+          font-weight: 600;
+        }
+
+        .txt-small {
+          text-transform: uppercase;
+          font-weight: 300;
+          font-size: 1.2em;
+          fill: black;
+        }
+
+        .color-1 {
+          fill: @bg-red;
+        }
+
+        .color-2 {
+          fill: @bg-green;
+        }
+
+        .color-3 {
+          fill: @bg-dark-blue;
+        }
+
+        .arc {
+          stroke-width: 4;
+          fill: none;
+        }
+
+        .arc-1 {
+          stroke: @bg-red;
+        }
+
+        .arc-2 {
+          stroke: @bg-green;
+        }
+
+        .arc-3 {
+          stroke: @bg-dark-blue;
+        }
+      }
+
+    }
+
+    p {
+      width: 70%;
+      display: inline-block;
+      padding: 1.5em 2em;
+    }
+  }
+
+  @media screen {
+
+    @media (min-width: @media-br-1) {
+
+      .hello {
+
+        h1 {
+          font-size: 4em;
+        }
+      }
+
+      .performance {
+        flex-flow: row;
+        align-items: stretch;
+        justify-content: space-around;
+      }
+    }
+
+    @media (min-width: @media-br-2) {
+    }
+  }
+}

@@ -1,0 +1,136 @@
+@import "../variables";
+@import "../mixins";
+@import "../common";
+
+.portfolio-section {
+  h2 {
+    background-image: url("../images/bg-section-1.jpg");
+  }
+
+  .portfolio {
+    background-color: white;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2em 0;
+
+    .base-img {
+      display: none;
+    }
+
+    .project {
+      transform: translateZ(0) scale(1.001, 1.001);
+      display: block;
+      overflow: hidden;
+      position: relative;
+      flex: 1 1 100%;
+      max-width: 235px;
+      margin: 0.15em;
+      cursor: pointer;
+      min-height: 0;
+      min-width: 0;
+
+      &:hover {
+
+        img {
+          filter: grayscale(0%);
+        }
+
+        .description {
+
+          svg,
+          span {
+            transform: translateY(0);
+          }
+        }
+      }
+
+      .description {
+        position: absolute;
+        z-index: 2;
+        top: 50%;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        text-transform: uppercase;
+
+        svg {
+          display: inline-block;
+          margin-top: -50%;
+          transition-duration: 0.5s;
+          transition-property: transform;
+          transform: translateY(-350px);
+
+        }
+
+        span {
+          color: black;
+          display: inline-block;
+          width: 100%;
+          transition-duration: 0.5s;
+          transition-property: transform;
+          transform: translateY(350px);
+          background-color: rgba(255, 255, 255, 0.51);
+          padding: 0.5em 0;
+        }
+      }
+
+      img {
+        filter: grayscale(100%);
+        transition-duration: 0.5s;
+        transition-property: filter;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        display: block;
+      }
+    }
+
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+
+      .project {
+
+        &:after {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(225, 225, 225, 0.7);
+          transition-duration: 0.5s;
+        }
+
+        &:hover {
+
+          &:after {
+            background-color: rgba(225, 225, 225, 0);
+          }
+        }
+      }
+    }
+
+    @media screen {
+      @media (min-width: @media-br-1) {
+        padding: 0;
+
+        .project {
+          margin: 0;
+        }
+      }
+
+      @media (min-width: @media-br-2) {
+        justify-content: flex-start;
+
+        .project {
+          flex: 1 1 14%;
+          max-width: none;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
