@@ -73,7 +73,7 @@ ul {
     margin: 0 auto;
   }
 }
-nav {
+.navbar-section {
   position: fixed;
   display: block;
   z-index: 35;
@@ -82,7 +82,7 @@ nav {
   width: 100%;
   transition-duration: 0.5s;
 }
-nav .navbar {
+.navbar-section .navbar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -95,7 +95,7 @@ nav .navbar {
   -ms-flex-flow: wrap;
       flex-flow: wrap;
 }
-nav .nav-button {
+.navbar-section .nav-button {
   cursor: pointer;
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
@@ -104,41 +104,41 @@ nav .nav-button {
   font-size: 2em;
   padding: 0.15em;
 }
-nav .nav-button:after {
+.navbar-section .nav-button:after {
   content: "\f0c9";
 }
-nav .title,
-nav .selected {
+.navbar-section .title,
+.navbar-section .selected {
   letter-spacing: 10px;
   font-weight: 400;
   text-transform: uppercase;
 }
-nav .title {
+.navbar-section .title {
   font-size: 1.75em;
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
   padding: 0 0 0 0.1em ;
 }
-nav .menu-items {
+.navbar-section .menu-items {
   -webkit-box-ordinal-group: 4;
       -ms-flex-order: 3;
           order: 3;
 }
-nav .nav-button {
+.navbar-section .nav-button {
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
           order: 2;
 }
-nav .menu-items {
+.navbar-section .menu-items {
   padding: 1em 0;
   display: none;
   width: 100%;
 }
-nav .menu-items .selected {
+.navbar-section .menu-items .selected {
   display: none;
 }
-nav .menu-items li {
+.navbar-section .menu-items li {
   text-align: center;
   display: list-item;
   font-weight: 400;
@@ -147,18 +147,18 @@ nav .menu-items li {
   padding: 0.5em;
   letter-spacing: 5px;
 }
-nav .menu-items li a {
+.navbar-section .menu-items li a {
   text-decoration: none;
   color: #222222;
 }
 @media screen and (min-width: 768px) {
-  nav .title {
+  .navbar-section .title {
     display: none;
   }
-  nav .nav-button {
+  .navbar-section .nav-button {
     display: none;
   }
-  nav .menu-items {
+  .navbar-section .menu-items {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -170,18 +170,18 @@ nav .menu-items li a {
             align-items: center;
     height: inherit;
   }
-  nav .menu-items .selected {
+  .navbar-section .menu-items .selected {
     display: list-item;
     font-size: 2.2em;
   }
 }
 @media screen and (min-width: 1200px) {
-  nav ul {
+  .navbar-section ul {
     max-width: 1680px;
     margin: 0 auto;
   }
 }
-#logo {
+.logo-section {
   height: 100vh;
   width: 100%;
   overflow: hidden;
@@ -193,7 +193,7 @@ nav .menu-items li a {
   background-position: 0 0;
   background-color: white;
 }
-#logo h1 {
+.logo-section h1 {
   position: absolute;
   z-index: 10;
   bottom: 0;
@@ -203,11 +203,11 @@ nav .menu-items li a {
   width: 90%;
   padding: 1em 0 2em 0.1em;
 }
-#logo h1 span {
+.logo-section h1 span {
   display: inline-block;
   padding: 0 0.5em;
 }
-#logo:before {
+.logo-section:before {
   display: block;
   position: absolute;
   top: 0;
@@ -218,15 +218,15 @@ nav .menu-items li a {
   transition-duration: 0.5s;
   transition-property: background-color;
 }
-#logo .container {
+.logo-section .container {
   overflow: hidden;
   position: absolute;
   height: 100%;
 }
-#logo:after {
+.logo-section:after {
   clear: both;
 }
-#logo .panel {
+.logo-section .panel {
   overflow: hidden;
   display: block;
   height: 100%;
@@ -234,81 +234,81 @@ nav .menu-items li a {
   background-image: url("../images/jumbo-sm.jpg");
   background-repeat: no-repeat;
 }
-#logo .container-0 {
+.logo-section .container-0 {
   left: calc(0%);
   width: calc(20%);
   top: 0;
 }
-#logo .container-1 {
+.logo-section .container-1 {
   left: calc(20%);
   width: calc(20%);
   top: 0;
 }
-#logo .container-2 {
+.logo-section .container-2 {
   left: calc(40%);
   width: calc(20%);
   top: 0;
 }
-#logo .container-3 {
+.logo-section .container-3 {
   left: calc(60%);
   width: calc(20%);
   top: 0;
 }
-#logo .container-4 {
+.logo-section .container-4 {
   left: calc(80%);
   width: calc(20%);
   top: 0;
 }
-#logo .panel {
+.logo-section .panel {
   background-size: calc(500%) 100%;
 }
-#logo .panel-0 {
+.logo-section .panel-0 {
   opacity: 1;
   background-position: calc(0%) 0;
 }
-#logo .panel-1 {
+.logo-section .panel-1 {
   opacity: 1;
   background-position: calc(25%) 0;
 }
-#logo .panel-2 {
+.logo-section .panel-2 {
   opacity: 1;
   background-position: calc(50%) 0;
 }
-#logo .panel-3 {
+.logo-section .panel-3 {
   opacity: 1;
   background-position: calc(75%) 0;
 }
-#logo .panel-4 {
+.logo-section .panel-4 {
   opacity: 1;
   background-position: calc(100%) 0;
 }
 @media screen and (min-width: 768px) {
-  #logo {
+  .logo-section {
     max-height: 516px;
     background-image: url("../images/jumbo.jpg");
     background-size: 100% 100%;
   }
-  #logo .panel {
+  .logo-section .panel {
     background-image: url("../images/jumbo.jpg");
   }
-  #logo h1 {
+  .logo-section h1 {
     font-size: 1.5em;
     width: 50%;
     padding: 0 1em 3em 0;
   }
 }
 @media screen and (min-width: 992px) {
-  #logo {
+  .logo-section {
     max-height: 624px;
   }
-  #logo h1 {
+  .logo-section h1 {
     font-size: 1.5em;
     width: 40%;
     padding: 0 3em 5em 0;
   }
 }
 @media screen and (min-width: 1200px) {
-  #logo {
+  .logo-section {
     max-height: 1040px;
   }
 }
@@ -324,7 +324,7 @@ nav .menu-items li a {
 .color-3:before {
   background-color: rgba(226, 0, 201, 0.28);
 }
-#about {
+.about-section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -338,7 +338,7 @@ nav .menu-items li a {
   padding: 2em 0;
   width: 100%;
 }
-#about > div {
+.about-section > div {
   overflow: hidden;
   text-align: center;
   width: 100%;
@@ -349,10 +349,10 @@ nav .menu-items li a {
   box-sizing: border-box;
   max-width: 500px;
 }
-#about > div h2 {
+.about-section > div h2 {
   transition-duration: 0.5s;
 }
-#about > div .info {
+.about-section > div .info {
   top: 0;
   left: 0;
   padding: 2em 1em;
@@ -363,7 +363,7 @@ nav .menu-items li a {
   transition-duration: 0.5s;
   background-color: white;
 }
-#about > div img {
+.about-section > div img {
   top: 0;
   left: 0;
   position: absolute;
@@ -376,30 +376,30 @@ nav .menu-items li a {
       -ms-transform: rotate(60deg) scale(0.3, 0.3);
           transform: rotate(60deg) scale(0.3, 0.3);
 }
-#about > div:hover {
+.about-section > div:hover {
   background-color: white;
 }
-#about > div:hover h2 {
+.about-section > div:hover h2 {
   background-color: black;
   color: white;
 }
-#about > div:hover button {
+.about-section > div:hover button {
   background-color: black;
   color: white;
   border-color: white;
 }
-#about > div p {
+.about-section > div p {
   text-align: justify;
   padding: 1em;
   font-size: 0.9em;
 }
-#about > div h2 {
+.about-section > div h2 {
   text-transform: uppercase;
   font-weight: 300;
   letter-spacing: 1px;
   font-size: 1.5em;
 }
-#about > div .btn {
+.about-section > div .btn {
   position: absolute;
   margin-left: auto;
   margin-right: auto;
@@ -407,7 +407,7 @@ nav .menu-items li a {
   right: 0;
   bottom: 2%;
 }
-#about > div button {
+.about-section > div button {
   cursor: pointer;
   outline: 0;
   background-color: white;
@@ -420,50 +420,50 @@ nav .menu-items li a {
   transition-duration: 0.5s;
 }
 @media screen and (min-width: 768px) {
-  #about {
+  .about-section {
     padding: 7em 0;
   }
-  #about > div {
+  .about-section > div {
     width: 40.5em;
     max-width: none;
   }
-  #about > div:hover {
+  .about-section > div:hover {
     background-color: white;
   }
-  #about > div:hover h2 {
+  .about-section > div:hover h2 {
     background-color: white;
     color: black;
   }
-  #about > div:hover .info {
+  .about-section > div:hover .info {
     -webkit-transform: rotate(360deg) scale(0.3, 0.3);
         -ms-transform: rotate(360deg) scale(0.3, 0.3);
             transform: rotate(360deg) scale(0.3, 0.3);
     opacity: 0;
   }
-  #about > div:hover img {
+  .about-section > div:hover img {
     -webkit-transform: rotate(360deg) scale(1, 1);
         -ms-transform: rotate(360deg) scale(1, 1);
             transform: rotate(360deg) scale(1, 1);
     opacity: 1;
   }
-  #about > div:hover button {
+  .about-section > div:hover button {
     background-color: black;
     color: white;
     border-color: white;
   }
-  #about > div h2 {
+  .about-section > div h2 {
     letter-spacing: 5px;
     font-size: 2em;
   }
-  #about > div p {
+  .about-section > div p {
     padding: 3em 1.5em;
     font-size: 1em;
   }
-  #about > div .btn {
+  .about-section > div .btn {
     bottom: 10%;
   }
 }
-#images {
+.images-section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -478,7 +478,7 @@ nav .menu-items li a {
   background-color: #efeee9;
   width: 100%;
 }
-#images h3 {
+.images-section h3 {
   font-weight: 100;
   margin-top: 5%;
   font-size: 1.4em;
@@ -498,7 +498,7 @@ nav .menu-items li a {
       -ms-transform: rotate(-90deg) translateY(-20px);
           transform: rotateZ(-90deg) translateY(-20px);
 }
-#images p {
+.images-section p {
   font-size: 0.9em;
   padding: 1em 1.5em;
   color: white;
@@ -514,7 +514,7 @@ nav .menu-items li a {
       -ms-transform: rotate(90deg) translateY(-10px);
           transform: rotateZ(90deg) translateY(-10px);
 }
-#images a {
+.images-section a {
   display: inline-block;
   color: white;
   outline: 0;
@@ -533,7 +533,7 @@ nav .menu-items li a {
       -ms-transform: translateX(-500px);
           transform: translateX(-500px);
 }
-#images .item {
+.images-section .item {
   -webkit-transform: translateZ(0);
           transform: translateZ(0);
   overflow: hidden;
@@ -544,7 +544,7 @@ nav .menu-items li a {
   max-width: 500px;
   position: relative;
 }
-#images .item .descr {
+.images-section .item .descr {
   box-sizing: border-box;
   position: absolute;
   z-index: 5;
@@ -554,7 +554,7 @@ nav .menu-items li a {
   right: 0;
   text-align: center;
 }
-#images .item .descr:after {
+.images-section .item .descr:after {
   z-index: -1;
   transition-duration: 0.25s;
   transition-timing-function: ease-out;
@@ -573,7 +573,7 @@ nav .menu-items li a {
       -ms-transform: translateY(100%);
           transform: translateY(100%);
 }
-#images .item img {
+.images-section .item img {
   width: 100%;
   height: 100%;
   display: block;
@@ -582,39 +582,39 @@ nav .menu-items li a {
   transition-property: transform;
   transition-property: transform, -webkit-transform;
 }
-#images .item:hover img {
+.images-section .item:hover img {
   -webkit-transform: scale(1.1, 1.1) rotateZ(3deg);
       -ms-transform: scale(1.1, 1.1) rotate(3deg);
           transform: scale(1.1, 1.1) rotateZ(3deg);
 }
-#images .item:hover .descr:after,
-#images .item:hover h3,
-#images .item:hover p {
+.images-section .item:hover .descr:after,
+.images-section .item:hover h3,
+.images-section .item:hover p {
   -webkit-transform: rotateZ(0) translateY(0);
       -ms-transform: rotate(0) translateY(0);
           transform: rotateZ(0) translateY(0);
 }
-#images .item:hover a {
+.images-section .item:hover a {
   -webkit-transform: translateX(0);
       -ms-transform: translateX(0);
           transform: translateX(0);
 }
 @media screen and (min-width: 768px) {
-  #images .item {
+  .images-section .item {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 50%;
             flex: 1 1 50%;
     max-width: none;
   }
-  #images h3 {
+  .images-section h3 {
     margin-top: 10%;
   }
-  #images p {
+  .images-section p {
     padding: 1.5em 3em;
   }
 }
 @media screen and (min-width: 992px) {
-  #images .item {
+  .images-section .item {
     -webkit-transform: translateZ(0) scale(1.01, 1.01);
             transform: translateZ(0) scale(1.01, 1.01);
     -webkit-box-flex: 1;
@@ -789,7 +789,7 @@ nav .menu-items li a {
     max-width: 720px;
   }
 }
-#additional-info {
+.additional-info-section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -807,7 +807,7 @@ nav .menu-items li a {
   padding: 2em 0;
   width: 100%;
 }
-#additional-info > div {
+.additional-info-section > div {
   border-top: 5px solid transparent;
   transition-duration: 0.5s;
   display: block;
@@ -819,14 +819,14 @@ nav .menu-items li a {
   max-width: 500px;
   margin: 1em 0;
 }
-#additional-info > div:hover {
+.additional-info-section > div:hover {
   border-top: 5px solid #4daeff;
 }
-#additional-info > div:hover h3 {
+.additional-info-section > div:hover h3 {
   background-color: #4daeff;
   color: white;
 }
-#additional-info > div:hover a {
+.additional-info-section > div:hover a {
   background-color: #4daeff;
   color: white;
   text-decoration: none;
@@ -839,26 +839,26 @@ nav .menu-items li a {
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
 }
-#additional-info > div p {
+.additional-info-section > div p {
   padding: 2em 0;
   font-weight: 300;
   font-size: 1.2em;
 }
-#additional-info > div a {
+.additional-info-section > div a {
   display: inline-block;
   padding: 1em;
   background-color: white;
   color: #4daeff;
   transition-duration: 0.5s;
 }
-#additional-info h3 {
+.additional-info-section h3 {
   font-weight: 900;
   font-size: 1em;
   padding: 1em;
   transition-duration: 0.5s;
 }
 @media screen and (min-width: 992px) {
-  #additional-info {
+  .additional-info-section {
     padding: 6em 0;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -871,7 +871,7 @@ nav .menu-items li a {
         -ms-flex-flow: row;
             flex-flow: row;
   }
-  #additional-info > div {
+  .additional-info-section > div {
     padding: 4em 2em;
     margin: 0 1em;
     max-width: none;
@@ -879,12 +879,12 @@ nav .menu-items li a {
   }
 }
 @media screen and (min-width: 1200px) {
-  #additional-info > div {
+  .additional-info-section > div {
     padding: 4em;
     width: 22%;
   }
 }
-#address {
+.address-section {
   padding: 2em 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -901,7 +901,7 @@ nav .menu-items li a {
           flex-flow: column;
   background-color: #353535;
 }
-#address .info {
+.address-section .info {
   width: 100%;
   max-width: 500px;
   box-sizing: border-box;
@@ -920,27 +920,27 @@ nav .menu-items li a {
           justify-content: center;
   padding: 0 2em 1em 2em;
 }
-#address .info p,
-#address .info h4,
-#address .info span {
+.address-section .info p,
+.address-section .info h4,
+.address-section .info span {
   width: 95%;
   color: white;
   font-style: normal;
   padding: 0.5em 0;
 }
-#address .info p,
-#address .info span {
+.address-section .info p,
+.address-section .info span {
   font-weight: 300;
   padding-bottom: 0.8em;
 }
-#address #map {
+.address-section #map {
   width: 100%;
   height: 35em;
   background-color: grey;
   max-width: 500px;
 }
 @media screen and (min-width: 992px) {
-  #address {
+  .address-section {
     padding: 0;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -953,13 +953,13 @@ nav .menu-items li a {
         -ms-flex-flow: row;
             flex-flow: row;
   }
-  #address #map {
+  .address-section #map {
     height: 35em;
     background-color: grey;
     max-width: 600px;
   }
 }
-footer {
+.footer-section {
   background-color: #efeee9;
   padding: 2em 0;
   display: -webkit-box;
@@ -971,18 +971,18 @@ footer {
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
-footer ul {
+.footer-section ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-footer a {
+.footer-section a {
   display: inline-block;
   padding: 0.3em 1em 0.3em 0;
   text-decoration: none;
   color: #353535;
 }
-footer a:before {
+.footer-section a:before {
   display: block;
   font-family: 'Font Awesome', sans-serif;
   content: "";
@@ -991,16 +991,16 @@ footer a:before {
   padding: 0;
   border: 0;
 }
-footer a.twitter:before {
+.footer-section a.twitter:before {
   content: "\f099";
 }
-footer a.facebook:before {
+.footer-section a.facebook:before {
   content: "\f09a";
 }
-footer a.youtube:before {
+.footer-section a.youtube:before {
   content: "\f166";
 }
-footer a.instagram:before {
+.footer-section a.instagram:before {
   content: "\f16d";
 }
 .remove-spaces {
