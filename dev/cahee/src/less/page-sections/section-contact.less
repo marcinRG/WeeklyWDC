@@ -1,0 +1,99 @@
+@import "../variables";
+@import "../common";
+
+.section-contact {
+  .zero-border-box(white);
+  background-image: url("./../images/bg-contact.jpg");
+  background-repeat: no-repeat;
+  padding-bottom: 4em;
+  background-size: 100% 100%;
+
+  .description {
+    &:extend(.padding);
+  }
+
+  button {
+    .button-mixin(white, @btn-color-2);
+    margin: 0.5em;
+  }
+
+  .address-box {
+    color: white;
+    margin: 1em;
+
+    p,
+    a {
+      display: block;
+      margin: 0.2em 0 0.6em;
+      padding: 0.1em 0 0.1em;
+      text-decoration: none;
+      color: white;
+      letter-spacing: 1.5px;
+    }
+
+    h3 {
+      margin: 0.2em;
+      padding: 0;
+      text-transform: uppercase;
+      font-size: 1.2em;
+    }
+  }
+
+  h2 {
+    .h2-mixin(@footer-color);
+  }
+
+  input,
+  textarea {
+    outline: none;
+    background-color: rgba(0, 194, 191, 0.5);
+    font-weight: 400;
+    border: 1px solid white;
+    border-radius: 2px;
+    text-align: left;
+    padding: 0.7em 3em 0.7em 0.5em;
+    font-size: 1.2em;
+    margin: 0.5em;
+    width: 100%;
+    float: left;
+    color: white;
+
+    &::-webkit-input-placeholder {
+      color: white;
+    }
+
+    &::-moz-placeholder {
+      color: white;
+    }
+
+    &:-ms-input-placeholder {
+      color: white;
+    }
+
+    &:focus {
+      background-color: rgba(0, 194, 191, 0.8);
+    }
+  }
+
+  @media screen {
+    @media (min-width: 768px) {
+
+      .address-box {
+        color: black;
+
+        p,
+        a {
+          color: black;
+        }
+      }
+    }
+
+    @media (min-width: 992px) {
+      input,
+      textarea {
+        width: 85%;
+      }
+    }
+  }
+
+}

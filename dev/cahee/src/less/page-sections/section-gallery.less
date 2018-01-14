@@ -1,0 +1,33 @@
+@import "../variables";
+@import "../common";
+@import "../utils/material-shadows";
+
+.section-gallery {
+  .zero-border-box(@yellow);
+
+  button {
+    .button-mixin(white, @btn-color-2);
+    &:extend(.row-margin);
+  }
+
+  p {
+    &:extend(.padding);
+  }
+
+  h2 {
+    .h2-mixin(@footer-color);
+  }
+
+  img {
+    &:extend(.block-border-box);
+    margin: 10px 0;
+    .BoxShadowHelper(4);
+    width: 100%;
+    height: auto;
+  }
+
+  .img-correction {
+    min-height: 238px;
+  }
+
+}

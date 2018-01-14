@@ -1,0 +1,69 @@
+@import "../variables";
+@import "../common";
+
+.subscribe {
+  .zero-border-box(white);
+  padding: 0 0 340px 0;
+  background-image: url("./../images/bg-subscribe.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+
+  h3 {
+    margin: 1em;
+    text-align: center;
+  }
+
+  p {
+    margin: 0.5em;
+  }
+
+  button {
+    .button-mixin(white, @btn-color-4);
+  }
+
+  input {
+    outline: none;
+    border: 1px solid @break-color;
+    border-radius: 2px;
+    text-align: left;
+    padding: 0.7em 3em 0.7em 0.5em;
+    font-size: 1.2em;
+    margin: 0.5em 0;
+    width: 100%;
+    float: left;
+  }
+
+  @media screen {
+    @media (min-width: 768px) {
+      padding: 2em 0 150px;
+
+      h3 {
+        margin: 2em 0.5em 1em;
+      }
+
+      input {
+        margin: 0 0.5em 0 0;
+        width: 70%;
+      }
+
+    }
+
+
+    @media (min-width: 992px) {
+      padding: 2em 0 4em;
+
+      h3 {
+        margin: 2em 0.5em 1em;
+      }
+
+      input {
+        width: 60%;
+      }
+
+      background-image: url("./../images/bg-subscribe.jpg");
+      background-repeat: no-repeat;
+      background-position: center right;
+    }
+  }
+
+}

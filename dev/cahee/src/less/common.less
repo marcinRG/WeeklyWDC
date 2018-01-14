@@ -1,0 +1,88 @@
+@import "variables";
+@import "utils/fonts";
+@import "utils/material-shadows";
+@import "mixins";
+
+.pacificoFonts {
+  .customFontMixin("Pacifico", "pacifico-regular", 400, normal, @pathPacifico);
+}
+
+.ralewayFonts {
+  .customFontMixin("Raleway", "raleway-regular", 400, normal, @pathRaleway);
+  .customFontMixin("Raleway", "raleway-medium", 500, normal, @pathRaleway);
+  .customFontMixin("Raleway", "raleway-bold", 700, normal, @pathRaleway);
+  .customFontMixin("Raleway", "raleway-black", 900, normal, @pathRaleway);
+}
+
+.pacifico {
+  font-family: "Pacifico", cursive;
+}
+
+.raleway {
+  font-family: "Raleway", sans-serif;
+}
+
+*,
+html,
+body {
+  .raleway;
+  &:extend(.setToZero);
+}
+
+p {
+  font-size: 1.2em;
+  text-align: justify;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 2.4em;
+}
+
+.zero-border-box(@color) {
+  &:extend(.block-border-box);
+  background-color: @color;
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+.button-mixin (@color, @bg-color) {
+  .BoxShadowHelper(3);
+  cursor: pointer;
+  outline: none;
+  color: @color;
+  display: inline-block;
+  background-color: @bg-color;
+  border: 0;
+  border-radius: 2px;
+  text-align: center;
+  padding: 0.7em 3em;
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+
+.h2-mixin(@color) {
+  .raleway;
+  color: @color;
+  padding: 1em 0 0.2em;
+  font-weight: 700;
+  font-size: 4.6em;
+  text-align: center;
+}
+
+.padding {
+  padding-bottom: 2em;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.img-responsive {
+  margin: 0 auto;
+  padding: 0;
+}
+
+.row-margin {
+  margin: 3em 0 5em 0;
+}

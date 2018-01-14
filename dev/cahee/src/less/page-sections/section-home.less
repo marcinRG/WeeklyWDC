@@ -1,0 +1,41 @@
+@import "../variables";
+@import "../common";
+
+.section-home {
+  .zero-border-box(white);
+  background-image: url("./../images/bg-home.jpg");
+  background-repeat: no-repeat;
+  background-size: 150%;
+  background-position: 70% 100%;
+
+  height: 100vh;
+  max-height: 1050px;
+
+  .header-title {
+    margin-top: 20vh;
+
+    .title {
+      &:extend(.setToZero);
+      .raleway;
+      font-weight: 900;
+      font-size: 4em;
+    }
+
+    p {
+      text-align: justify;
+      padding: 0.6em 0;
+    }
+
+    button {
+      .button-mixin(white, @btn-color);
+    }
+  }
+
+  @media screen {
+    @media (min-width: 992px) {
+      background-size: cover;
+      background-position: 0 0;
+    }
+  }
+
+}

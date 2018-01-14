@@ -1,0 +1,44 @@
+@import "../variables";
+@import "../common";
+
+.footer-section {
+  .zero-border-box(@footer-color);
+  color: white;
+
+  .footer {
+
+    .part {
+
+      &:nth-of-type(1) {
+
+        p {
+          text-align: left;
+          font-size: 1.2em;
+        }
+
+      }
+
+      &:nth-of-type(2) {
+
+        p {
+          .pacifico;
+          font-size: 2em;
+          text-align: center;
+        }
+      }
+
+      &:nth-of-type(3) {
+
+        p {
+          font-size: 1em;
+          text-align: right;
+
+          span {
+            color: @btn-color-3;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+}
