@@ -1,0 +1,78 @@
+@import "../variables";
+@import "../mixins";
+@import "../common";
+
+.contact-section {
+  background-color: @bg-color-1;
+  text-align: center;
+  padding-top: 5em;
+
+  h2 {
+    .montserrat;
+    font-size: 2em;
+    padding: 3em 0;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 0;
+    color: white;
+  }
+
+  button {
+    .montserrat;
+    cursor: pointer;
+    background-color: @bg-color-1;
+    padding: 0 25px;
+    border-radius: 5px;
+    font-size: 1em;
+    height: 3em;
+    text-transform: uppercase;
+    outline: 0;
+    color: white;
+    border: 3px white solid;
+    margin-bottom: 5em;
+
+    &:hover {
+      background-color: white;
+      color: @bg-color-1;
+    }
+  }
+
+  div {
+    &:extend(.block-border-box);
+    width: 100%;
+    padding: 2em 0;
+    background-color: white;
+  }
+
+  ul {
+    &:extend(.block-border-box);
+    width: 100%;
+    list-style-type: none;
+
+    li {
+      padding: 0.5em 0;
+    }
+  }
+
+  @media screen {
+    @media (min-width: @media-br-1) {
+
+      ul {
+        width: 720px;
+        margin: auto;
+        overflow: hidden;
+
+        li {
+          display: block;
+          float: left;
+          padding-left: 0.5em;
+        }
+
+        &::after {
+          clear: both;
+        }
+      }
+    }
+  }
+}

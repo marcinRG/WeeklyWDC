@@ -1,0 +1,111 @@
+@import "variables";
+@import "mixins";
+@import "utils/fonts";
+@import "utils/material-shadows";
+
+
+.montserratFonts {
+  .customFontMixin('Montserrat', 'montserrat-regular', 400, normal, @pathMontserrat);
+  .customFontMixin('Montserrat', 'montserrat-bold', 700, normal, @pathMontserrat);
+}
+
+.poppinsFonts {
+  .customFontMixin('Roboto Slab', 'robotoslab-thin', 100, normal, @pathRobotoSlab);
+  .customFontMixin('Roboto Slab', 'robotoslab-light', 300, normal, @pathRobotoSlab);
+  .customFontMixin('Roboto Slab', 'robotoslab-regular', 400, normal, @pathRobotoSlab);
+  .customFontMixin('Roboto Slab', 'robotoslab-bold', 700, normal, @pathRobotoSlab);
+}
+
+.robotoSlab {
+  font-family: 'Roboto Slab', serif;
+}
+
+.montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.z-index-relative(@position) {
+  z-index: @position;
+  position: relative;
+}
+
+.btn-green {
+  .montserrat;
+  cursor: pointer;
+  padding: 0 45px;
+  background-color: @bg-color-1;
+  border-radius: 40px;
+  font-size: 0.86em;
+  height: 4em;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 3px @color-3;
+  outline: 0;
+  color: white;
+  border: 1px @bg-color-1 solid;
+
+  &:hover {
+    color: @bg-color-1;
+    background-color: white;
+    border-color: white;
+  }
+
+}
+
+.h2-all {
+  .montserrat;
+  font-size: 2em;
+  padding: 5em 0 0.1em 0;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.h3-all {
+  .montserrat;
+  font-size: 1em;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 1em 2em;
+}
+
+p {
+  .robotoSlab;
+}
+
+.p-bigger {
+  .robotoSlab;
+  font-weight: 400;
+  font-size: 0.9em;
+  color: @color-2;
+  padding: 1em 1em 3em 1em;
+  text-align: center;
+}
+
+.p-mid {
+  font-weight: 300;
+  font-size: 0.8em;
+}
+
+.p-smaller {
+  font-weight: 300;
+  text-align: center;
+  font-size: 0.7em;
+  padding: 0 2em;
+}
+
+*,
+html,
+body {
+  &:extend(.setToZero);
+  //transition-duration: 0.3s;
+}
+
+@media screen {
+  @media (min-width: @media-br-3) {
+    body {
+      max-width: 1670px;
+      margin: 0 auto;
+    }
+  }
+}
