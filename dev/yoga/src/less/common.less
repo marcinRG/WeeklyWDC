@@ -1,0 +1,61 @@
+@import "variables";
+@import "utils/fonts";
+@import "mixins";
+
+.ptSerifFonts {
+  .customFontMixin('PT Serif', 'pt_serif-web-regular', 400, normal, @pathPTSerif);
+  .customFontMixin('PT Serif', 'pt_serif-web-italic', 400, italic, @pathPTSerif);
+
+  .customFontMixin('PT Serif', 'pt_serif-web-bold', 700, normal, @pathPTSerif);
+  .customFontMixin('PT Serif', 'pt_serif-web-bolditalic', 700, italic, @pathPTSerif);
+}
+
+.poppinsFonts {
+  .customFontMixin('Poppins', 'poppins-light', 300, normal, @pathPoppins);
+  .customFontMixin('Poppins', 'poppins-regular', 400, normal, @pathPoppins);
+  .customFontMixin('Poppins', 'poppins-medium', 500, normal, @pathPoppins);
+  .customFontMixin('Poppins', 'poppins-semibold', 600, normal, @pathPoppins);
+  .customFontMixin('Poppins', 'poppins-bold', 700, normal, @pathPoppins);
+}
+
+.ptserif {
+  font-family: 'PT Serif', serif;
+}
+
+.poppins {
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  counter-reset: points-counter;
+  &:extend(.setToZero);
+}
+
+p {
+  &:extend(.font-grey-size);
+  .ptserif;
+  font-size: 1.2em;
+  line-height: 2em;
+}
+
+h2 {
+  .poppins;
+  font-size: 2.5em;
+  font-weight: 600;
+
+
+  &::before {
+    .ptserif;
+    font-weight: bold;
+    font-size: 2.6em;
+    color: @num-color;
+    content: "0" counter(points-counter) ".";
+    counter-increment: points-counter;
+  }
+
+  & > em {
+    color: @bg-color;
+    font-style: normal;
+  }
+
+}

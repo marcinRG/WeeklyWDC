@@ -1,0 +1,64 @@
+@import "../variables";
+@import "../mixins";
+@import "../common";
+@import "../utils/material-shadows";
+
+.subscribe {
+  &:extend(.textCenter);
+  &:extend(.block-border-box);
+  .ptserif;
+  width: 100%;
+  padding: 3% 0;
+  background-color: @bg-color;
+  color: white;
+  overflow: hidden;
+
+  & h3 {
+    font-size: 2em;
+    text-align: center;
+  }
+
+  & p {
+    &:extend(.setToZero);
+    color: white;
+  }
+
+  .sub-description {
+    background: none;
+
+    @media screen {
+      @media (min-width: 768px) {
+        background-image: url("./../images/arrow.png");
+        padding-right: 180px;
+        background-repeat: no-repeat;
+        background-position: right center;
+      }
+    }
+  }
+
+  .btn-cont {
+    @media screen {
+      @media (min-width: 768px) {
+        text-align: left;
+      }
+    }
+  }
+
+  & button {
+    background-color: white;
+    font-weight: bold;
+    padding: 1.2em;
+    color: @bg-color;
+    border-radius: 4px;
+    border: 1px solid @bg-color;
+    transition: box-shadow 1s, color 0.5s, transform 0.3s;
+  }
+
+  button:hover {
+    .BoxShadowHelper(4);
+    color: @strong-clr;
+    transform: scale(1.1, 1.1);
+  }
+}
+
+

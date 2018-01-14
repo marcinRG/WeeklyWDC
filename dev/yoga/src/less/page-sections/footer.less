@@ -1,0 +1,72 @@
+@import "../variables";
+@import "../mixins";
+@import "../common";
+
+.page-footer {
+  &:extend(.setToZero);
+  margin: 4em 0 1em;
+  background-image: url("./../images/logo-green.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  width: 100%;
+  min-height: 85px;
+  padding-top: 55px;
+  color: @cgrey600;
+  font-size: 0.9em;
+
+  @media screen {
+    @media (min-width: 768px) {
+      background-position: left center;
+      padding-top: 0;
+      padding-left: 85px;
+    }
+  }
+
+  .footer {
+    &:extend(.block-border-box);
+    &:extend(.setToZero);
+    overflow: hidden;
+    min-height: 85px;
+
+    &::after {
+      clear: both;
+    }
+
+    @media screen {
+      @media (min-width: 768px) {
+        padding-top: 40px;
+      }
+    }
+  }
+
+  & span {
+    &:extend(.block-border-box);
+    &:extend(.setToZero);
+    float: left;
+    width: 40%;
+    text-align: left;
+  }
+
+  & ul {
+    &:extend(.block-border-box);
+    &:extend(.setToZero);
+    text-align: right;
+    float: right;
+    width: 60%;
+    padding-right: 0.2em;
+    list-style-type: none;
+
+    & li {
+      display: inline-block;
+
+      a {
+        color: @cgrey600;
+
+        &:hover {
+          text-decoration: underline;
+          color: @cgrey600;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+@import "../variables";
+@import "../mixins";
+@import "../common";
+
+.features-section {
+  padding-top: 80px;
+
+  & ul {
+    list-style-type: none;
+    &:extend(.setToZero);
+
+    & > li {
+      display: block;
+
+      & > span {
+        color: @bg-color;
+        background-color: white;
+      }
+
+      & > h3 {
+        .poppins;
+        font-weight: 600;
+        display: inline-block;
+      }
+    }
+  }
+}

@@ -1,0 +1,57 @@
+@import "../variables";
+@import "../mixins";
+@import "../common";
+
+.about-section {
+  background-image: url("./../images/upper-shape.png");
+  padding-top: 80px;
+  background-repeat: no-repeat;
+  background-size: 100% 80px;
+  background-position: top center;
+
+  & > div {
+    background-image: url("./../images/bottom-shape.png");
+    padding-bottom: 155px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 150px;
+    background-position: bottom center;
+    min-height: 150px;
+
+    & p {
+      &:extend(.setToZero);
+      margin-bottom: 2em;
+    }
+
+    & ul {
+      &:extend(.setToZero);
+      list-style-type: none;
+      counter-reset: lix-counter;
+
+      & > li {
+        .poppins;
+        font-weight: 600;
+        margin: 0.5em 0;
+        display: block;
+        font-size: @font-size;
+
+        &::before {
+          .setToZero;
+          margin-right: 0.5em;
+          width: 45px;
+          height: 45px;
+          font-size: 16px;
+          box-sizing: border-box;
+          display: inline-block;
+          padding: 13.5px;
+          text-align: center;
+          border-radius: 50%;
+          background-color: @bg-color;
+          color: white;
+          content: counter(lix-counter);
+          counter-increment: lix-counter;
+        }
+      }
+    }
+  }
+}

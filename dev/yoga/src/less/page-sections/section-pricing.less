@@ -1,0 +1,130 @@
+@import "../variables";
+@import "../mixins";
+@import "../common";
+@import "../utils/material-shadows";
+
+.pricing-section {
+  background-image: url("./../images/bottom-shape-2.png");
+  padding-bottom: 50px;
+  padding-top: 80px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: bottom center;
+
+  .price-offer {
+    .BoxShadowHelper(4);
+    margin: 2em 2em;
+    text-align: center;
+    padding: 2em 0;
+    background-image: url("./../images/plans-bg.png");
+    background-repeat: no-repeat;
+    background-color: white;
+
+    &:hover {
+
+      h4 {
+        .poppins;
+        background-color: @bg-color;
+        color: white;
+      }
+    }
+
+    @media screen {
+      @media (min-width: 768px) {
+        margin: 1.5em 0;
+      }
+    }
+
+    & h3 {
+      &:extend(.block-border-box);
+      &:extend(.setToZero);
+      .poppins;
+      width: 100%;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: 900;
+      margin: 1.8em 0 0 0;
+      font-size: 2em;
+    }
+
+    & h4 {
+      &:extend(.block-border-box);
+      &:extend(.setToZero);
+      .poppins;
+      width: 100%;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: bold;
+      margin: 1em 0;
+      padding: 1em 0;
+      border-left: 3px solid @bg-color;
+      border-right: 3px solid @bg-color;
+      transition: background-color 0.5s, color 1s;
+    }
+
+    & p {
+      padding: 0 2.5em;
+      text-align: center;
+      font-size: 1em;
+    }
+
+    & button {
+      .poppins;
+      outline: 0;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: 800;
+      font-size: 1em;
+      background-color: unset;
+      padding: 10px;
+      margin: 4em 0;
+      transition: color 1s, border 0.5s, shadow-box 1s;
+      border: 1px solid transparent;
+      border-radius: 3px;
+
+      &:hover {
+        .BoxShadowHelper(3);
+        color: @strong-clr;
+        border: 1px solid @cgrey300;
+
+        & span {
+          animation-duration: 1s;
+          animation-name: button-animation;
+          animation-iteration-count: infinite;
+
+        }
+      }
+
+      & span {
+        font-size: 0.8em;
+      }
+    }
+  }
+
+  @keyframes button-animation {
+    0% {
+      transform: translateX(0) scale(1, 1);
+    }
+
+    50% {
+      transform: translateX(5px) scale(1.2, 1.2);
+    }
+
+    100% {
+      transform: translateX(0) scale(1, 1);
+    }
+  }
+
+  .ffirst {
+    background-position: left bottom;
+  }
+
+  .fsec {
+    background-position: center bottom;
+  }
+
+  .fthird {
+    background-position: right bottom;
+  }
+}

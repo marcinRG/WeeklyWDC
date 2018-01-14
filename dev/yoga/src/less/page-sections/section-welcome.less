@@ -1,0 +1,46 @@
+@import "../variables";
+@import "../mixins";
+@import "../common";
+
+.welcome-section {
+  background-image: url("./../images/welcome-back-sl.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+
+  @media screen {
+    @media (min-width: 780px) {
+      background-image: url("./../images/welcome-back-md.jpg");
+    }
+  }
+
+  @media screen {
+    @media (min-width: 1000px) {
+      background-image: url("./../images/welcome-back.jpg");
+    }
+  }
+
+  header {
+    padding-top: 22vh;
+
+    h1 {
+      .poppins;
+      &:extend(.setToZero);
+      line-height: 1em;
+      color: white;
+      text-transform: uppercase;
+      font-size: 4em;
+      font-weight: 600;
+      text-shadow: 1px 1px 9px @cgrey900;
+    }
+
+    p {
+      &:extend(.setToZero);
+      padding-top: 0.6em;
+      color: white;
+      text-shadow: 1px 1px 2px @cgrey900;
+    }
+
+  }
+}
