@@ -1,0 +1,21 @@
+{
+  "rules": {
+    "string-quotes": "double",
+    "block-no-empty": null,
+    "color-no-invalid-hex": true,
+    "comment-empty-line-before": [
+      "never"
+    ],
+    "declaration-colon-space-after": "always",
+    "max-empty-lines": 2,
+    "unit-whitelist": [
+      "em",
+      "rem",
+      "%",
+      "s",
+      "px",
+      "vh",
+      "deg"
+    ]
+  }
+}
