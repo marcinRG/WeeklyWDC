@@ -1,0 +1,28 @@
+@import "variables";
+@import "mixins";
+@import "common";
+@import "utils/material-shadows";
+
+.navbar-change {
+  padding: 0;
+  border-bottom: 1px solid @bg-color-2;
+
+  @media screen {
+    @media (min-width: @media-br-1) {
+      .nav {
+        padding: 0;
+      }
+    }
+  }
+
+}
+
+.nav {
+  .menu-items > ul > li > a {
+
+    &.item-change {
+      color: @color-3;
+    }
+  }
+}
+

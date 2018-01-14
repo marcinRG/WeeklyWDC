@@ -1,0 +1,144 @@
+@import "../variables";
+@import "../mixins";
+@import "../common";
+
+.culture-section {
+  background-color: white;
+  margin: 0 0 2em 0;
+
+  h2 {
+    &:extend(.h2-all);
+  }
+
+  p {
+    &:extend(.p-bigger);
+  }
+
+  ul {
+    &:extend(.block-border-box);
+    list-style-type: none;
+    width: 100%;
+    padding-bottom: 2em;
+
+    & > li:nth-of-type(1) {
+
+      &::before {
+        background-position: -76px -55px;
+      }
+    }
+
+    & > li:nth-of-type(2) {
+
+      &::before {
+        background-position: -138px -55px;
+      }
+    }
+
+    & > li:nth-of-type(3) {
+
+      &::before {
+        background-position: -7px -55px;
+      }
+    }
+
+    & > li {
+      &:extend(.block-border-box);
+      width: 100%;
+      margin-top: 2em;
+      position: relative;
+
+      &::before {
+        content: "";
+        position: relative;
+        display: block;
+        margin: 2em auto 0 auto;
+        padding: 12px;
+        border: 3px solid @color-2;
+        width: 51px;
+        height: 51px;
+        border-radius: 50%;
+        background-image: url("./../images/icon.png");
+        background-repeat: no-repeat;
+        background-origin: content-box;
+
+      }
+
+      h3 {
+        &:extend(.h3-all);
+      }
+
+      p {
+        &:extend(.p-smaller);
+      }
+    }
+  }
+
+  @media screen {
+    @media (min-width: @media-br-1) {
+
+      ul {
+        overflow: hidden;
+
+        li {
+          display: block;
+          width: 30%;
+          float: left;
+        }
+      }
+    }
+  }
+
+  @media screen {
+    @media (min-width: @media-br-1) {
+      ul {
+        margin: auto;
+        width: 95%;
+        overflow: hidden;
+
+        li {
+          .block-border-box;
+          width: 31%;
+          padding: 0 0.1em;
+          float: left;
+        }
+      }
+    }
+  }
+
+  @media screen {
+    @media (min-width: @media-br-3) {
+
+      ul {
+        margin: auto;
+        width: 85%;
+        overflow: hidden;
+
+        & > li {
+          .block-border-box;
+          width: 32%;
+          padding: 0 3em;
+
+          &:nth-of-type(1),
+          &:nth-of-type(2) {
+
+            &::after {
+              content: "";
+              display: block;
+              width: 10em;
+              height: 5px;
+              border-radius: 2px;
+              background-color: @color-2;
+              position: absolute;
+              top: 45%;
+              left: 80%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &::after {
+    clear: both;
+  }
+}

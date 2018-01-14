@@ -1,0 +1,74 @@
+@import "../variables";
+@import "../mixins";
+@import "../common";
+
+.home-section {
+  &:extend(.block-border-box);
+  width: 100%;
+
+  & > div {
+    &:extend(.block-border-box);
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    background-image: url("./../images/jumbo-sm.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    &::before {
+      &:extend(.block-border-box);
+      content: "";
+      opacity: 0.65;
+      position: absolute;
+      background-color: black;
+      width: 100%;
+      height: 100vh;
+      top: 0;
+      left: 0;
+    }
+
+    h1 {
+      .z-index-relative(5);
+      .montserrat;
+      padding-top: 1.5em;
+      font-size: 3.1em;
+      text-align: center;
+      font-weight: 700;
+      color: white;
+      text-transform: uppercase;
+      line-height: 105%;
+    }
+
+    p {
+      .z-index-relative(5);
+      .robotoSlab;
+      padding: 2.5em 0.6em 3.5em 0.6em;
+      text-transform: none;
+      color: white;
+      font-weight: 300;
+    }
+
+    button {
+      .z-index-relative(5);
+      .btn-green;
+    }
+
+  }
+
+  @media screen {
+    @media (min-width: @media-br-1) {
+      padding-top: 137px;
+
+      div {
+        background-image: url("./../images/jumbo-bg.jpg");
+        height: 50vh;
+
+        &::before {
+          height: 50vh;
+        }
+      }
+    }
+  }
+}

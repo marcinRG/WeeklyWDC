@@ -1,0 +1,143 @@
+@import "../variables";
+@import "../mixins";
+@import "../common";
+
+.clients-section {
+  background-color: white;
+  padding-bottom: 2em;
+  overflow: hidden;
+
+  p {
+    &:extend(.p-mid);
+  }
+
+  & > p:first-of-type {
+    &:extend(.p-bigger);
+  }
+
+  h2 {
+    &:extend(.h2-all);
+  }
+
+  h3 {
+    &:extend(.h3-all);
+  }
+
+  img {
+    margin: 2em auto;
+    display: block;
+    width: 250px;
+    height: auto;
+    border-radius: 50%;
+  }
+
+  blockquote {
+    &:extend(.block-border-box);
+    width: 100%;
+
+    q {
+      &:extend(.block-border-box);
+      .robotoSlab;
+      width: 100%;
+      font-size: 0.9em;
+      text-align: justify;
+      font-weight: 400;
+      color: @color-2;
+      padding: 0 1em;
+    }
+
+    footer {
+      .robotoSlab;
+      color: @bg-color-1;
+      font-weight: bold;
+      text-align: center;
+    }
+  }
+
+  @media screen {
+    @media (min-width: @media-br-1) {
+
+      div {
+        &:extend(.block-border-box);
+        padding: 2em 2em 0 2em;
+        width: 80%;
+        height: 350px;
+
+        blockquote {
+          display: block;
+          width: 55%;
+        }
+
+        img {
+          display: block;
+          float: right;
+          width: 250px;
+          padding: 0;
+          margin: 0;
+        }
+
+        footer {
+          margin: 0;
+          padding: 1.2em 0;
+        }
+
+      }
+
+      div:nth-of-type(1) {
+        float: right;
+
+        blockquote {
+          float: left;
+        }
+
+        img {
+          float: right;
+        }
+      }
+
+      div:nth-of-type(2) {
+        float: left;
+
+        blockquote {
+          float: right;
+        }
+
+        img {
+          float: left;
+        }
+      }
+
+      div::after {
+        clear: both;
+      }
+    }
+  }
+
+  @media screen {
+    @media (min-width: @media-br-2) {
+      div {
+        width: 70%;
+
+        blockquote {
+          width: 60%;
+        }
+      }
+    }
+  }
+
+  @media screen {
+    @media (min-width: @media-br-3) {
+      div {
+        width: 60%;
+
+        blockquote {
+          width: 70%;
+        }
+      }
+    }
+  }
+
+  &::after {
+    clear: both;
+  }
+}

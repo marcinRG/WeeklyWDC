@@ -1,0 +1,223 @@
+@import "../variables";
+@import "../mixins";
+@import "../common";
+
+.blog-section {
+  overflow: hidden;
+  background-color: @bg-color-3;
+  color: white;
+
+  & > div {
+    &:extend(.block-border-box);
+    width: 100%;
+
+    & > h3 {
+      &:extend(.h3-all);
+      padding: 3em;
+    }
+  }
+
+  .contact {
+    &:extend(.block-border-box);
+    width: 95%;
+    margin: 0 auto;
+
+    & > p:nth-of-type(1)::before {
+      background-position: -68px -10px;
+    }
+
+    & > p:nth-of-type(2)::before {
+      background-position: -5px -10px;
+    }
+
+    & > p:nth-of-type(3)::before {
+      background-position: -37px -10px;
+    }
+
+    & > p::before {
+      content: "";
+      background-image: url("./../images/icon.png");
+      background-repeat: no-repeat;
+      display: inline-block;
+      width: 26px;
+      height: 33px;
+      position: absolute;
+      top: 0;
+      left: 10px;
+    }
+
+    & > p {
+      &:extend(.block-border-box);
+      font-size: 1em;
+      font-weight: 500;
+      width: 100%;
+      height: 33px;
+      margin: 0;
+      position: relative;
+      margin-bottom: 1em;
+
+      & > span {
+        display: inline-block;
+        padding-top: 2px;
+        position: absolute;
+        left: 45px;
+      }
+    }
+  }
+
+  .posts {
+    &:extend(.block-border-box);
+    width: 95%;
+    margin: 0 auto;
+
+    ul {
+      list-style-type: none;
+      &:extend(.block-border-box);
+      width: 100%;
+
+      & > li {
+        &:extend(.block-border-box);
+        width: 100%;
+        overflow: hidden;
+        padding-bottom: 1em;
+
+        & > a {
+          .robotoSlab;
+          font-size: 1em;
+          font-weight: 500;
+          display: inline-block;
+          float: left;
+          color: white;
+          width: 70%;
+          text-decoration: none;
+          padding: 0 2px 0 5px;
+
+          &:hover {
+            color: @bg-color-1;
+            transition-duration: 0s;
+          }
+
+        }
+
+        &::before {
+          content: "";
+          float: left;
+          background-image: url("./../images/icon.png");
+          background-repeat: no-repeat;
+          display: block;
+          width: 27px;
+          height: 2em;
+        }
+
+        &:after {
+          clear: both;
+        }
+
+        &.article::before {
+          background-position: -159px -10px;
+        }
+
+        &.multimedia::before {
+          background-position: -128px -10px;
+        }
+
+        &.images::before {
+          background-position: -195px -10px;
+        }
+      }
+    }
+  }
+
+  .tweets {
+    &:extend(.block-border-box);
+    width: 95%;
+    margin: 0 auto;
+
+    ul {
+      list-style-type: none;
+      &:extend(.block-border-box);
+      width: 100%;
+
+      & > li {
+        cursor: pointer;
+        &:extend(.block-border-box);
+        overflow: hidden;
+        padding-bottom: 1em;
+        width: 100%;
+
+        &:hover {
+          color: @bg-color-1;
+          transition-duration: 0s;
+        }
+
+        &::before {
+          content: "";
+          float: left;
+          background-image: url("./../images/icon.png");
+          background-repeat: no-repeat;
+          background-origin: content-box;
+          display: block;
+          width: 24px;
+          height: 20px;
+          margin-bottom: 40px;
+          background-position: -104px -10px;
+          margin-left: 10px;
+        }
+
+        & > a {
+          width: 80%;
+          display: block;
+          float: left;
+
+          & > span {
+            .robotoSlab;
+          }
+        }
+
+        &::after {
+          clear: both;
+        }
+      }
+    }
+
+    .tweet {
+      display: block;
+      font-weight: 700;
+    }
+
+    .tags {
+      display: block;
+      font-style: italic;
+    }
+
+    .last-update {
+      display: block;
+    }
+  }
+
+  @media screen {
+    @media (min-width: @media-br-1) {
+
+      .posts,
+      .tweets,
+      .contact {
+        width: 70%;
+      }
+    }
+
+    @media (min-width: @media-br-2) {
+
+      .posts,
+      .tweets,
+      .contact {
+        float: left;
+        width: 31%;
+        margin: 0 1%;
+      }
+    }
+  }
+
+  &::after {
+    clear: both;
+  }
+}

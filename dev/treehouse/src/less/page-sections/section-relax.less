@@ -1,0 +1,135 @@
+@import "../variables";
+@import "../mixins";
+@import "../common";
+
+.relax-section {
+
+  &:extend(.block-border-box);
+  width: 100%;
+  overflow: hidden;
+
+  &::before {
+    display: none;
+  }
+
+  & > div {
+    &:extend(.block-border-box);
+    background-image: url("./../images/sea-sm.jpg");
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 0 1em 3em 2em;
+    background-color: black;
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      opacity: 0.65;
+      background-color: black;
+    }
+
+    h2 {
+      .z-index-relative(5);
+      .montserrat;
+      padding: 3em 0 0.8em 0;
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 0;
+      color: white;
+      font-size: 1.5em;
+      text-align: left;
+
+      span {
+        color: @bg-color-1;
+      }
+    }
+
+    ul {
+      &:extend(.block-border-box);
+      list-style-type: none;
+      padding-bottom: 3em;
+
+      li {
+        .z-index-relative(5);
+        &:extend(.block-border-box);
+        padding: 0.8em 0;
+        width: 100%;
+        overflow: hidden;
+
+        &::before {
+          content: "";
+          float: left;
+          display: block;
+          height: 35px;
+          width: 35px;
+          background-image: url("./../images/icon.png");
+          background-repeat: no-repeat;
+          background-position: -229px -55px;
+        }
+
+        span {
+          .robotoSlab;
+          font-size: 0.8em;
+          float: left;
+          display: block;
+          color: white;
+          position: absolute;
+          margin-left: 40px;
+          padding-top: 8px;
+          font-weight: 300;
+        }
+      }
+    }
+
+    p {
+      .z-index-relative(5);
+      &:extend(.p-mid);
+      text-align: left;
+      color: white;
+    }
+
+    button {
+      .z-index-relative(5);
+      .btn-green;
+    }
+  }
+
+  @media screen {
+    @media (min-width: @media-br-1) {
+      overflow: hidden;
+
+      & > div {
+        &:extend(.block-border-box);
+        background-image: url("./../images/sea-bg.jpg");
+        background-attachment: fixed;
+        width: 80%;
+        height: 490px;
+        float: right;
+      }
+
+      &::before {
+        &:extend(.block-border-box);
+        background-color: @bg-color-2;
+        content: "";
+        display: block;
+        width: 20%;
+        height: 490px;
+        float: left;
+        background-position: right center;
+        background-image: url("./../images/cog-half.png");
+        background-repeat: no-repeat;
+      }
+
+      &::after {
+        clear: both;
+      }
+
+    }
+  }
+}
