@@ -1,0 +1,96 @@
+@import "../variables";
+@import "../common";
+
+.section-services {
+  .zero-border-box(@blue);
+
+  h2 {
+    .h2-mixin(white);
+    padding-top: 250px;
+    background-image: url("./../images/bg-services.jpg");
+    background-size: 55%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-height: 600px;
+  }
+
+  .buttons {
+    padding: 10% 0 10% 0;
+  }
+
+  button {
+    &:extend(.block-border-box);
+    .BoxShadowHelper(2);
+    background-color: white;
+    cursor: pointer;
+    outline: none;
+    border-radius: 2px;
+    text-align: center;
+    padding: 1.5em 80px 1.5em 1em;
+    font-weight: 700;
+    font-size: 1.2em;
+    width: 100%;
+    position: relative;
+    margin: 1.5% 0 10px 0;
+
+    &::after {
+      content: "";
+      display: block;
+      //width: 18%;
+      height: 100%;
+      position: absolute;
+      right: 0;
+      top: 0;
+      padding: 10px 10px;
+      width: 78px;
+      border-left: 1px solid @break-color;
+      background-origin: content-box;
+      background-image: url("./../images/icons.png");
+      background-repeat: no-repeat;
+
+    }
+
+    &.shoping {
+
+      &::after {
+        background-position: -1px -35px;
+      }
+    }
+
+    &.products {
+
+      &::after {
+        background-position: -1px -127px;
+      }
+    }
+
+    &.delivery {
+
+      &::after {
+        background-position: -1px -223px;
+      }
+    }
+
+    &.organization {
+
+      &::after {
+        background-position: -1px -318px;
+      }
+    }
+  }
+
+  @media screen {
+    @media (min-width: 768px) {
+      h2 {
+        background-size: contain;
+      }
+    }
+
+    @media (min-width: 992px) {
+
+      .buttons {
+        padding: 30% 0 10% 0;
+      }
+    }
+  }
+}

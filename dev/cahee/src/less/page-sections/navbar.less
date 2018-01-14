@@ -1,0 +1,166 @@
+@import "../variables";
+@import "../common";
+
+.navbar-section {
+
+  z-index: 50;
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  transition-duration: 0.5s;
+
+  .menu-headers {
+    overflow: hidden;
+    width: 100%;
+
+    & > span {
+      .pacifico;
+      font-weight: 400;
+      font-size: 3em;
+      padding: 0;
+      display: block;
+      float: left;
+      width: 75%;
+    }
+
+    .nav-btn {
+      float: right;
+      padding: 5px;
+
+
+      button {
+        cursor: pointer;
+        outline: 0;
+        border: 1px solid @footer-color;
+        border-radius: 2px;
+        width: 33px;
+        height: 33px;
+        background-color: transparent;
+
+        & > span {
+          outline: 0;
+          width: 31px;
+          height: 31px;
+          display: inline-block;
+          background-image: url("./../images/icons.png");
+          background-position: -15px -487px;
+        }
+      }
+
+    }
+
+    &::after {
+      clear: both;
+    }
+  }
+
+  .menu-items {
+    width: 100%;
+    display: none;
+
+    ul {
+      display: block;
+      width: 100%;
+      list-style-type: none;
+
+      li {
+        display: block;
+        width: 100%;
+        text-align: center;
+      }
+
+      a {
+        position: relative;
+        display: inline-block;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: @footer-color;
+        font-size: 1em;
+        padding: 0.5em 0;
+        font-weight: 700;
+
+        &::before {
+          width: 0;
+          height: 3px;
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 0;
+
+        }
+
+        &:hover {
+
+          &::before {
+            width: 100%;
+            background-color: @btn-color;
+            transition-duration: 0.5s;
+            transition-property: width;
+
+          }
+        }
+      }
+    }
+  }
+
+  @media screen {
+    @media (min-width: 768px) {
+      overflow: hidden;
+      width: 100%;
+      padding: 3em 8.3333% 0 8.3333%;
+
+      .menu-headers {
+        width: 20%;
+        float: left;
+
+        span {
+          width: 100%;
+        }
+
+        .nav-btn {
+          display: none;
+        }
+      }
+
+      .menu-items {
+        display: block;
+        float: right;
+        width: 80%;
+        margin: 1em auto 0;
+
+        ul {
+          overflow: hidden;
+
+          li {
+            width: 16%;
+            float: left;
+          }
+
+          &::after {
+            clear: both;
+          }
+        }
+      }
+    }
+
+    @media (min-width: 992px) {
+
+      .menu-items {
+
+        ul {
+          margin-left: 20%;
+
+          li {
+            width: 12%;
+          }
+        }
+      }
+    }
+  }
+
+  &:after {
+    clear: both;
+  }
+
+}

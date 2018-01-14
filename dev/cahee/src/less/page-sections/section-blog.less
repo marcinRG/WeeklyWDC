@@ -1,0 +1,125 @@
+@import "../variables";
+@import "../common";
+@import "../utils/material-shadows";
+
+.section-blog {
+  .zero-border-box(@violet);
+
+  button {
+    .button-mixin(white, @btn-color-3);
+    &:extend(.row-margin);
+  }
+
+  .rs-container {
+
+    .BoxShadowHelper(3);
+    padding: 0;
+    display: inline-block;
+    margin: 1em auto;
+    width: 280px;
+    padding-bottom: 290px;
+    position: relative;
+    background-size: cover;
+
+
+    &.first {
+      background-image: url("./../images/blog-img.jpg");
+    }
+
+    &.second {
+      background-image: url("./../images/blog-img-2.jpg");
+    }
+
+    &.third {
+      background-image: url("./../images/blog-img-3.jpg");
+    }
+
+    .event {
+      position: absolute;
+      top: 5%;
+      left: 5%;
+      width: 90%;
+      height: 90%;
+
+      .date {
+        .setToZero;
+        background-color: rgba(0, 0, 0, 0.5);
+        text-align: center;
+        border-radius: 10px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20%;
+        height: 35%;
+
+        span {
+          display: block;
+          font-size: 1.5em;
+          font-weight: bold;
+        }
+      }
+
+      .description {
+        position: absolute;
+        display: block;
+        top: 40%;
+        font-weight: bold;
+        font-size: 1.5em;
+      }
+
+      .author {
+        .setToZero;
+        position: absolute;
+        display: block;
+        bottom: 0;
+        font-size: 0.7em;
+        font-weight: 300;
+      }
+
+    }
+
+  }
+
+  p {
+    &:extend(.padding);
+    width: 100%;
+    color: white;
+  }
+
+  h2 {
+    .h2-mixin(white);
+  }
+
+  @media screen {
+    @media (min-width: 768px) {
+
+      .rs-container {
+        margin: 1em auto;
+        width: 100%;
+        padding-bottom: 100%;
+
+        .event {
+
+          .date {
+
+            span {
+              font-size: 2em;
+            }
+          }
+
+          .description {
+            font-size: 1.8em;
+            top: 50%;
+          }
+
+          .author {
+            font-size: 1em;
+          }
+        }
+      }
+    }
+
+    @media (min-width: 992px) {
+    }
+  }
+}
