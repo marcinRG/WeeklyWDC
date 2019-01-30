@@ -29,7 +29,7 @@ function SimpleSlider(settings) {
             var span = document.createElement('span');
             span.className = navbarItemClass;
             span.setAttribute('data-number', i);
-            navbar.append(span);
+            navbar.appendChild(span);
         }
         return Array.from(navbar.querySelectorAll('.' + navbarItemClass));
     }
@@ -126,10 +126,17 @@ function SimpleSlider(settings) {
         });
     }
 
+    function addResizeHandler() {
+        window.addEventListener('resize', function () {
+            next();
+        });
+    }
+
     function addHandlers() {
         addNavbarHandlers();
         addNextHandler();
         addPreviousHandler();
+        addResizeHandler();
     }
 
     function prepareForContinuous() {

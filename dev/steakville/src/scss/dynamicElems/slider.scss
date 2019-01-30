@@ -175,14 +175,14 @@
     position: relative;
 
     .nav > span {
-      padding: 0 0.1em;
+      padding: 0 .1em;
     }
 
     .slider-view {
       @include set-to-zero;
       position: relative;
       width: 85%;
-      height: 320px;
+      height: 400px;
       margin: 0 auto;
       overflow: hidden;
 
@@ -191,7 +191,7 @@
         position: absolute;
         white-space: nowrap;
         text-align: center;
-        height: 320px;
+        height: 400px;
         font-size: 0;
         width: 100%;
       }
@@ -203,19 +203,19 @@
         display: inline-block;
         vertical-align: top;
         white-space: normal;
-        height: 320px;
+        height: 400px;
         width: 100%;
-        padding: 4em 0;
+        padding: 3em 0;
 
         & > span {
-          font-size: 1.5em;
+          font-size: 1em;
         }
 
         p {
-          width: 70%;
+          width: 85%;
           display: block;
           margin: 0 auto;
-          padding: 2em;
+          padding: 1.5em;
         }
 
         h4 {
