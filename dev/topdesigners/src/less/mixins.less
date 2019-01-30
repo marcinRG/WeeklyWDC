@@ -1,0 +1,204 @@
+@import "variables";
+
+.setToZero {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.block-border-box {
+  display: block;
+  box-sizing: border-box;
+}
+
+.small-mixin() {
+
+  small {
+    font-size: 0.5em;
+    text-transform: none;
+    font-weight: 300;
+    display: inline-block;
+    width: 100%;
+    position: relative;
+
+    @media screen {
+
+      @media (min-width: @media-br-1) {
+
+        &::before,
+        &::after {
+          content: "";
+          height: 1px;
+          display: inline-block;
+          width: 80px;
+          background-color: white;
+          margin: 0 20px 5px 20px;
+        }
+      }
+    }
+  }
+}
+
+.header-text() {
+  font-size: 2.5em;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: white;
+  width: 100%;
+  position: relative;
+  padding: 3em 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.header-properties {
+  .small-mixin;
+  .header-text;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 40px;
+    left: 10px;
+    right: 10px;
+    bottom: 40px;
+    border: 2px solid white;
+  }
+
+  @media screen {
+
+    @media (min-width: @media-br-1) {
+
+      &:before {
+        content: "";
+        position: absolute;
+        top: 40px;
+        left: 20%;
+        right: 20%;
+        bottom: 40px;
+        border: 2px solid white;
+      }
+    }
+  }
+}
+
+.header-big-letters(@font-size, @font-weight, @font-color, @line-color, @line-width) {
+  font-size: @font-size;
+  font-weight: @font-weight;
+  color: @font-color;
+  text-transform: uppercase;
+
+  &:after {
+    content: '';
+    margin: 10px auto 0 auto;
+    width: @line-width;
+    height: 3px;
+    display: block;
+    background-color: @line-color;
+  }
+}
+
+.frame(@border-width, @border-padding, @border-color, @orientation) {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    box-sizing: border-box;
+    border: @border-width @border-color solid;
+
+    & when (@orientation = "top") {
+      top: 0;
+      bottom: @border-padding;
+      right: @border-padding;
+      left: @border-padding;
+      border-top: 0;
+    }
+
+    & when (@orientation = "bottom") {
+      top: @border-padding;
+      bottom: 0;
+      right: @border-padding;
+      left: @border-padding;
+      border-bottom: 0;
+    }
+
+    & when (@orientation = "left") {
+      top: @border-padding;
+      bottom: @border-padding;
+      right: @border-padding;
+      left: 0;
+      border-left: 0;
+    }
+
+    & when (@orientation = "right") {
+      top: @border-padding;
+      bottom: @border-padding;
+      left: @border-padding;
+      right: 0;
+      border-right: 0;
+    }
+  }
+}
+
+.triangle(@color, @size, @orientation) {
+  overflow: hidden;
+
+  &::after {
+    content: "";
+    height: @size;
+    width: @size;
+    background-color: @color;
+    position: absolute;
+    transform: rotateZ(45deg);
+
+    & when (@orientation = "top") or (@orientation = "bottom") {
+      margin-top: inherit;
+      margin-bottom: inherit;
+      margin-left: auto;
+      margin-right: auto;
+      left: 0;
+      right: 0;
+    }
+
+    & when (@orientation = "top") {
+      bottom: auto;
+      top: calc(-1 * (@size / 2));
+    }
+
+    & when (@orientation = "bottom") {
+      top: auto;
+      bottom: calc(-1 * (@size / 2));
+    }
+
+    & when (@orientation = "left") or (@orientation = "right") {
+      margin-left: inherit;
+      margin-right: inherit;
+      margin-top: auto;
+      margin-bottom: auto;
+      top: 0;
+      bottom: 0;
+    }
+
+    & when (@orientation = "left") {
+      right: auto;
+      left: calc(-1 * (@size / 2));
+    }
+
+    & when (@orientation = "right") {
+      left: auto;
+      right: calc(-1 * (@size / 2));
+    }
+  }
+}
+
+.flex-column-centered {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}

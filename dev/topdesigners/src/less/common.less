@@ -1,0 +1,32 @@
+@import "variables";
+@import "mixins";
+@import "utils/fonts";
+
+.QuickSandFonts {
+  .customFontMixin('QuickSand', 'quicksand-bold', 700, normal, @pathQuickSandFonts);
+  .customFontMixin('QuickSand', 'quicksand-regular', 400, normal, @pathQuickSandFonts);
+  .customFontMixin('QuickSand', 'quicksand-light', 300, normal, @pathQuickSandFonts);
+}
+
+.quicksand() {
+  font-family: 'Quicksand', sans-serif;
+}
+
+*,
+html,
+body {
+  .quicksand;
+  text-align: center;
+  &:extend(.setToZero);
+}
+
+h2 {
+  .header-properties;
+}
+
+section,
+footer {
+  max-width: 1680px;
+  margin: 0 auto;
+}
+

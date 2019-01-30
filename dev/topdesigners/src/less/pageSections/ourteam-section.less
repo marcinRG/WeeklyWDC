@@ -1,0 +1,125 @@
+@import "../variables";
+@import "../mixins";
+@import "../common";
+
+.ourteam-section {
+  h2 {
+    background-image: url("../images/bg-section.jpg");
+  }
+
+  .team {
+
+    display: flex;
+    flex-flow: column;
+    justify-items: center;
+    width: 90%;
+    padding: 2em 0;
+    margin: 0 auto;
+
+    h3 {
+      .header-big-letters(2.5em, 400, black, @bg-red, 120px);
+      line-height: 80%;
+      padding: 0.5em 0 1.5em 0;
+
+      small {
+        font-size: 0.4em;
+        display: inline-block;
+        width: 100%;
+      }
+    }
+
+    .dev {
+      display: flex;
+      flex-flow: row wrap;
+
+      &:nth-of-type(even) {
+
+        .img {
+          .frame(3px, 10px, white, "top");
+          .triangle(white, 100px, "top");
+          order: 2;
+        }
+
+        .info {
+          .frame(3px, 10px, black, "bottom");
+          order: 1;
+        }
+      }
+
+      .img,
+      .info {
+        max-width: 650px;
+      }
+
+      .img {
+        .frame(3px, 10px, white, "bottom");
+        .triangle(white, 100px, "bottom");
+        flex: 1 1 100%;
+        box-sizing: border-box;
+        order: 1;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .info {
+        .frame(3px, 10px, black, "top");
+        width: 100%;
+        flex: 1 1 100%;
+        order: 2;
+        box-sizing: border-box;
+        background-color: white;
+        padding: 3em 0;
+
+        p {
+          width: 75%;
+          display: inline-block;
+        }
+      }
+    }
+  }
+
+  @media screen {
+
+    @media (min-width: @media-br-1) {
+
+      .team {
+
+        .dev {
+          display: flex;
+          flex-flow: row;
+          justify-content: flex-start;
+
+          &:nth-of-type(even) {
+            .img {
+              .frame(3px, 10px, white, "left");
+              .triangle(white, 100px, "left");
+            }
+
+            .info {
+              .frame(3px, 10px, black, "right");
+            }
+          }
+
+          .img,
+          .info {
+            max-width: none;
+          }
+
+          .img {
+            flex: 1 1 50%;
+            .frame(3px, 10px, white, "right");
+            .triangle(white, 100px, "right");
+          }
+
+          .info {
+            flex: 1 1 50%;
+            .frame(3px, 10px, black, "left");
+          }
+        }
+      }
+    }
+  }
+}
