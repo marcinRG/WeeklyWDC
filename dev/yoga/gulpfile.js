@@ -67,7 +67,8 @@ gulp.task('browserify-compil', ['code-check'], function () {
     return browserify({
         entries: [settings.app.jsFile],
         debug: true
-    }).bundle()
+    }).transform('babelify')
+        .bundle()
         .pipe(source(settings.app.compiledJs))
         .pipe(gulp.dest('./'));
 });
