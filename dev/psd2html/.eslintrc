@@ -1,0 +1,33 @@
+{
+  "extends": ["eslint:recommended"],
+  "parserOptions": {
+    "ecmaVersion": 2017,
+    "sourceType": "module"
+  },
+  "rules": {
+    "semi": "off",
+    "indent": "off",
+    "curly": "error",
+    "quotes": [
+      "error",
+      "single"
+    ],
+    "spaced-comment": "off",
+    "space-before-function-paren": "off",
+    "brace-style": "off",
+    "handle-callback-err": "off",
+    "no-new": "off",
+    "no-unused-vars": "off",
+    "no-console": "off",
+    "no-sparse-arrays": "off"
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
+  "plugins": [
+    "standard",
+    "promise"
+  ]
+}
