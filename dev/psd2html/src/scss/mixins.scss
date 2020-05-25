@@ -1,0 +1,21 @@
+@import './utils/material-shadows';
+@import './variables';
+
+@mixin set-to-zero {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin block-border-box {
+  box-sizing: border-box;
+  display: block;
+}
+
+@mixin animation-mixin($duration, $name, $count) {
+  animation-duration: $duration;
+  animation-timing-function: ease-in-out;
+  animation-name: $name;
+  animation-fill-mode: both;
+  animation-iteration-count: $count;
+}
