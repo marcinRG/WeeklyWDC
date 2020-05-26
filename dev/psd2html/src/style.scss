@@ -1,0 +1,73 @@
+@import './scss/variables';
+@import './scss/mixins';
+
+*,
+html,
+body {
+  @include set-to-zero;
+  box-sizing: border-box;
+}
+
+
+.app-header {
+  width: 100%;
+  height: 100vh;
+
+}
+
+.app-title {
+  width: 100%;
+  height: 100vh;
+  background-color: #0E6A04;
+  position: relative;
+
+  .title-begin {
+    @include block-border-box;
+    position: absolute;
+    left: 0;
+    top: 10vh;
+    width: 50%;
+    background-color: #069604;
+    height: 30vh;
+    color: wheat;
+    text-transform: uppercase;
+  }
+
+  .title-end {
+    @include block-border-box;
+    position: absolute;
+    right: 0;
+    bottom: 10vh;
+    width: 50%;
+    background-color: #6EAB08;
+    height: 30vh;
+    color: wheat;
+    text-transform: uppercase;
+  }
+
+  .title-middle {
+    @include block-border-box;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 400px;
+    height: 400px;
+    z-index: 10;
+    line-height: 400px;
+    font-size: 400px;
+    text-align: center;
+    color: wheat;
+    text-transform: uppercase;
+  }
+
+}
+
+.framed-image {
+  @include box-shadow-helper(5);
+  display: block;
+  border: 1px solid $dark-green;
+  width: 300px;
+  padding: 30px;
+}
+
