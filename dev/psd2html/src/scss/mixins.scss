@@ -19,3 +19,11 @@
   animation-fill-mode: both;
   animation-iteration-count: $count;
 }
+
+@mixin font-roboto {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+@mixin font-anton {
+  font-family: 'Anton', sans-serif;
+}

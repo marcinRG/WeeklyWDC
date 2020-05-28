@@ -1,24 +1,185 @@
 @import './scss/variables';
 @import './scss/mixins';
 
+
 *,
 html,
 body {
   @include set-to-zero;
+  @include font-roboto;
   box-sizing: border-box;
 }
 
-
 .app-header {
+  display: none;
   width: 100%;
+  height: 100vh;
+  background-color: white;
+  position: relative;
+  overflow: hidden;
 }
+
+.header-letters {
+  @include font-anton;
+  text-transform: uppercase;
+  font-size: 90px;
+}
+
+.header-img-1 {
+
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 50%;
+
+  &:hover {
+
+    .background-rect-image {
+      fill: #57f897;
+    }
+
+    .monitor-pencils {
+      fill: #f85fc8;
+    }
+
+  }
+
+  .background-rect-image {
+    width: 100%;
+    height: 100%;
+    fill: #fff531;
+    transition-duration: .5s;
+  }
+
+  .monitor-pencils {
+    fill: black;
+  }
+}
+
+.header-img-2 {
+
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 50%;
+  height: 50%;
+
+  .background-rect-operations {
+    width: 100%;
+    height: 100%;
+    fill: #f64075;
+    transition-duration: .5s;
+  }
+
+  .images {
+    fill: black;
+  }
+
+  &:hover {
+
+    .background-rect-operations {
+      fill: #694bff;
+    }
+
+    .images {
+      fill: #fdf208;
+    }
+  }
+}
+
+.header-text-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 50%;
+
+  .rect-1 {
+    transform: skewY(-15deg) translateY(0) rotate(10deg) translateX(-7px);
+    transform-origin: calc(423px + 85px) calc(30px + 60px);
+  }
+
+  .rect-2 {
+    transform: skewY(12deg) skewX(0) translateY(3px) rotate(-7deg) translateX(0);
+    transform-origin: calc(456px + 60px) calc(153px + 65px);
+  }
+
+  .rect-3 {
+    transform: skewY(0) skewX(12deg) translateY(0) rotate(6deg) translateX(-2px);
+    transform-origin: calc(400px + 110px) calc(285px + 62.5px);
+  }
+
+}
+
+.header-text-2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  height: 50%;
+
+  .header-letters {
+    fill: white;
+  }
+
+  .rect-1 {
+    transform: skewY(-3deg) translateY(8px) rotate(6deg) translateX(4px);
+    transform-origin: calc(280px + 250px) calc(60px + 65px);
+  }
+
+  .rect-2 {
+    transform: skewY(-10deg) translateY(-8px) rotate(3deg) translateX(-6px);
+    transform-origin: calc(444px + 85px) calc(190px + 60px);
+  }
+
+  .rect-3 {
+    transform: skewY(4deg) translateY(-11px) rotate(-8deg) translateX(-15px);
+    transform-origin: calc(280px + 250px) calc(310px + 65px);
+  }
+
+
+}
+
 
 .main {
   width: 100%;
+  height: 100vh;
+  background-color: white;
+  overflow: hidden;
+  position: relative;
 }
 
-img {
-  width: auto;
-  height: 100vh;
+.site-snapshot {
+  position: absolute;
+  width: 250px;
+  height: auto;
+  left: 50%;
+  top: 30%;
+  display: none;
+
+  &.img-1 {
+    display: block;
+    transform: translateY(-10px) rotate(10deg) translateX(1px);
+    z-index: 10;
+  }
+
+  &.img-2 {
+    display: block;
+    transform: translateY(60px) rotate(-10deg) translateX(150px);
+    z-index: 11;
+  }
+
+  &.img-3 {
+    display: block;
+    transform: translateY(-50px) rotate(15deg) translateX(-150px);
+    z-index: 12;
+  }
+
 }
+
+.footer {
+  display: none;
+}
+
 
