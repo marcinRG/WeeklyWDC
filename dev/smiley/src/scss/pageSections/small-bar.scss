@@ -1,10 +1,11 @@
+@import '../variables';
+@import '../mixins';
 
 .small-bar {
-  background-color: #1976d3;
+  background-color: $light-blue;
   display: grid;
   grid-template-columns: 100px auto auto 100px;
 }
-
 
 .contact-info {
   display: grid;
@@ -13,19 +14,18 @@
   justify-items: start;
   justify-self: start;
   grid-column: 2 / 3;
-  grid-column-gap: 10px;
+  grid-column-gap: 15px;
 
   .info {
     color: white;
-    font-size: 12px;
-    font-family: 'Roboto', 'sans-serif';
+    font-size: 14px;
     display: inline-block;
-
 
     &.phone-number {
 
       &::before {
-        content: '\01F4DE';
+        @include font-ioniconic;
+        content: $ionicon-var-ios-telephone;
         padding-right: 5px;
       }
     }
@@ -33,13 +33,13 @@
     &.email {
 
       &::before {
-        content: '\01F4E7';
+        @include font-ioniconic;
+        content: $ionicon-var-email;
         padding-right: 5px;
       }
     }
   }
 }
-
 
 .links {
   display: grid;
@@ -54,13 +54,22 @@
   .link {
     font-size: 12px;
     background-color: white;
-    color: #1976d3;
+    color: $light-blue;
     border-radius: 50%;
     width: 35px;
     height: 35px;
     display: grid;
     align-items: center;
     justify-items: center;
-  }
+    cursor: pointer;
 
+    &:hover {
+      background-color: $light-red;
+      color: white;
+    }
+
+    i {
+      font-size: 16px;
+    }
+  }
 }

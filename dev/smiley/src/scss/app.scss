@@ -1,0 +1,89 @@
+@import 'libs/ionicons/ionicons';
+@import 'variables';
+@import 'utils/fonts';
+@import 'utils/material-shadows';
+@import 'mixins';
+@import 'pageSections/small-bar';
+@import 'pageSections/navbar';
+@import 'pageSections/hero-image';
+
+@include custom-font-mixin('Roboto', 'roboto-thin', 100, normal, $path-roboto);
+@include custom-font-mixin('Roboto', 'roboto-light', 300, normal, $path-roboto);
+@include custom-font-mixin('Roboto', 'roboto-regular', 400, normal, $path-roboto);
+@include custom-font-mixin('Roboto', 'roboto-bold', 700, normal, $path-roboto);
+@include custom-font-mixin('ion icons', 'ionicons', 400, normal, $path-ionicons);
+
+*,
+html,
+body {
+  @include font-roboto;
+  padding: 0;
+  margin: 0;
+}
+
+.app {
+  background-color: white;
+}
+
+.main {
+  max-width: 1800px;
+  margin: 0 auto;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 50px 100px 790px 200px 715px 530px 1655px 950px 250px 765px 190px 995px 840px 540px 210px;
+}
+
+
+.short-info {
+  background-color: #1976d3;
+}
+
+.short-movie {
+  background-image: url('../img/skills-bg.jpg');
+  background-position: center;
+}
+
+.our-team {
+  background-color: #1976d3;
+}
+
+.short-description {
+  background-color: #f5f5f5;
+}
+
+.recommendations {
+  background-color: #1976d3;
+}
+
+.pricing {
+  background-color: white;
+}
+
+.latest-news {
+  background-color: white;
+}
+
+.subscribe {
+  background-color: #f5f5f5;
+}
+
+.footer {
+  background-color: #1976d3;
+  font-size: 20px;
+
+  .some-test {
+    @include font-ioniconic;
+    font-size: 20px;
+  }
+
+  .some-else {
+    @include font-ioniconic;
+    color: magenta;
+    font-size: 40px;
+
+    &::before {
+      content: $ionicon-var-android-alarm-clock;
+    }
+  }
+
+}

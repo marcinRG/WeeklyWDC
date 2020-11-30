@@ -1,0 +1,7 @@
+@import '../variables';
+@import '../mixins';
+
+.hero-image {
+  background-image: url('../img/bckgrnd-hero.jpg');
+  background-position: center;
+}

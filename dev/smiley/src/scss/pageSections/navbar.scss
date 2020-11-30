@@ -1,0 +1,66 @@
+@import '../variables';
+@import '../mixins';
+
+.navbar {
+  background-color: white;
+  display: grid;
+  grid-template-columns: 100px auto auto 100px;
+
+  .logo {
+    grid-column: 2 / 3;
+    justify-self: start;
+    align-self: center;
+    height: 52px;
+  }
+
+  .app-menu {
+    grid-column: 3 / 4;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    justify-self: end;
+
+    .menu-item {
+      display: grid;
+      align-items: stretch;
+      justify-items: stretch;
+
+      .link,
+      .search {
+        text-decoration: none;
+        text-transform: uppercase;
+        display: grid;
+        align-items: center;
+        justify-items: center;
+
+      }
+
+      .link {
+        border-bottom: 4px solid transparent;
+        color: $text-black;
+
+        &:hover {
+          border-bottom: 4px solid $light-red;
+          color: $light-red;
+        }
+      }
+
+      .search {
+        i {
+          background-color: $light-red;
+          width: 35px;
+          height: 35px;
+          border-radius: 50%;
+          color: white;
+          font-size: 16px;
+          display: grid;
+          align-items: center;
+          justify-items: center;
+        }
+      }
+
+    }
+
+  }
+
+}
