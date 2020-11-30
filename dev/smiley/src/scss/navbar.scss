@@ -1,0 +1,20 @@
+.navbar {
+  background-color: white;
+  display: grid;
+  grid-template-columns: 100px auto auto 100px;
+
+  .logo {
+    grid-column: 2 / 3;
+    justify-self: start;
+    align-self: center;
+    height: 52px;
+  }
+
+  .app-menu {
+    grid-column: 3 / 4;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+  }
+
+}

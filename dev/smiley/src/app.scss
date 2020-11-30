@@ -1,0 +1,136 @@
+@import 'scss/small-bar';
+@import 'scss/navbar';
+
+*,
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.app {
+  background-color: white;
+}
+
+.main {
+  max-width: 1800px;
+  margin: 0 auto;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 50px 100px 790px 200px 715px 530px 1655px 950px 250px 765px 190px 995px 840px 540px 210px;
+}
+
+.hero-image {
+  background-image: url('img/bckgrnd-hero.jpg');
+  background-position: center;
+}
+
+.short-info {
+  background-color: #1976d3;
+}
+
+.short-movie {
+  background-image: url('img/skills-bg.jpg');
+  background-position: center;
+}
+
+.our-team {
+  background-color: #1976d3;
+}
+
+.short-description {
+  background-color: #f5f5f5;
+}
+
+.recommendations {
+  background-color: #1976d3;
+}
+
+.pricing {
+  background-color: white;
+}
+
+.latest-news {
+  background-color: white;
+}
+
+.subscribe {
+  background-color: #f5f5f5;
+}
+
+.footer {
+  background-color: #1976d3;
+}
+
+
+
+
+
+//article {
+//  margin: 20px;
+//  padding: 0;
+//  box-sizing: border-box;
+//}
+
+//.stripe {
+//  margin: 0;
+//  padding: 0;
+//  box-sizing: border-box;
+//  width: 700px;
+//  height: 120px;
+//  animation-duration: 1s;
+//  background-size: 100% 400%;
+//  animation-direction: alternate;
+//  animation-fill-mode: backwards;
+//  animation-timing-function: linear;
+//  animation-iteration-count: infinite;
+//  animation-name: background-transition;
+//
+//  &:nth-of-type(1) {
+//    height: 60px;
+//    background-image: linear-gradient(#cb1709, #e44847);
+//  }
+//
+//  &:nth-of-type(2) {
+//    background-image: linear-gradient(#cb6415, #e4962a);
+//  }
+//
+//  &:nth-of-type(3) {
+//    background-image: linear-gradient(#cbcb01, #e4e066);
+//  }
+//
+//  &:nth-of-type(4) {
+//    background-image: linear-gradient(#1bcb03, #7be464);
+//  }
+//
+//  &:nth-of-type(5) {
+//    background-image: linear-gradient(#042bcb, #3a48cb);
+//  }
+//
+//  &:nth-of-type(6) {
+//    height: 60px;
+//    background-image: linear-gradient(#c502c6, #ea62f2);
+//  }
+//}
+//
+//@keyframes background-transition {
+//  from {
+//    background-position: 0 0;
+//  }
+//
+//  to {
+//    background-position: 0 100%;
+//  }
+//}
+//
+//.example-2 {
+//  width: 700px;
+//  height: 600px;
+//  background-color: #760540;
+//}
+//
+//.example-3 {
+//  width: 700px;
+//  height: 600px;
+//  background-color: #C00782;
+//}
