@@ -18,3 +18,20 @@
 @mixin  font-ioniconic {
   font-family: 'ion icons', Wingdings;
 }
+
+.button {
+  border: 0;
+  color: white;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  border-radius: 3px;
+  padding: 15px 25px;
+
+  &.blue {
+    background-color: $light-blue;
+    filter: none;
+  }
+
+}

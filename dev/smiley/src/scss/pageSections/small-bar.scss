@@ -5,6 +5,7 @@
   background-color: $light-blue;
   display: grid;
   grid-template-columns: 100px auto auto 100px;
+  grid-template-rows: 50px;
 }
 
 .contact-info {

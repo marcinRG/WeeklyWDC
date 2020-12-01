@@ -1,0 +1,60 @@
+@import '../variables';
+@import '../mixins';
+
+.short-info {
+  display: grid;
+  grid-template-rows: 200px;
+  grid-template-columns: 230px repeat(6, auto) 230px;
+  background: linear-gradient(90deg, $light-blue 0%, $light-blue 50%, $lighter-blue 50%, $lighter-blue 100%);
+
+  .info-panel {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    background-color: $lighter-blue;
+
+    &:nth-of-type(odd) {
+      background-color: $light-blue;
+    }
+
+    &.one {
+      grid-column: 2 / 3;
+    }
+
+    &.two {
+      grid-column: 3 / 4;
+    }
+
+    &.three {
+      grid-column: 4 / 5;
+    }
+
+    &.four {
+      grid-column: 5 / 6;
+    }
+
+    &.five {
+      grid-column: 6 / 7;
+    }
+
+    &.six {
+      grid-column: 7 / 8;
+    }
+
+  }
+
+  i {
+    color: white;
+    font-size: 42px;
+    align-self: end;
+  }
+
+  .info-title {
+    color: white;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bolder;
+    align-self: start;
+  }
+
+}
