@@ -15,37 +15,94 @@
     grid-row-gap: 10px;
   }
 
-  .big-info-title {
-    text-transform: uppercase;
-    font-size: 16px;
-    font-weight: bolder;
-    display: grid;
-    justify-items: start;
-    align-items: center;
-    grid-template-columns: 60px auto;
-
-    &::before {
-      font-weight: bold;
-      color: white;
-      content: 'X';
-      text-align: center;
-      line-height: 50px;
-      vertical-align: center;
-      background-color: $light-red;
-      margin-right: 10px;
-      border-radius: 50%;
-      width: 50px;
-      height: 50px;
-    }
-
-  }
-
   .big-info-desc {
     color: $text-black;
     text-align: justify;
     font-weight: 400;
     font-size: 13px;
     margin-left: 60px;
+  }
+}
+
+.big-info-title {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bolder;
+  display: grid;
+  justify-items: start;
+  align-items: center;
+  grid-template-columns: 60px auto;
+
+  &.cash {
+    &::before {
+      content: $ionicon-var-cash;
+    }
+  }
+
+  &.clock {
+    &::before {
+      content: $ionicon-var-clock;
+    }
+  }
+
+  &.cloud {
+    &::before {
+      content: $ionicon-var-cloud;
+    }
+  }
+
+  &.camera {
+    &::before {
+      content: $ionicon-var-camera;
+    }
+  }
+
+  &.eye {
+    &::before {
+      content: $ionicon-var-eye;
+    }
+  }
+
+  &.lightbulb {
+    &::before {
+      content: $ionicon-var-lightbulb;
+    }
+  }
+
+  &.mic {
+    &::before {
+      content: $ionicon-var-ios-mic;
+    }
+  }
+
+  &.monitor {
+    &::before {
+      content: $ionicon-var-ios-monitor;
+    }
+  }
+
+  &.music {
+    &::before {
+      content: $ionicon-var-ios-musical-notes;
+    }
+  }
+
+
+
+
+  &::before {
+    @include font-ioniconic;
+    font-size: 20px;
+    font-weight: normal;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    vertical-align: center;
+    background-color: $light-red;
+    margin-right: 10px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
   }
 
 }

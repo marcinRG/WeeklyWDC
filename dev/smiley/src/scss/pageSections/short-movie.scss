@@ -1,0 +1,52 @@
+@import '../variables';
+@import '../mixins';
+
+.short-movie {
+  display: grid;
+  position: relative;
+  grid-template-rows: 530px;
+  justify-items: center;
+  align-items: center;
+
+
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    background-image: url('../img/skills-bg.jpg');
+    background-position: center;
+    filter: brightness(.2);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+
+  .btn-ctrl-container {
+    background-color: rgba(255, 255, 255, .4);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .play-button {
+    @include font-ioniconic;
+    border: 0;
+    background-color: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    color: $light-red;
+    font-size: 30px;
+    cursor: pointer;
+
+    &::before {
+      content: $ionicon-var-play;
+    }
+
+  }
+}
