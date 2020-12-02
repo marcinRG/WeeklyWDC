@@ -7,18 +7,45 @@
   grid-template-rows: repeat(3, 1fr);
   grid-template-columns: repeat(3, 1fr);
   column-gap: 30px;
-  row-gap: 50px;
+  grid-row-gap: 50px;
   margin: 100px 310px;
+
+  .info-big {
+    display: grid;
+    grid-row-gap: 10px;
+  }
 
   .big-info-title {
     text-transform: uppercase;
     font-size: 16px;
     font-weight: bolder;
+    display: grid;
+    justify-items: start;
+    align-items: center;
+    grid-template-columns: 60px auto;
+
+    &::before {
+      font-weight: bold;
+      color: white;
+      content: 'X';
+      text-align: center;
+      line-height: 50px;
+      vertical-align: center;
+      background-color: $light-red;
+      margin-right: 10px;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+    }
+
   }
 
   .big-info-desc {
     color: $text-black;
     text-align: justify;
+    font-weight: 400;
+    font-size: 13px;
+    margin-left: 60px;
   }
 
 }
