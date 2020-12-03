@@ -15,7 +15,7 @@
   font-family: 'Roboto', sans-serif;
 }
 
-@mixin  font-ioniconic {
+@mixin font-ioniconic {
   font-family: 'ion icons', Wingdings;
 }
 
@@ -28,10 +28,10 @@
   letter-spacing: 1px;
   border-radius: 3px;
   padding: 15px 25px;
+  cursor: pointer;
 
   &.blue {
     background-color: $light-blue;
     filter: none;
   }
-
 }
