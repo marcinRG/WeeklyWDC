@@ -3,4 +3,79 @@
 
 .our-team {
   background-color: $light-blue;
+  display: grid;
+  justify-items: center;
+  padding: 60px 0;
+
+  .section-title {
+
+    .title {
+      color: white;
+    }
+
+    .subtitle {
+      color: white;
+    }
+
+    &::after {
+      background-color: white;
+    }
+  }
+
+  .people-list {
+    padding-top: 40px;
+    display: grid;
+    grid-column-gap: 20px;
+    grid-template-columns: repeat(3, 370px);
+  }
+
+  .person {
+    background-color: $lighter-blue-2;
+    display: grid;
+    justify-items: center;
+    padding: 40px 0 20px;
+  }
+
+  .person-data {
+    border-top: 1px solid rgba(255, 255, 255, .3);
+    color: white;
+    justify-self: stretch;
+    text-transform: uppercase;
+    display: grid;
+    justify-items: center;
+    padding: 40px 0 20px;
+    font-weight: normal;
+    
+    .name {
+      font-size: 20px;
+    }
+
+    .occupation {
+      font-size: 14px;
+      font-weight: 300;
+    }
+
+  }
+
+  .person-portrait {
+    margin-bottom: 40px;
+    border: 10px solid rgba(255, 255, 255, .2);
+    border-radius: 50%;
+    display: block;
+  }
+
+  .person-links {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    border-top: 1px solid rgba(255, 255, 255, .2);
+
+    .link {
+      color: white;
+      padding: 5px 10px;
+    }
+
+  }
+
+
 }

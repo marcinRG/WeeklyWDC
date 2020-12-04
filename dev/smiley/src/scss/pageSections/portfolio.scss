@@ -5,40 +5,22 @@
   background-color: white;
   display: grid;
   justify-items: center;
-  row-gap: 60px;
+  grid-row-gap: 60px;
   padding: 60px 0;
 
 
   .section-title {
-    position: relative;
-    display: grid;
-    justify-items: center;
-    align-items: center;
-    padding: 30px 0;
 
     .title {
-      font-weight: normal;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      font-size: 34px;
       color: black;
     }
 
     .subtitle {
-      font-weight: lighter;
-      font-size: 14px;
       color: $text-black;
     }
 
     &::after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      width: 50px;
-      height: 2px;
       background-color: $lighter-blue;
-      transform: translateY(-10px) translateX(-50%);
     }
   }
 

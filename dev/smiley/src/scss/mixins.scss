@@ -35,3 +35,33 @@
     filter: none;
   }
 }
+
+.section-title {
+  position: relative;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  padding: 30px 0;
+
+  .title {
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 34px;
+  }
+
+  .subtitle {
+    font-weight: lighter;
+    font-size: 14px;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 50px;
+    height: 2px;
+    transform: translateY(-10px) translateX(-50%);
+  }
+}
