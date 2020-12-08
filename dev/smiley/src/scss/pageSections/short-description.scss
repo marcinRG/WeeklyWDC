@@ -1,0 +1,56 @@
+@import '../variables';
+@import '../mixins';
+
+.short-description {
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 20px;
+  justify-self: center;
+
+
+  .description {
+    display: grid;
+    border: 1px solid gold;
+    justify-items: center;
+    padding: 40px 60px;
+  }
+
+  .desc-count {
+    text-transform: uppercase;
+    font-size: 20px;
+
+    &::before {
+      @include font-ioniconic;
+      content: '';
+      color: $light-red;
+      margin-right: 10px;
+      font-size: 25px;
+    }
+
+    &.projects {
+      &::before {
+        content: 'p';
+      }
+    }
+
+    &.web {
+      &::before {
+        content: 'w';
+      }
+    }
+
+    &.hours {
+      &::before {
+        content: 'h';
+      }
+    }
+
+    &.coffee {
+      &::before {
+        content: 'c';
+      }
+    }
+
+  }
+}
