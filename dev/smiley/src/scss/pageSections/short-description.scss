@@ -2,7 +2,7 @@
 @import '../mixins';
 
 .short-description {
-  background-color: white;
+  //background-color: $light-gray;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-column-gap: 20px;
@@ -11,9 +11,8 @@
 
   .description {
     display: grid;
-    border: 1px solid gold;
     justify-items: center;
-    padding: 40px 60px;
+    padding: 80px 60px;
   }
 
   .desc-count {
@@ -30,25 +29,25 @@
 
     &.projects {
       &::before {
-        content: 'p';
+        content: $ionicon-var-android-car;
       }
     }
 
     &.web {
       &::before {
-        content: 'w';
+        content: $ionicon-var-android-globe;
       }
     }
 
     &.hours {
       &::before {
-        content: 'h';
+        content: $ionicon-var-android-time;
       }
     }
 
     &.coffee {
       &::before {
-        content: 'c';
+        content: $ionicon-var-coffee;
       }
     }
 
