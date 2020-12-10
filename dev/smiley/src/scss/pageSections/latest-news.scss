@@ -1,10 +1,11 @@
 @import '../variables';
 @import '../mixins';
+@import '../utils/material-shadows';
 
 .latest-news {
   display: grid;
   justify-items: center;
-  padding: 60px 0;
+  padding: 60px 0 80px;
   grid-row-gap: 60px;
 
   .section-title {
@@ -30,6 +31,7 @@
   }
 
   .news {
+    @include box-shadow-helper(1);
     display: grid;
     position: relative;
   }

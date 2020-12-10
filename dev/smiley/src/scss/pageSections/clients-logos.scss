@@ -1,0 +1,28 @@
+@import '../variables';
+@import '../mixins';
+
+.clients-logos {
+  background-color: $light-gray;
+  display: grid;
+  justify-items: center;
+
+  .logo-slider {
+    display: grid;
+    grid-template-columns: 50px 1100px 50px;
+    grid-column-gap: 20px;
+    justify-items: center;
+    align-items: center;
+    padding: 60px 0;
+  }
+
+  .prev-btn,
+  .next-btn {
+    background-color: $light-blue;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    border: 0;
+    color: white;
+  }
+
+}

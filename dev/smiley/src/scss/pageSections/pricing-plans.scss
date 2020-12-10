@@ -1,10 +1,12 @@
 @import '../variables';
 @import '../mixins';
+@import '../utils/material-shadows';
 
 .pricing {
   display: grid;
   justify-items: center;
   padding: 60px 0;
+  grid-row-gap: 60px;
 
   .section-title {
 
@@ -20,4 +22,51 @@
       background-color: $lighter-blue;
     }
   }
+
+  .pricing-plans {
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    grid-column-gap: 20px;
+  }
+
+  .pricing-plan {
+    @include box-shadow-helper(1);
+    display: grid;
+    justify-items: center;
+    padding: 40px 0;
+  }
+
+  .plan-features {
+    padding: 30px 0;
+    list-style-type: none;
+    display: grid;
+    justify-items: center;
+    grid-row-gap: 15px;
+  }
+
+  .plan-name {
+    text-transform: uppercase;
+    font-size: 20px;
+  }
+
+  .plan-price {
+    color: $lighter-blue;
+    font-size: 20px;
+    font-weight: bold;
+    justify-self: stretch;
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 1px solid $lighter-blue;
+  }
+
+  .text-add {
+    font-size: 12px;
+    color: $text-black;
+  }
+
+  .feature {
+    color: $text-black;
+    text-transform: uppercase;
+  }
+
 }
