@@ -51,26 +51,4 @@
   list-style-type: none;
   grid-column: 3 / 4;
   grid-column-gap: 5px;
-
-  .link {
-    font-size: 12px;
-    background-color: white;
-    color: $light-blue;
-    border-radius: 50%;
-    width: 35px;
-    height: 35px;
-    display: grid;
-    align-items: center;
-    justify-items: center;
-    cursor: pointer;
-
-    &:hover {
-      background-color: $light-red;
-      color: white;
-    }
-
-    i {
-      font-size: 16px;
-    }
-  }
 }

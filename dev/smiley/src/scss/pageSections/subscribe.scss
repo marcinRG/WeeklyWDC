@@ -1,0 +1,74 @@
+@import '../variables';
+@import '../mixins';
+
+.subscribe {
+  background-color: $light-gray;
+  display: grid;
+  justify-items: center;
+  padding: 60px 0 80px;
+  grid-row-gap: 60px;
+
+
+  .section-title {
+
+    .title {
+      color: black;
+    }
+
+    .subtitle {
+      color: $text-black;
+    }
+
+    &::after {
+      background-color: $lighter-blue;
+    }
+  }
+
+  .input-wrapper {
+    border-bottom: 2px solid $lighter-blue;
+    min-width: 600px;
+    padding: 5px 0;
+
+    &::before {
+      @include font-ioniconic;
+      content: $ionicon-var-email;
+      color: darkgray;
+    }
+
+  }
+
+  .subscribe-form {
+    display: grid;
+    justify-items: center;
+    grid-row-gap: 60px;
+  }
+
+  .input-txt {
+    border: 0;
+    font-size: 14px;
+    outline: 0;
+    margin-left: 5px;
+    background-color: $light-gray;
+    width: 90%;
+  }
+
+  .btn-subscribe {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: $lighter-blue;
+    color: white;
+    border: 0;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 13px;
+
+    &::after {
+      @include font-ioniconic;
+      margin-left: 10px;
+      content: $ionicon-var-android-cloud-done;
+
+    }
+
+  }
+
+}

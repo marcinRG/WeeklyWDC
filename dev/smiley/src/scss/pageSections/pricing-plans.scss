@@ -1,8 +1,7 @@
 @import '../variables';
 @import '../mixins';
 
-.recommendations {
-  background-color: $light-blue;
+.pricing {
   display: grid;
   justify-items: center;
   padding: 60px 0;
@@ -10,15 +9,15 @@
   .section-title {
 
     .title {
-      color: white;
+      color: black;
     }
 
     .subtitle {
-      color: white;
+      color: $text-black;
     }
 
     &::after {
-      background-color: white;
+      background-color: $lighter-blue;
     }
   }
 }

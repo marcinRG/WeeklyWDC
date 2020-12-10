@@ -1,0 +1,75 @@
+@import '../variables';
+@import '../mixins';
+
+.latest-news {
+  display: grid;
+  justify-items: center;
+  padding: 60px 0;
+  grid-row-gap: 60px;
+
+  .section-title {
+
+    .title {
+      color: black;
+    }
+
+    .subtitle {
+      color: $text-black;
+    }
+
+    &::after {
+      background-color: $lighter-blue;
+    }
+  }
+
+
+  .news-panel {
+    display: grid;
+    grid-template-columns: repeat(3, 370px);
+    grid-column-gap: 15px;
+  }
+
+  .news {
+    display: grid;
+    position: relative;
+  }
+
+  .go-btn {
+    position: absolute;
+    top: 300px;
+    right: 0;
+    transform: translateY(-50%) translateX(-50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 0;
+    background-color: $lighter-blue;
+    color: white;
+
+    &:hover {
+      background-color: $light-red;
+    }
+  }
+
+  .news-text {
+    padding: 20px 10px;
+  }
+
+  .news-title {
+    text-transform: uppercase;
+  }
+
+  .news-author {
+    color: $text-black;
+    font-size: 12px;
+  }
+
+  .news-preview {
+    color: $text-black;
+    font-size: 12px;
+    padding: 20px 0;
+    text-align: justify;
+  }
+
+
+}

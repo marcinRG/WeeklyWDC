@@ -2,12 +2,15 @@
 @import '../mixins';
 
 .short-description {
-  //background-color: $light-gray;
+  background-color: $light-gray;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-column-gap: 20px;
-  justify-self: center;
 
+  .activities {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 20px;
+    justify-self: center;
+  }
 
   .description {
     display: grid;
