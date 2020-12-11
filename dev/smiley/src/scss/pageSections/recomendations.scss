@@ -6,6 +6,7 @@
   display: grid;
   justify-items: center;
   padding: 60px 0;
+  grid-row-gap: 60px;
 
   .section-title {
 
@@ -20,5 +21,80 @@
     &::after {
       background-color: white;
     }
+  }
+
+  .clients {
+    display: grid;
+    grid-template-columns: repeat(3, 120px);
+    grid-column-gap: 30px;
+  }
+
+  .client-name-job {
+    padding-top: 20px;
+    text-transform: uppercase;
+    grid-row-gap: 10px;
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    display: grid;
+    justify-items: center;
+
+    .occupation {
+      font-weight: lighter;
+    }
+
+  }
+
+  .client-portrait {
+    border: 5px solid rgba(255, 255, 255, .2);
+    border-radius: 50%;
+  }
+
+  .opinions {
+    position: relative;
+    width: 900px;
+    height: 100px;
+
+    .clients-opinions {
+      width: 100%;
+      height: 100%;
+      border: 1px solid white;
+      overflow: hidden;
+    }
+
+    .opinion {
+      display: block;
+      height: 100px;
+      width: 100%;
+      font-size: 12px;
+      font-weight: lighter;
+      color: white;
+      padding: 30px 60px;
+      text-align: center;
+    }
+
+    .btn-next,
+    .btn-prev {
+      position: absolute;
+      background-color: white;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      border: 0;
+      color: $light-blue;
+    }
+
+    .btn-next {
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%) translateX(50%);
+    }
+
+    .btn-prev {
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%) translateX(-50%);
+    }
+
   }
 }
