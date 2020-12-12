@@ -1,0 +1,32 @@
+@import 'variables';
+@import 'mixins';
+
+@mixin font-raleway {
+  font-family: 'Raleway', sans-serif;
+}
+
+@mixin font-lato {
+  font-family: 'Lato', sans-serif;
+}
+
+@mixin font-kameron {
+  font-family: 'Kameron', serif;
+}
+
+*,
+html,
+body {
+  @include set-to-zero;
+}
+
+main {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1920px;
+}
+
+.section {
+  box-sizing: border-box;
+}

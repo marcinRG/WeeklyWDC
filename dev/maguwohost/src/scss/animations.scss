@@ -1,0 +1,77 @@
+//@import "variables";
+//@import "mixins";
+//@import "common";
+//
+//.animation-mixin(@duration, @name, @count, @direction: normal) {
+//  animation-direction: @direction;
+//  animation-duration: @duration;
+//  animation-fill-mode: both;
+//  animation-iteration-count: @count;
+//  animation-name: @name;
+//  animation-timing-function: ease-in-out;
+//}
+//
+//.anim-txt-hide {
+//  .animation-mixin(0.25s, hide-txt, 1);
+//}
+//
+//.anim-txt-rotate {
+//  .animation-mixin(0.5s, rotate-txt, 1);
+//  transform-origin: 10% 50%;
+//}
+//
+//.anim-txt-translate {
+//  .animation-mixin(0.25s, translate-txt, 1);
+//}
+//
+//.anim-txt-scale {
+//  .animation-mixin(0.25s, scale-txt, 1);
+//}
+//
+//@keyframes hide-txt {
+//  from {
+//    opacity: 1;
+//  }
+//
+//  to {
+//    opacity: 0;
+//  }
+//}
+//
+//@keyframes rotate-txt {
+//  0% {
+//    transform: rotateX(-90deg);
+//  }
+//
+//  100% {
+//    transform: rotateX(0deg);
+//  }
+//}
+//
+//@keyframes translate-txt {
+//  0% {
+//    opacity: 0;
+//    transform: translateX(-200px);
+//  }
+//
+//  100% {
+//    opacity: 1;
+//    transform: translateX(0);
+//  }
+//}
+//
+//@keyframes scale-txt {
+//  0% {
+//    opacity: 0;
+//    transform: scale(0, 0);
+//  }
+//
+//  10% {
+//    opacity: 1;
+//  }
+//
+//  100% {
+//    opacity: 1;
+//    transform: scale(1, 1);
+//  }
+//}

@@ -1,0 +1,115 @@
+@import '../variables';
+@import '../mixins';
+@import '../common';
+
+.home {
+  background-image: url('../images/bg-big.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  max-height: 990px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .title {
+    @include font-kameron;
+    font-size: 2.85em;
+    font-weight: 400;
+    color: white;
+  }
+
+  img {
+    margin: 2em 0;
+  }
+
+  .adv-list {
+    @include font-raleway;
+    color: white;
+    font-size: 1.5em;
+    list-style: none;
+    display: flex;
+    flex-flow: row;
+
+    .adv {
+      padding: 0 .5em;
+
+      &:nth-of-type(2) {
+        padding: 0;
+
+        &::before,
+        &::after {
+          display: inline-block;
+          content: '-';
+        }
+
+        &::before {
+          padding: 0 1em 0 .5em;
+        }
+
+        &::after {
+          padding: 0 .5em 0 1em;
+        }
+      }
+    }
+  }
+
+  .form {
+    @include set-to-zero;
+    background-color: rgba(255, 255, 255, .4);
+    padding: 1em;
+    display: flex;
+
+    .txt {
+      @include font-raleway;
+      flex: 1 1 50%;
+      outline: 0;
+      background-color: white;
+      color: black;
+      font-weight: 400;
+      font-size: 1.2em;
+      padding: .8em;
+    }
+
+    .item-selection {
+      flex: 1 1 50%;
+      display: flex;
+      align-items: stretch;
+
+      .selected {
+        @include font-raleway;
+        background-color: $yellow;
+        color: black;
+        font-weight: 700;
+        font-size: 1em;
+        padding: 1.1em;
+      }
+
+      .options {
+        display: none;
+      }
+
+      .selection-btn {
+        @include font-raleway;
+        background-color: $yellow;
+        color: white;
+        font-size: 1.2em;
+        padding: .8em .4em;
+        border-right: 1px solid white;
+      }
+
+      .btn {
+        @include font-raleway;
+        white-space: nowrap;
+        background-color: $yellow;
+        color: white;
+        font-weight: bold;
+        font-size: .8em;
+        padding: .8em 1.2em;
+      }
+    }
+
+  }
+
+}

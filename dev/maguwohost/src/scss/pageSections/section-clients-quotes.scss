@@ -1,0 +1,92 @@
+@import '../variables';
+@import '../mixins';
+@import '../common';
+
+.clients-quotes {
+  .clients {
+    display: flex;
+    flex-flow: row;
+    padding: 4em 10% 0;
+    justify-content: space-around;
+    align-items: stretch;
+
+    .desc {
+      flex: 3 3 0;
+      padding: 2em;
+
+      h3 {
+        @include font-raleway;
+        font-size: 1.75em;
+        color: $blue;
+        padding-bottom: .5em;
+      }
+
+      p {
+        @include font-raleway;
+        font-weight: normal;
+        font-size: .85em;
+        line-height: 1.5;
+      }
+
+    }
+  }
+
+  .clients-list {
+    flex: 7;
+    list-style-type: none;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .quotes {
+    padding: 4em 10% 6em;
+  }
+
+  .quotes-list {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: stretch;
+    list-style-type: none;
+
+    .quote {
+      margin: 0 2.5em;
+
+      q {
+        @include font-kameron;
+        line-height: 1.5;
+        font-style: italic;
+        text-align: justify;
+        color: $faint-grey;
+
+      }
+
+      span {
+        @include font-raleway;
+        font-weight: bold;
+        font-size: 1.2em;
+        color: $grey;
+        display: inline-block;
+        padding-top: 1em;
+      }
+
+      footer {
+        position: relative;
+
+      }
+
+      img {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        border: 10px solid $lighter-grey;
+        transform:  translateX(35%) translateY(50%) scale(.3, .3);
+        border-radius: 50%;
+      }
+
+    }
+
+  }
+}

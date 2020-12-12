@@ -1,0 +1,79 @@
+@import '../variables';
+@import '../mixins';
+@import '../common';
+
+.info {
+  display: flex;
+
+  .panel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 6em 0;
+  }
+
+  .btn {
+    @include font-raleway;
+    background-color: transparent;
+    color: white;
+    padding: .8em 3em;
+    border: 2px solid white;
+    font-weight: bold;
+  }
+
+  .title {
+    @include font-raleway;
+    font-size: 2em;
+  }
+
+  .txt {
+    @include font-raleway;
+    width: 50%;
+    margin: 2em 0;
+    text-align: center;
+    font-weight: normal;
+    font-size: .75em;
+    color: white;
+    line-height: 1.5;
+  }
+
+  .webhost {
+    background-color: $blue;
+    color: white;
+
+    .title {
+
+      &::before {
+        display: block;
+        margin: 0 auto 1em;
+        background-image: url('../images/server-img.png');
+        background-repeat: no-repeat;
+        background-position: center center;
+        text-align: center;
+        width: 180px;
+        height: 180px;
+        content: '';
+      }
+    }
+
+  }
+
+  .domain {
+    background-color: $yellow;
+    color: white;
+
+    .title {
+      &::before {
+        display: block;
+        margin: 0 auto 1em;
+        text-align: center;
+        content: '.com';
+        color: $blue;
+        font-weight: 700;
+        font-size: 3em;
+      }
+    }
+  }
+}
